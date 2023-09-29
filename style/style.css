@@ -1,6 +1,46 @@
+body {
+  background-color: #EBEBEB;
+}
+
 nav {
   font-size: 20px;
 }
 nav .logo {
   width: 100px;
+}
+nav .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+nav .nav-link {
+  color: black;
+}
+
+.hero {
+  display: none;
+}
+
+.campagne {
+  display: none;
+}
+
+.services {
+  display: none;
+}
+
+.nouvelles {
+  display: none;
+}
+
+.temoignage {
+  display: none;
+}
+
+.espace {
+  display: none;
+}
+
+footer {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
