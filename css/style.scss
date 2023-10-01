@@ -1,0 +1,153 @@
+
+@use "variables";
+
+*{
+    font-family: lato;
+}
+body{
+    background-color: variables.$gris;
+}
+/*****************ALERT***********************/
+.alert{
+    background-color: variables.$grisFoncer;
+    font-size: 36px;
+    font-weight: 400;
+    .btn-close{
+        background: url(../assets/images/btnX.svg);
+        background-repeat: no-repeat;
+        background-size: 45px;
+        background-position: center;
+        opacity: 1;
+    }
+    p{
+        margin:0;
+    }
+    a{
+        color:variables.$orange;
+        text-decoration: none;
+    }
+}
+/*****************NAV***********************/
+nav{
+font-size:20px;
+.logo{
+    width:100px;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+}
+.nav-lien{
+    font-size:28px;
+    font-weight: 300;
+    text-decoration: none;
+    color:black;
+    &:hover{
+        color:variables.$orange;
+        text-decoration: underline;text-decoration-thickness:1.5px;
+        text-underline-offset: 8px;
+    }
+}
+.nav-item:hover{
+    .nav-link{
+        color: variables.$orange;
+    }
+}
+
+/*****************HERO***********************/
+.hero{
+    width:100vw;
+    height:80vh;
+    padding:0 66px;
+    display: grid;
+    grid-template-rows:66px 1fr 1fr 1fr;
+    grid-template-columns:33% 33% 33%;
+    &__titre{
+        grid-row-start: 2;
+        grid-column-start:1;
+    h1{
+        color: black;
+        font-size: 80px;
+        padding-right:25px;
+        padding-left: 0;
+        font-weight: 900;
+    }
+    h1:nth-child(3){
+        padding-left:25px;
+    }
+}
+&__info01{
+    margin-top:66px;
+    grid-row-start: 3;
+    grid-column-start:1;
+    grid-column-end: 3;
+    &__content{
+        width: 390px;
+    }
+    h2{
+        font-size:40px;
+        font-weight:700;
+    }
+    p{
+        font-size: 14px;
+        text-align: right;
+    }
+}
+&__info02{
+    margin-top: 40px;
+    grid-row-start: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    &__content{
+        width:500px;
+    }
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+    }
+    &__carousel{
+        width:207px;
+        height:178px;
+        background-image: url(../assets/images/cercle.png);
+        background-repeat:no-repeat ;
+        background-size: 100%;
+        font-size: 14px;
+        p{
+            width: 150px;
+            margin:0;
+        }
+        &__nav{
+            width:30%;
+            button{
+                margin-top: 5px;
+                border:none;
+                background-color: variables.$bleu;
+                width: 11px;
+                height: 11px;
+                border-radius:100%;
+            }
+        } 
+    }
+}
+}
+.campagne{
+    display: none;
+}
+.services{
+    display: none;
+}
+.nouvelles{
+    display: none;
+}
+.temoignage{
+    display: none;
+}
+.espace{
+    display: none;
+}
+footer{
+    display: none;
+}

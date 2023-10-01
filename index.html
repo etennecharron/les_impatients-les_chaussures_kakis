@@ -5,52 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Impatients - Les chaussures kakis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 
     <header>
-        <div class="alert">
-            <p>Ce site est développé par des étudiants</p><a href="https://impatients.ca/">Site web original</a>
+        <div class="alert alert-dismissible fade show d-flex justify-content-center" role="alert">
+            <p>Ce site est développé par des étudiants</p>
+            <p>&nbsp</p><a href="https://impatients.ca/">Site web original</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
         </div>
         <!-- Nav barre à faire correctement avec bootstrap -->
         <nav class="navbar navbar-light navbar-expand-lg">
             <div class="container-fluid">
 
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href=""  class="navbar-brand">
+                <a href="" class="navbar-brand">
                     <img src="assets/images/logo.png" alt="logo" class="logo">
                 </a>
-                
+
 
                 <div id="mainNav" class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">Accueil</a>
+                            <a href="" class=" nav-lien">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">Ateliers</a>
+                            <a href="" class="nav-lien">Ateliers</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">Collection</a>
+                            <a href="" class="nav-lien">Collection</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">Événements</a>
+                            <a href="" class="nav-lien">Événements</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">Boutique</a>
+                            <a href="" class="nav-lien">Boutique</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">Contact</a>
+                            <a href="" class="nav-lien">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link text-dark">En</a>
+                            <a href="" class="nav-lien">En</a>
                         </li>
                     </ul>
                 </div>
@@ -59,162 +67,178 @@
 
         <main>
 
-        <section class="hero">
-            <div class="hero__titre">
-                <h1>LES</h1> <div class="fleche"></div><h1>IMPATIENTS</h1>
-            </div>
-            <!-- Peut etre utiliser les cartes bootstrap horizontal-->
-            <div class="hero__info01">
-                <h2>Une maison pour tous</h2>
-                <p>Les Impatients viennent en aide aux personnes ayant des problèmes de santé mentale par le biais de l’expression artistique.</p>
-                <img src="" alt="petite image de coté">
-            </div>
-            <!-- Peut etre utiliser les cartes bootstrap horizontal-->
-            <div class="hero__info02">
-                <h2>Pour plus d’informations</h2>
-                <p>Naviguer avec les boutons du caroussel pour obtenir plus d’informations sur la fondation.</p>
-            </div>
-           <!--Il va potentiellement utiliser swiper pour le caroussel d'image, a voir -->
-            <div class="hero__carousel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                <div class="caroussel__nav">
-                    <button>1</button><button>2</button><button>3</button>
+            <section class="hero">
+                <div class="hero__titre d-flex align-items-center">
+                    <h1>LES</h1><img src="assets/images/fleche.svg" alt="">
+                    <h1>IMPATIENTS</h1>
                 </div>
-            </div>
-        </section>
-
-        <section class="campagne">
-            <img src="" alt="image de coté">
-            <div class="campagne__contenus">
-            <h2>CAMPAGNE DE LEVÉE
-                DE FONDS</h2>
-                <p>Il y a quelques semaines, nous avons fêté nos 30 ans. Pour notre anniversaire, on a soufflé des chandelles…et la maison a brûlé.
-                    Aidez-nous à maintenir nos activités et accueillir nos Impatients.</p>
-                    <button>Pour donner -></button>
-                </div>
-        </section>
-
-        <section class="services">
-        <div class="services__contenus">
-            <h2>Services offerts</h2>
-            <!-- utiliser le drop down bootstrap-->
-            <div class="services__atelier">
-                <h3>Ateliers</h3>
-                <button></button>
-            </div>
-            <!-- utiliser le drop down bootstrap-->
-            <div class="services__evenements">
-                <h3>Évènements</h3>
-                <button></button>
-            </div>
-            <!-- utiliser le drop down bootstrap-->
-            <div class="services__collection">
-                <h3>La collection</h3>
-                <button></button>
-            </div>
-        </div>
-            <img src="" alt="image de coté">
-        </section>
-        <section class="nouvelles">
-            <h2>Les dernières nouvelles</h2>
-            <button>Pour plus de nouvelles -></button> 
-            <!-- utiliser carte bootstrap-->
-            <div class="nouvelle__carte">
-                <img src="" alt="image carte 01">
-                <h4>360 000 $ POUR LA 24E ÉDITION</h4>
-                <button>En savoir plus</button>
-            </div>
-            <!-- utiliser carte bootstrap-->
-            <div class="nouvelle__carte">
-                <img src="" alt="image carte 02">
-                <h4>PARLE MOI D'AMOUR... ET D'ESPOIR</h4>
-                <button>En savoir plus</button>
-            </div>
-            <!-- utiliser carte bootstrap-->
-            <div class="nouvelle__carte">
-                <img src="" alt="image carte 03">
-                <h4>ÉVÈNEMENT LECTURE</h4>
-                <button>En savoir plus</button>
-            </div>
-        </section>
-        <section class="temoignage">
-            <!-- peut etre utiliser display flex pour les mettre l'un a coté de l'autre-->
-            <h2>Témoignage</h2>
-            <!-- utiliser carte bootstrap-->
-            <div class="temoignage__carte">
-                <img src="" alt="image carte 01">
-                <h4>Jean Sébastien Saint-Amour | Artiste | 24 ans</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-            </div>
-            <img src="" alt="image de coté">
-        </section>
-        <section class="espace">
-            <h2>L'espace Impatients</h2>
-            <div class="espace__contenus">x
-            <button>Pour plus d'articles ></button>
-            <!-- utiliser carte bootstrap-->
-            <div class="espace__carte">
-                <img src="" alt="image carte 01">
-                <h4>Jocelyne Proulx ET ANNIE LETENDRE À L'ESPACE D'EXPOSITION AIMANTÉ</h4>
-                <button>Lire l'article</button>
-            </div>
-            <!-- utiliser carte bootstrap-->
-            <div class="espace__carte">
-                <img src="" alt="image carte 02">
-                <h4>DIANE FRIGON À L'ESPACE D'EXPOSITION AIMANTÉ</h4>
-                <button>Lire l'article</button>
-            </div>
-        </div>
-        </section>
-        <footer>
-            <section class="footer__compagnie">
-                <h2>Nous poursuivons notre action grâce à</h2>
-                <div class="compagne__logos">
-                <img src="" alt="image compagnie 01">
-                <img src="" alt="image compagnie 02">
-                <img src="" alt="image compagnie 03">
-                <img src="" alt="image compagnie 04">
-                <img src="" alt="image compagnie 05">
-                <img src="" alt="image compagnie 06">
-                <img src="" alt="image compagnie 07">
-                <img src="" alt="image compagnie 08">
-                </div>
-            </section>
-            <section class="footer__bas">
-                <div class="bas__impliquer">
-                    <h4>Simpliquer</h4>
-                    <a href="">Offres d'emploi</a>
-                    <a href="">Devenir bénévole</a>
-                    <a href="">Nos partenaires</a>
-                    <img src="" alt="logo">
-                </div>
-                <div class="bas__connaitre">
-                    <h4>Nous connaître</h4>
-                    <a href="">À propos</a>
-                    <a href="">Mission</a>
-                    <a href="">Historique</a>
-                    <a href="">Presse</a>
-                    <a href="">Équipe</a>
-                    <a href="">CA</a>
-                    <button>Pour donner -></button>
-                </div>
-                <div class="bas__inscription">
-                    <h4>Inscrivez-vous à l'infolettre</h4>
-                    <div class="recherche"></div>
-                    <div class="icons">
-                        <div>instagrame</div><div>facebook</div><div>youtube</div>
+                <!-- Peut etre utiliser les cartes bootstrap horizontal-->
+                <div class="hero__info01 d-flex">
+                    <div class="hero__info01__content">
+                        <div class="d-flex">
+                        <h2>Une maison</h2><h2>&nbsp</h2><h2>pour tous</h2>
+                    </div> 
+                        <p>Les Impatients viennent en aide aux personnes ayant des problèmes de santé mentale par le
+                            biais de l’expression artistique.</p>
                     </div>
-                    <a href="">Organisme de bienfaisance enregistré</a>
-                    <a href="">13484-5213-RR0001</a>
-                    <a href="">Téléphone</a>
-                    <a href="">514 842-1043</a>
-                    <p>© lesimpatientsleschaussureskakis</p>
+                    <img src="assets/images/personnage01.png" alt="petite image de coté">
+                </div>
+                <!-- Peut etre utiliser les cartes bootstrap horizontal-->
+                <div class="hero__info02 d-flex">
+                    <div class="hero__info02__content">
+                        <h2>Pour plus d’informations</h2>
+                        <p>Naviguer avec les boutons du caroussel pour obtenir plus d’informations sur la fondation.</p>
+                    </div>
+
+
+                <!--Il va potentiellement utiliser swiper pour le caroussel d'image, a voir -->
+                    <div class="hero__info02__carousel d-flex flex-column justify-content-center align-items-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <div class="hero__info02__carousel__nav d-flex justify-content-around">
+                            <button></button><button></button><button></button>
+                        </div>
+                    </div>
+                </div>
+
                 </div>
             </section>
-        </footer>
+
+            <section class="campagne">
+                <img src="" alt="image de coté">
+                <div class="campagne__contenus">
+                    <h2>CAMPAGNE DE LEVÉE
+                        DE FONDS</h2>
+                    <p>Il y a quelques semaines, nous avons fêté nos 30 ans. Pour notre anniversaire, on a soufflé des
+                        chandelles…et la maison a brûlé.
+                        Aidez-nous à maintenir nos activités et accueillir nos Impatients.</p>
+                    <button>Pour donner -></button>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="services__contenus">
+                    <h2>Services offerts</h2>
+                    <!-- utiliser le drop down bootstrap-->
+                    <div class="services__atelier">
+                        <h3>Ateliers</h3>
+                        <button></button>
+                    </div>
+                    <!-- utiliser le drop down bootstrap-->
+                    <div class="services__evenements">
+                        <h3>Évènements</h3>
+                        <button></button>
+                    </div>
+                    <!-- utiliser le drop down bootstrap-->
+                    <div class="services__collection">
+                        <h3>La collection</h3>
+                        <button></button>
+                    </div>
+                </div>
+                <img src="" alt="image de coté">
+            </section>
+            <section class="nouvelles">
+                <h2>Les dernières nouvelles</h2>
+                <button>Pour plus de nouvelles -></button>
+                <!-- utiliser carte bootstrap-->
+                <div class="nouvelle__carte">
+                    <img src="" alt="image carte 01">
+                    <h4>360 000 $ POUR LA 24E ÉDITION</h4>
+                    <button>En savoir plus</button>
+                </div>
+                <!-- utiliser carte bootstrap-->
+                <div class="nouvelle__carte">
+                    <img src="" alt="image carte 02">
+                    <h4>PARLE MOI D'AMOUR... ET D'ESPOIR</h4>
+                    <button>En savoir plus</button>
+                </div>
+                <!-- utiliser carte bootstrap-->
+                <div class="nouvelle__carte">
+                    <img src="" alt="image carte 03">
+                    <h4>ÉVÈNEMENT LECTURE</h4>
+                    <button>En savoir plus</button>
+                </div>
+            </section>
+            <section class="temoignage">
+                <!-- peut etre utiliser display flex pour les mettre l'un a coté de l'autre-->
+                <h2>Témoignage</h2>
+                <!-- utiliser carte bootstrap-->
+                <div class="temoignage__carte">
+                    <img src="" alt="image carte 01">
+                    <h4>Jean Sébastien Saint-Amour | Artiste | 24 ans</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad</p>
+                </div>
+                <img src="" alt="image de coté">
+            </section>
+            <section class="espace">
+                <h2>L'espace Impatients</h2>
+                <div class="espace__contenus">x
+                    <button>Pour plus d'articles ></button>
+                    <!-- utiliser carte bootstrap-->
+                    <div class="espace__carte">
+                        <img src="" alt="image carte 01">
+                        <h4>Jocelyne Proulx ET ANNIE LETENDRE À L'ESPACE D'EXPOSITION AIMANTÉ</h4>
+                        <button>Lire l'article</button>
+                    </div>
+                    <!-- utiliser carte bootstrap-->
+                    <div class="espace__carte">
+                        <img src="" alt="image carte 02">
+                        <h4>DIANE FRIGON À L'ESPACE D'EXPOSITION AIMANTÉ</h4>
+                        <button>Lire l'article</button>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <section class="footer__compagnie">
+                    <h2>Nous poursuivons notre action grâce à</h2>
+                    <div class="compagne__logos">
+                        <img src="" alt="image compagnie 01">
+                        <img src="" alt="image compagnie 02">
+                        <img src="" alt="image compagnie 03">
+                        <img src="" alt="image compagnie 04">
+                        <img src="" alt="image compagnie 05">
+                        <img src="" alt="image compagnie 06">
+                        <img src="" alt="image compagnie 07">
+                        <img src="" alt="image compagnie 08">
+                    </div>
+                </section>
+                <section class="footer__bas">
+                    <div class="bas__impliquer">
+                        <h4>Simpliquer</h4>
+                        <a href="">Offres d'emploi</a>
+                        <a href="">Devenir bénévole</a>
+                        <a href="">Nos partenaires</a>
+                        <img src="" alt="logo">
+                    </div>
+                    <div class="bas__connaitre">
+                        <h4>Nous connaître</h4>
+                        <a href="">À propos</a>
+                        <a href="">Mission</a>
+                        <a href="">Historique</a>
+                        <a href="">Presse</a>
+                        <a href="">Équipe</a>
+                        <a href="">CA</a>
+                        <button>Pour donner -></button>
+                    </div>
+                    <div class="bas__inscription">
+                        <h4>Inscrivez-vous à l'infolettre</h4>
+                        <div class="recherche"></div>
+                        <div class="icons">
+                            <div>instagrame</div>
+                            <div>facebook</div>
+                            <div>youtube</div>
+                        </div>
+                        <a href="">Organisme de bienfaisance enregistré</a>
+                        <a href="">13484-5213-RR0001</a>
+                        <a href="">Téléphone</a>
+                        <a href="">514 842-1043</a>
+                        <p>© lesimpatientsleschaussureskakis</p>
+                    </div>
+                </section>
+            </footer>
 
 
-            
+
         </main>
 
 
@@ -228,7 +252,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
 </body>
 
