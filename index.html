@@ -17,9 +17,10 @@
 
 
     <header>
-        <div class="alert alert-dismissible fade show d-flex justify-content-center" role="alert">
+        <div class="alert alert-dismissible fade show d-flex justify-content-around align-items-center" role="alert">
             <p>Ce site est développé par des étudiants</p>
-            <p>&nbsp</p><a href="https://impatients.ca/">Site web original</a>
+            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+            <a href="https://impatients.ca/">Site web original</a>
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 
         </div>
@@ -27,40 +28,63 @@
         <nav class="navbar navbar-light navbar-expand-lg">
             <div class="container-fluid">
 
+                <!--DÉBUT LOGO-->
+                <a href="" class="navbar-brand">
+                    <img src="assets/images/logo.png" alt="logo" class="logo">
+                </a>
+                <!--FIN LOGO-->
+
+                <!--DÉBUT BTN HAMBURGER-->
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
                     aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <a href="" class="navbar-brand">
-                    <img src="assets/images/logo.png" alt="logo" class="logo">
-                </a>
-
-
+                <!--FIN BTN HAMBURGER-->
+                
+                <!--DÉBUT CONTENUS NAV-->
                 <div id="mainNav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav align-items-center">
                         <li class="nav-item">
                             <a href="" class=" nav-lien">Accueil</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-lien">Ateliers</a>
                         </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
                         <li class="nav-item">
                             <a href="" class="nav-lien">Collection</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-lien">Événements</a>
                         </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
                         <li class="nav-item">
                             <a href="" class="nav-lien">Boutique</a>
                         </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
                         <li class="nav-item">
                             <a href="" class="nav-lien">Contact</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
                         </li>
                         <li class="nav-item">
                             <a href="" class="nav-lien">En</a>
                         </li>
                     </ul>
+                    <!--FIN CONTENUS NAV-->
                 </div>
             </div>
         </nav>
@@ -68,11 +92,14 @@
         <main>
 
             <section class="hero">
+                <!--DÉBUT TITRE "LES IMPATIENTS"-->
                 <div class="hero__titre d-flex align-items-center">
                     <h1>LES</h1><img src="assets/images/fleche.svg" alt="">
                     <h1>IMPATIENTS</h1>
                 </div>
-                <!-- Peut etre utiliser les cartes bootstrap horizontal-->
+                <!--FIN TITRE "LES IMPATIENTS"-->
+
+               <!--DÉBUT INFO #1-->
                 <div class="hero__info01 d-flex">
                     <div class="hero__info01__content">
                         <div class="d-flex">
@@ -83,15 +110,17 @@
                     </div>
                     <img src="assets/images/personnage01.svg" alt="petite image de coté">
                 </div>
-                <!-- Peut etre utiliser les cartes bootstrap horizontal-->
+                <!--FIN INFO #1-->
+                
+                <!--DÉBUT INFO #2-->
                 <div class="hero__info02 d-flex">
                     <div class="hero__info02__content">
-                        <h2>Pour plus d’informations</h2>
+                        <div class="d-flex">
+                        <h2>Pour plus d’</h2><h2> informations</h2>
+                        </div>
                         <p>Naviguer avec les boutons du caroussel pour obtenir plus d’informations sur la fondation.</p>
                     </div>
-
-
-                <!--Il va potentiellement utiliser swiper pour le caroussel d'image, a voir -->
+                        <!--Il va potentiellement utiliser swiper pour le caroussel d'image, a voir -->
                     <div class="hero__info02__carousel d-flex flex-column justify-content-center align-items-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                         <div class="hero__info02__carousel__nav d-flex justify-content-around">
@@ -99,6 +128,7 @@
                         </div>
                     </div>
                 </div>
+                <!--FIN INFO #2-->
 
                 </div>
             </section>

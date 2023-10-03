@@ -6,18 +6,27 @@ body {
   background-color: #EBEBEB;
 }
 
+.ligne_separation {
+  height: 13px;
+}
+
 /*****************ALERT***********************/
 .alert {
   background-color: #AEB4A9;
-  font-size: 36px;
+  font-size: 10px;
   font-weight: 400;
+  margin-bottom: 0;
+  height: 25px;
 }
 .alert .btn-close {
   background: url(../assets/images/btnX.svg);
   background-repeat: no-repeat;
-  background-size: 45px;
+  background-size: 17px;
   background-position: center;
   opacity: 1;
+  width: 0;
+  height: 0;
+  padding: 1rem 1rem;
 }
 .alert p {
   margin: 0;
@@ -31,30 +40,57 @@ body {
 nav {
   font-size: 20px;
 }
+nav .ligne_separation {
+  display: none;
+}
 nav .logo {
-  width: 100px;
+  width: 39px;
 }
 nav .navbar-nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  margin: 0;
 }
 
 .nav-lien {
-  font-size: 28px;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 900;
   text-decoration: none;
   color: black;
-}
-.nav-lien:hover {
-  color: #F75C03;
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  text-underline-offset: 8px;
+  /*
+  &:hover{
+
+      color:variables.$orange;
+      text-decoration: underline;text-decoration-thickness:1.5px;
+      text-underline-offset: 8px;
+
+  }
+  */
 }
 
-.nav-item:hover .nav-link {
-  color: #F75C03;
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  width: 100%;
+  border: #004E89 3px solid;
+  border-radius: 40px;
+}
+.nav-item:hover {
+  background-color: #F75C03;
+}
+.nav-item:hover .nav-lien {
+  color: white;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../assets/images/menu_hamburger.svg);
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
 }
 
 /*****************HERO***********************/
@@ -72,9 +108,10 @@ nav .navbar-nav {
 }
 .hero__titre h1 {
   color: black;
-  font-size: 80px;
+  font-size: 24px;
   padding-right: 25px;
   padding-left: 0;
+  margin: 0;
   font-weight: 900;
 }
 .hero__titre h1:nth-child(3) {
@@ -88,6 +125,12 @@ nav .navbar-nav {
 }
 .hero__info01__content {
   width: 390px;
+}
+.hero__info01__content h2:nth-child(1) {
+  text-decoration: underline;
+  text-decoration-color: #004E89;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
 }
 .hero__info01 h2 {
   font-size: 40px;
@@ -105,6 +148,12 @@ nav .navbar-nav {
 }
 .hero__info02__content {
   width: 500px;
+}
+.hero__info02__content h2:nth-child(2) {
+  text-decoration: underline;
+  text-decoration-color: #F75C03;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
 }
 .hero__info02 h2 {
   font-size: 40px;
