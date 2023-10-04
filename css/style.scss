@@ -93,14 +93,20 @@ font-size:20px;
 .hero{
     width:100vw;
     height:80vh;
-    padding:0 66px;
-    display: grid;
-
+    padding:15px 15px;
+/**
     grid-template-rows:66px 1fr 1fr 1fr;
     grid-template-columns:33% 33% 33%;
+**/
     &__titre{
+
+        /*
         grid-row-start: 2;
         grid-column-start:1;
+        */
+        img{
+            width:49px;
+        }
         
     h1{
         color: black;
@@ -115,12 +121,14 @@ font-size:20px;
     }
 }
 &__info01{
-    margin-top:66px;
+    /*
     grid-row-start: 3;
     grid-column-start:1;
     grid-column-end: 3;
+    */
+    padding-top:40px;
     &__content{
-        width: 390px;
+        width: 200px;
         h2:nth-child(1){
         text-decoration: underline;
         text-decoration-color:variables.$bleu;
@@ -129,21 +137,28 @@ font-size:20px;
         }
     }
     h2{
-        font-size:40px;
+        font-size:20px;
         font-weight:700;
     }
     p{
         font-size: 14px;
         text-align: right;
+        margin: 0;
+    }
+    img{
+        width: 146px;
+        height:140px;
     }
 }
 &__info02{
-    margin-top: 40px;
+    padding-top:20px;
+    /*
     grid-row-start: 4;
     grid-column-start: 2;
     grid-column-end: 4;
+    */
     &__content{
-        width:500px;
+        width:220px;
         h2:nth-child(2){
             text-decoration: underline;
             text-decoration-color:variables.$orange;
@@ -152,18 +167,18 @@ font-size:20px;
             }
     }
     h2{
-        font-size: 40px;
+        font-size: 20px;
         font-weight: 700;
     }
     &__carousel{
-        width:207px;
-        height:178px;
+        width:120px;
+        height:130px;
         background-image: url(../assets/images/cercle.png);
         background-repeat:no-repeat ;
         background-size: 100%;
-        font-size: 14px;
+        font-size: 8px;
         p{
-            width: 150px;
+            width: 100px;
             margin:0;
         }
         &__nav{
@@ -172,8 +187,8 @@ font-size:20px;
                 margin-top: 5px;
                 border:none;
                 background-color: variables.$bleu;
-                width: 11px;
-                height: 11px;
+                width: 12px;
+                height: 12px;
                 border-radius:100%;
             }
         } 

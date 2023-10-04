@@ -97,14 +97,20 @@ nav .navbar-nav {
 .hero {
   width: 100vw;
   height: 80vh;
-  padding: 0 66px;
-  display: grid;
-  grid-template-rows: 66px 1fr 1fr 1fr;
-  grid-template-columns: 33% 33% 33%;
+  padding: 15px 15px;
+  /**
+      grid-template-rows:66px 1fr 1fr 1fr;
+      grid-template-columns:33% 33% 33%;
+  **/
 }
 .hero__titre {
+  /*
   grid-row-start: 2;
-  grid-column-start: 1;
+  grid-column-start:1;
+  */
+}
+.hero__titre img {
+  width: 49px;
 }
 .hero__titre h1 {
   color: black;
@@ -118,13 +124,15 @@ nav .navbar-nav {
   padding-left: 25px;
 }
 .hero__info01 {
-  margin-top: 66px;
+  /*
   grid-row-start: 3;
-  grid-column-start: 1;
+  grid-column-start:1;
   grid-column-end: 3;
+  */
+  padding-top: 40px;
 }
 .hero__info01__content {
-  width: 390px;
+  width: 200px;
 }
 .hero__info01__content h2:nth-child(1) {
   text-decoration: underline;
@@ -133,21 +141,28 @@ nav .navbar-nav {
   text-underline-offset: 3.5px;
 }
 .hero__info01 h2 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
 }
 .hero__info01 p {
   font-size: 14px;
   text-align: right;
+  margin: 0;
+}
+.hero__info01 img {
+  width: 146px;
+  height: 140px;
 }
 .hero__info02 {
-  margin-top: 40px;
+  padding-top: 20px;
+  /*
   grid-row-start: 4;
   grid-column-start: 2;
   grid-column-end: 4;
+  */
 }
 .hero__info02__content {
-  width: 500px;
+  width: 220px;
 }
 .hero__info02__content h2:nth-child(2) {
   text-decoration: underline;
@@ -156,19 +171,19 @@ nav .navbar-nav {
   text-underline-offset: 3.5px;
 }
 .hero__info02 h2 {
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 700;
 }
 .hero__info02__carousel {
-  width: 207px;
-  height: 178px;
+  width: 120px;
+  height: 130px;
   background-image: url(../assets/images/cercle.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  font-size: 14px;
+  font-size: 8px;
 }
 .hero__info02__carousel p {
-  width: 150px;
+  width: 100px;
   margin: 0;
 }
 .hero__info02__carousel__nav {
@@ -178,8 +193,8 @@ nav .navbar-nav {
   margin-top: 5px;
   border: none;
   background-color: #004E89;
-  width: 11px;
-  height: 11px;
+  width: 12px;
+  height: 12px;
   border-radius: 100%;
 }
 
