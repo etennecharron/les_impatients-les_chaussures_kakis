@@ -10,7 +10,7 @@ body{
 .ligne_separation{
     height:13px;
 }
-/*****************ALERT***********************/
+/***************** DÉBUT ALERT***********************/
 .alert{
     background-color: variables.$grisFoncer;
     font-size: 10px;
@@ -23,8 +23,8 @@ body{
         background-size: 17px;
         background-position: center;
         opacity: 1;
-        width:0;
-        height:0;
+        width:0px;
+        height:0px;
         padding: 1rem 1rem;
     }
     p{
@@ -35,7 +35,43 @@ body{
         text-decoration: none;
     }
 }
-/*****************NAV***********************/
+
+@media (min-width:768px){
+    .alert{
+        height:51px;
+        font-size: 20px;
+        .btn-close{
+            background-size:32px;
+            width:32px;
+            height:20px;
+        }
+    }
+    .ligne_separation{
+        height:17px;
+    }
+}
+
+@media (min-width:1200px){
+    .alert{
+        height:79px;
+        font-size: 36px;
+        .btn-close{
+            background-size:45px;
+            width:45px;
+            height:45px;
+        }
+    }
+    .ligne_separation{
+        height:30px;
+    }
+}
+
+
+/***************** FIN ALERT***********************/
+
+
+
+/***************** DÉBUT NAV***********************/
 nav{
 font-size:20px;
 .ligne_separation{
@@ -89,17 +125,63 @@ font-size:20px;
     border: none;
 }
 
-/*****************HERO***********************/
+@media(min-width:768px){
+    nav{
+        .ligne_separation{
+            display:block;
+        }
+        .logo{
+            width:48px;
+        }
+
+        .nav-lien{
+            font-size:18px;
+            font-weight: 300;
+        }
+        .nav-item{
+            border:none;
+            border-radius: 40px;
+        &:hover{
+          background-color:variables.$gris;
+          .nav-lien{
+            color:variables.$orange;
+            text-decoration: underline;text-decoration-thickness:1.5px;
+            text-underline-offset: 8px;
+          }
+        }
+        }
+    }
+}
+@media(min-width:1200px){
+    nav{
+        .logo{
+            width:96px;
+        }
+        .nav-lien{
+            font-size:28px;
+        }
+    }
+}
+
+
+
+/***************** FIN NAV***********************/
+
+
+
+/***************** DÉBUT HERO***********************/
 .hero{
     width:100vw;
     height:80vh;
     padding:15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 /**
     grid-template-rows:66px 1fr 1fr 1fr;
     grid-template-columns:33% 33% 33%;
 **/
     &__titre{
-
         /*
         grid-row-start: 2;
         grid-column-start:1;
@@ -195,6 +277,42 @@ font-size:20px;
     }
 }
 }
+
+
+
+@media (min-width:768px){
+
+    .hero{
+        padding:0 50px;
+        display: grid;
+        &__titre{
+            h1{
+                font-size: 50px;
+            }
+            img{
+                width:105px;
+            }
+        }
+
+        &__info01{
+            position: relative;
+            width: 500px;
+            &__content{
+                width:315px;
+                position: absolute;
+            }
+            h2{
+                font-size: 32px;
+            }
+            img{
+                position: absolute;
+                right: 0;
+                width: 194px;
+            }
+        }
+    }
+}
+/*****************FIN HERO***********************/
 .campagne{
     display: none;
 }
