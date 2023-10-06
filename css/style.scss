@@ -177,15 +177,8 @@ font-size:20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-/**
-    grid-template-rows:66px 1fr 1fr 1fr;
-    grid-template-columns:33% 33% 33%;
-**/
     &__titre{
-        /*
-        grid-row-start: 2;
-        grid-column-start:1;
-        */
+        align-self: center;
         img{
             width:49px;
         }
@@ -203,12 +196,9 @@ font-size:20px;
     }
 }
 &__info01{
-    /*
-    grid-row-start: 3;
-    grid-column-start:1;
-    grid-column-end: 3;
-    */
+    align-self: center;
     padding-top:40px;
+    margin-top:0;
     &__content{
         width: 200px;
         h2:nth-child(1){
@@ -233,12 +223,9 @@ font-size:20px;
     }
 }
 &__info02{
+    align-self: center;
     padding-top:20px;
-    /*
-    grid-row-start: 4;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    */
+    margin-top:0;
     &__content{
         width:220px;
         h2:nth-child(2){
@@ -262,9 +249,10 @@ font-size:20px;
         p{
             width: 100px;
             margin:0;
+            font-size: 8px;
         }
         &__nav{
-            width:30%;
+            width:50%;
             button{
                 margin-top: 5px;
                 border:none;
@@ -286,6 +274,7 @@ font-size:20px;
         padding:0 50px;
         display: grid;
         &__titre{
+            align-self: flex-start;
             h1{
                 font-size: 50px;
             }
@@ -295,7 +284,9 @@ font-size:20px;
         }
 
         &__info01{
+            align-self: flex-start;
             position: relative;
+            height:170px;
             width: 500px;
             &__content{
                 width:315px;
@@ -308,6 +299,60 @@ font-size:20px;
                 position: absolute;
                 right: 0;
                 width: 194px;
+            }
+        }
+        &__info02{
+            align-self: flex-end;
+            &__content{
+                width: 380px;
+            }
+            h2{
+                font-size: 30px;
+            }
+            &__carousel{
+                width:207px;
+                height:178px;
+                p{
+                    width:134px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px){
+    .hero{
+        &__titre{
+            h1{
+                font-size:80px; 
+            }
+            img{
+                width:141px;
+            }
+        }
+        &__info01{
+            margin-top:38px;
+            width:700px;
+            &__content{
+                width: 390px;
+            }
+            h2{
+                font-size: 40px;
+            }
+            img{
+                width:280px;
+                height:233px;
+            }
+        }
+        &__info02{
+            margin-top:38px;
+            &__content{
+                width: 460px;
+            }
+            h2{
+                font-size: 40px
             }
         }
     }

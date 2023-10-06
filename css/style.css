@@ -165,16 +165,9 @@ nav .navbar-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /**
-      grid-template-rows:66px 1fr 1fr 1fr;
-      grid-template-columns:33% 33% 33%;
-  **/
 }
 .hero__titre {
-  /*
-  grid-row-start: 2;
-  grid-column-start:1;
-  */
+  align-self: center;
 }
 .hero__titre img {
   width: 49px;
@@ -191,12 +184,9 @@ nav .navbar-nav {
   padding-left: 25px;
 }
 .hero__info01 {
-  /*
-  grid-row-start: 3;
-  grid-column-start:1;
-  grid-column-end: 3;
-  */
+  align-self: center;
   padding-top: 40px;
+  margin-top: 0;
 }
 .hero__info01__content {
   width: 200px;
@@ -221,12 +211,9 @@ nav .navbar-nav {
   height: 140px;
 }
 .hero__info02 {
+  align-self: center;
   padding-top: 20px;
-  /*
-  grid-row-start: 4;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  */
+  margin-top: 0;
 }
 .hero__info02__content {
   width: 220px;
@@ -252,9 +239,10 @@ nav .navbar-nav {
 .hero__info02__carousel p {
   width: 100px;
   margin: 0;
+  font-size: 8px;
 }
 .hero__info02__carousel__nav {
-  width: 30%;
+  width: 50%;
 }
 .hero__info02__carousel__nav button {
   margin-top: 5px;
@@ -270,6 +258,9 @@ nav .navbar-nav {
     padding: 0 50px;
     display: grid;
   }
+  .hero__titre {
+    align-self: flex-start;
+  }
   .hero__titre h1 {
     font-size: 50px;
   }
@@ -277,7 +268,9 @@ nav .navbar-nav {
     width: 105px;
   }
   .hero__info01 {
+    align-self: flex-start;
     position: relative;
+    height: 170px;
     width: 500px;
   }
   .hero__info01__content {
@@ -291,6 +284,54 @@ nav .navbar-nav {
     position: absolute;
     right: 0;
     width: 194px;
+  }
+  .hero__info02 {
+    align-self: flex-end;
+  }
+  .hero__info02__content {
+    width: 380px;
+  }
+  .hero__info02 h2 {
+    font-size: 30px;
+  }
+  .hero__info02__carousel {
+    width: 207px;
+    height: 178px;
+  }
+  .hero__info02__carousel p {
+    width: 134px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero__titre h1 {
+    font-size: 80px;
+  }
+  .hero__titre img {
+    width: 141px;
+  }
+  .hero__info01 {
+    margin-top: 38px;
+    width: 700px;
+  }
+  .hero__info01__content {
+    width: 390px;
+  }
+  .hero__info01 h2 {
+    font-size: 40px;
+  }
+  .hero__info01 img {
+    width: 280px;
+    height: 233px;
+  }
+  .hero__info02 {
+    margin-top: 38px;
+  }
+  .hero__info02__content {
+    width: 460px;
+  }
+  .hero__info02 h2 {
+    font-size: 40px;
   }
 }
 /*****************FIN HERO***********************/
