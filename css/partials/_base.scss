@@ -10,12 +10,21 @@ body{
 .ligne_separation{
     height:13px;
 }
-// appliquer la class ".btn" sur les boutons pour qu'ils aient tous un style commun
-.btn{
+
+//style commun des boutons 
+@mixin btn{
     background-color: variables.$gris;
     color:variables.$orange;
     border: none;
     border-radius: 15px;
     font-size: 14px;
     box-shadow: 0 4px 4px 0 color.adjust(black,$alpha:-0.75);
+}
+
+// mixin pour souligner des mots
+@mixin sousligne{
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    text-underline-offset: 3.5px;
+    // rajouter " text-decoration-color: couleurChoisis" pour changer la couleur
 }

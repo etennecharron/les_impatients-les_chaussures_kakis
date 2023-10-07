@@ -3,7 +3,7 @@
 @use "partials/variables";
 @use "partials/sections";
 @use "partials/navbar";
-@use "partials/alert";
+@use "partials/alerte";
 @use "partials/base";
 
 /**aide mémoire pour font lato
@@ -44,10 +44,8 @@ font-weight: 900; = black
     &__content{
         width: 200px;
         h2:nth-child(1){
-        text-decoration: underline;
+        @include base.sousligne;
         text-decoration-color:variables.$bleu;
-        text-decoration-thickness:3px;
-        text-underline-offset: 3.5px;
         }
     }
     h2{
@@ -73,10 +71,8 @@ font-weight: 900; = black
         padding-right: 0;
         width:235px;
         h2:nth-child(2){
-            text-decoration: underline;
+            @include base.sousligne;
             text-decoration-color:variables.$orange;
-            text-decoration-thickness:3px;
-            text-underline-offset: 3.5px;
             }
     }
     h2{
@@ -247,6 +243,9 @@ p{
     font-weight: 300;
     line-height: 28px;
 }
+button{
+    @include base.btn;
+}
 }
 }
 
@@ -269,7 +268,7 @@ p{
             text-align: right;
             align-self: flex-end;
         }
-        .btn{
+        button{
             align-self: flex-end;
         }
     }
@@ -277,7 +276,7 @@ p{
 
 @media (min-width:1200px) {
     .campagne{
-        @include sections.sectionsTablette;
+        @include sections.sectionsOrdinateur;
         img{
             width:497px;
             height:439px;
@@ -292,16 +291,156 @@ p{
             text-align: right;
             align-self: flex-end;
         }
-        .btn{
+        button{
             align-self: flex-end;
         }
     }
 }
 
 /*****************FIN CAMPAGNE***********************/
+
+
+
+/*****************DÉBUT SERVICE***********************/
 .services{
-    display: none;
+    @include sections.sectionsTelephone;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__titre{
+    display: flex;
+    h2{
+        font-size: 24px;
+        @include base.sousligne;
+        text-decoration-color:variables.$bleu;
+    }
+    }
+    &__contenus{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        img{
+            width:163px;
+            height:135px; 
+         }
+         &__wrapupDropdown{
+            &__titre{
+                display: none;
+            }
+            .dropdown{
+                button{
+                    @include base.sousligne;
+                    text-decoration-color:variables.$orange;
+                    font-size: 20px;
+                }
+                .dropdown-menu{
+                    &.show{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 28px;
+                    }
+                    background-color:variables.$grisFoncer;
+                    width:270px;
+                    padding:20px;
+                    button{
+                        @include base.btn;
+                        box-shadow: 0 0 4px 0 variables.$bleu;
+                        height:30px;
+                        width:100%;
+                        max-width:200px;
+                        background-color:transparent;
+                        text-decoration-thickness:1px;
+                    }
+                }
+            
+              
+            }
+         }
+    }
+
 }
+
+
+
+
+@media (min-width:768px){
+    .services{
+        @include sections.sectionsTablette;
+        &__titre{
+            display: none;
+        }
+    
+        &__contenus{
+            img{
+                width:369px;
+                height:307px;
+            }
+            &__wrapupDropdown{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .dropdown{
+                    button{
+                        font-size: 28px;
+                    }
+                    .dropdown-menu{
+                        width:450px;
+                    }
+                }
+                &__titre{
+                    display:flex;
+                    h2:nth-child(1){
+                        @include base.sousligne;
+                        text-decoration-color:variables.$bleu;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .services{
+        @include sections.sectionsOrdinateur;
+        &__titre{
+            display: none;
+        }
+    
+        &__contenus{
+            img{
+                width:662px;
+                height:550px;
+            }
+            &__wrapupDropdown{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                .dropdown{
+                    .dropdown-menu{
+                        width:450px;
+                        p{font-size:20px;}
+                    }
+                }
+                &__titre{
+                    display:flex;
+                    h2:nth-child(1){
+                        @include base.sousligne;
+                        text-decoration-color:variables.$bleu;
+                    }
+                }
+            }
+        }
+    }
+}
+/*****************FIN SERVICES***********************/
+
 .nouvelles{
     display: none;
 }

@@ -40,7 +40,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--FIN BTN HAMBURGER-->
-                
+
                 <!--DÉBUT CONTENUS NAV-->
                 <div id="mainNav" class="collapse navbar-collapse">
                     <ul class="navbar-nav align-items-center">
@@ -90,7 +90,7 @@
         </nav>
 
         <main>
-            <!------------------------DÉBUT HERO-------------------------> 
+            <!------------------------DÉBUT HERO------------------------->
             <section class="hero d-flex flex-column">
                 <!--DÉBUT TITRE "LES IMPATIENTS"-->
                 <div class="hero__titre d-flex align-items-center">
@@ -99,29 +99,32 @@
                 </div>
                 <!--FIN TITRE "LES IMPATIENTS"-->
 
-               <!--DÉBUT INFO #1-->
+                <!--DÉBUT INFO #1-->
                 <div class="hero__info01 d-flex align-items-center">
                     <img src="assets/images/personnage01.svg" alt="petite image de coté">
                     <div class="hero__info01__content">
                         <div class="d-flex">
-                        <h2>Une maison</h2><h2>&nbsp</h2><h2>pour tous</h2>
-                    </div> 
+                            <h2>Une maison</h2>
+                            <h2>&nbsp</h2>
+                            <h2>pour tous</h2>
+                        </div>
                         <p>Les Impatients viennent en aide aux personnes ayant des problèmes de santé mentale par le
                             biais de l’expression artistique.</p>
                     </div>
-                 
+
                 </div>
                 <!--FIN INFO #1-->
-                
+
                 <!--DÉBUT INFO #2-->
                 <div class="hero__info02 d-flex align-items-center">
                     <div class="hero__info02__content">
                         <div class="d-flex">
-                        <h2>Pour plus d’</h2><h2> informations</h2>
+                            <h2>Pour plus d’</h2>
+                            <h2> informations</h2>
                         </div>
                         <p>Naviguer avec les boutons du caroussel pour obtenir plus d’informations sur la fondation.</p>
                     </div>
-                        <!--Il va potentiellement utiliser swiper pour le caroussel d'image, a voir -->
+                    <!--Il va potentiellement utiliser swiper pour le caroussel d'image, a voir -->
                     <div class="hero__info02__carousel d-flex flex-column justify-content-center align-items-center">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
                         <div class="hero__info02__carousel__nav d-flex justify-content-around">
@@ -132,9 +135,11 @@
                 <!--FIN INFO #2-->
                 </div>
             </section>
-             <!------------------------FIN HERO-------------------------> 
+            <!------------------------FIN HERO------------------------->
 
-              <!------------------------DÉBUT CAMPAGNE-------------------------> 
+
+
+            <!------------------------DÉBUT CAMPAGNE------------------------->
             <section class="campagne">
                 <img src="assets/images/personnage02.svg" alt="image de coté">
                 <div class="campagne__contenus">
@@ -143,33 +148,86 @@
                     <p>Il y a quelques semaines, nous avons fêté nos 30 ans. Pour notre anniversaire, on a soufflé des
                         chandelles…et la maison a brûlé.
                         Aidez-nous à maintenir nos activités et accueillir nos Impatients.</p>
-                    <button class="btn">Pour donner ></button>
+                    <button>Pour donner ></button>
                 </div>
             </section>
+            <!------------------------FIN CAMPAGNE------------------------->
 
+
+            <!------------------------FIN SERVICES------------------------->
             <section class="services">
-                <div class="services__contenus">
+                <div class="services__titre">
                     <h2>Services offerts</h2>
-                    <!-- utiliser le drop down bootstrap-->
-                    <div class="services__atelier">
-                        <h3>Ateliers</h3>
-                        <button></button>
-                    </div>
-                    <!-- utiliser le drop down bootstrap-->
-                    <div class="services__evenements">
-                        <h3>Évènements</h3>
-                        <button></button>
-                    </div>
-                    <!-- utiliser le drop down bootstrap-->
-                    <div class="services__collection">
-                        <h3>La collection</h3>
-                        <button></button>
-                    </div>
                 </div>
-                <img src="assets/images/personnage02.svg" alt="image de coté">
-            </section>
-        <!------------------------FIN CAMPAGNE-------------------------> 
+                <div class="services__contenus">
+                    <!-- utiliser le drop down bootstrap-->
+                    <div class="services__contenus__wrapupDropdown">
+                        <div class="services__contenus__wrapupDropdown__titre">
+                        <h2>Services</h2><h2>&nbsp</h2><h2>Offerts</h2>
+                        </div>
+                        <div>
+                        <div class="services__contenus__wrapupDropdown--sourligner__atelier dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownAtelier"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ateliers
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownAtelier">
+                                <p>
+                                    Notre organisme est à même de transmettre son expertise aux centres et aux groupes
+                                    travaillant avec une clientèle en santé mentale. Plusieurs lieux d’ateliers ont été
+                                    ouverts au Québec en collaboration avec des établissements du milieu de la santé et
+                                    avec des lieux de diffusion impliqués dans leur communauté. Plusieurs ont suivi.
+                                    Maintenant, nous avons 21 points de service dans 13 villes au Québec qui accueillent
+                                    900 personnes par semaine.
+                                </p>
+                                <button>Voir les ateliers</button>
+                            </div>
 
+                        </div>
+
+
+                        <div class="services__contenus__wrapupDropdown--sourligner__collection dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownCollection"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                La collection
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownCollection">
+                                <p>
+                                    Depuis le début de nos activités, nous avons conservé une grande partie des œuvres
+                                    produites par nos participants et participantes, ce qui constitue aujourd’hui un
+                                    patrimoine riche de 15 000 œuvres d’art. Il s’agit là d’une collection d’une grande
+                                    originalité, pionnière au Canada dans son champ de collectionnement.
+                                </p>
+                                <button>Voir la collection</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="services__contenus__wrapupDropdown--sourligner__evenement dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownEvenement"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ateliers
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownEvenement">
+                                <p>
+                                    Nous disposons d’un espace galerie grâce auquel nous faisons connaître à un large
+                                    public les œuvres produites dans nos ateliers. À cela s’ajoutent d’autres activités
+                                    de diffusion régulièrement mises de l’avant à l’extérieur de notre centre.
+                                </p>
+                                <button>Voir les évenement</button>
+                            </div>
+
+                        </div>
+                        </div>
+                    </div>
+                    <img src="assets/images/personnage03.svg" alt="image de coté">
+                </div>
+            </section>
+            <!------------------------FIN SERVICES------------------------->
+
+
+            <!------------------------DÉBUT NOUVELLE------------------------->
             <section class="nouvelles">
                 <h2>Les dernières nouvelles</h2>
                 <button>Pour plus de nouvelles -></button>
@@ -192,6 +250,13 @@
                     <button>En savoir plus</button>
                 </div>
             </section>
+
+            <!------------------------FIN NOUVELLE------------------------->
+
+
+
+
+
             <section class="temoignage">
                 <!-- peut etre utiliser display flex pour les mettre l'un a coté de l'autre-->
                 <h2>Témoignage</h2>
