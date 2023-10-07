@@ -439,10 +439,12 @@ button{
         }
     }
 }
+
+
 /*****************FIN SERVICES***********************/
 
 .nouvelles{
-    display: none;
+    @include sections.sectionsTelephone;
 }
 .temoignage{
     display: none;

@@ -589,7 +589,8 @@ font-weight: 900; = black
 }
 /*****************FIN SERVICES***********************/
 .nouvelles {
-  display: none;
+  padding: 40px 12px;
+  display: flex;
 }
 
 .temoignage {
