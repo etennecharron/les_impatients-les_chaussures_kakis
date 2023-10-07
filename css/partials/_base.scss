@@ -1,0 +1,21 @@
+@use "sass:color";
+@use "variables";
+
+*{
+    font-family: lato;
+}
+body{
+    background-color: variables.$gris;
+}
+.ligne_separation{
+    height:13px;
+}
+// appliquer la class ".btn" sur les boutons pour qu'ils aient tous un style commun
+.btn{
+    background-color: variables.$gris;
+    color:variables.$orange;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 4px 4px 0 color.adjust(black,$alpha:-0.75);
+}

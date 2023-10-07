@@ -1,21 +1,17 @@
 
+@use "sass:color";
 @use "partials/variables";
 @use "partials/sections";
 @use "partials/navbar";
 @use "partials/alert";
+@use "partials/base";
 
-/****DÉBUT GÉNÉRAL******/
-*{
-    font-family: lato;
-}
-body{
-    background-color: variables.$gris;
-}
-.ligne_separation{
-    height:13px;
-}
-/****FIN GÉNÉRAL******/
-
+/**aide mémoire pour font lato
+font-weight: 300; = light
+font-weight: 400; = regular
+font-weight: 700; = bold 
+font-weight: 900; = black
+**/
 
 /***************** DÉBUT HERO***********************/
 .hero{
@@ -62,6 +58,7 @@ body{
         font-size: 14px;
         text-align: right;
         margin: 0;
+        line-height:1.5;
     }
     img{
         width: 146px;
@@ -73,7 +70,8 @@ body{
     padding-top:20px;
     margin-top:0;
     &__content{
-        width:220px;
+        padding-right: 0;
+        width:235px;
         h2:nth-child(2){
             text-decoration: underline;
             text-decoration-color:variables.$orange;
@@ -84,6 +82,10 @@ body{
     h2{
         font-size: 20px;
         font-weight: 700;
+    }
+    p{
+        font-size: 14px;
+        line-height:1.5;
     }
     &__carousel{
         width:120px;
@@ -96,6 +98,7 @@ body{
             width: 100px;
             margin:0;
             font-size: 8px;
+            line-height:1.5;
         }
         &__nav{
             width:50%;
@@ -139,6 +142,9 @@ body{
             h2{
                 font-size: 32px;
             }
+            p{
+                line-height:30px;
+            }
             img{
                 position: absolute;
                 right: 0;
@@ -149,9 +155,13 @@ body{
             align-self: flex-end;
             &__content{
                 width: 380px;
+                padding-right: 0;
             }
             h2{
                 font-size: 30px;
+            }
+            p{
+                line-height: 30px;
             }
             &__carousel{
                 width:207px;
@@ -159,6 +169,7 @@ body{
                 p{
                     width:134px;
                     font-size: 14px;
+                    line-height:1.5;
                 }
             }
         }
@@ -195,6 +206,7 @@ body{
             margin-top:38px;
             &__content{
                 width: 460px;
+                padding-right: 10px;
             }
             h2{
                 font-size: 40px
@@ -210,6 +222,8 @@ body{
 .campagne{
 @include sections.sectionsTelephone;
 background-color: variables.$bleu;
+justify-content: center;
+align-items: center;
 img{
     display: none;
 }
@@ -223,14 +237,66 @@ h2{
     font-size: 24px;
     width:268px;
     text-align: center;
+    line-height: 45px;
 }
 p{
     font-size: 14px;
     color: white;
+    width:242px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 28px;
 }
 }
 }
 
+@media (min-width:768px) {
+    .campagne{
+        @include sections.sectionsTablette;
+        justify-content: space-between;
+        img{
+            display:block;
+            width:336px;
+            height:290px;
+        }
+        h2{
+            width:334px;
+            font-size:30px;
+            text-align: right;
+            align-self: right;
+        }
+        p{
+            text-align: right;
+            align-self: flex-end;
+        }
+        .btn{
+            align-self: flex-end;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .campagne{
+        @include sections.sectionsTablette;
+        img{
+            width:497px;
+            height:439px;
+        }
+        h2{
+            width: 446px;
+            font-size:40px;
+            text-align: right;
+            align-self: right;
+        }
+        p{
+            text-align: right;
+            align-self: flex-end;
+        }
+        .btn{
+            align-self: flex-end;
+        }
+    }
+}
 
 /*****************FIN CAMPAGNE***********************/
 .services{

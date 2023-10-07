@@ -141,7 +141,6 @@ nav .navbar-nav {
     height: 30px;
   }
 }
-/****DÉBUT GÉNÉRAL******/
 * {
   font-family: lato;
 }
@@ -154,7 +153,21 @@ body {
   height: 13px;
 }
 
-/****FIN GÉNÉRAL******/
+.btn {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/**aide mémoire pour font lato
+font-weight: 300; = light
+font-weight: 400; = regular
+font-weight: 700; = bold 
+font-weight: 900; = black
+**/
 /***************** DÉBUT HERO***********************/
 .hero {
   padding: 40px 12px;
@@ -190,7 +203,8 @@ body {
 }
 .hero__info01__content h2:nth-child(1) {
   text-decoration: underline;
-  text-decoration-color: #004E89;
+  -webkit-text-decoration-color: #004E89;
+          text-decoration-color: #004E89;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
 }
@@ -202,6 +216,7 @@ body {
   font-size: 14px;
   text-align: right;
   margin: 0;
+  line-height: 1.5;
 }
 .hero__info01 img {
   width: 146px;
@@ -213,17 +228,23 @@ body {
   margin-top: 0;
 }
 .hero__info02__content {
-  width: 220px;
+  padding-right: 0;
+  width: 235px;
 }
 .hero__info02__content h2:nth-child(2) {
   text-decoration: underline;
-  text-decoration-color: #F75C03;
+  -webkit-text-decoration-color: #F75C03;
+          text-decoration-color: #F75C03;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
 }
 .hero__info02 h2 {
   font-size: 20px;
   font-weight: 700;
+}
+.hero__info02 p {
+  font-size: 14px;
+  line-height: 1.5;
 }
 .hero__info02__carousel {
   width: 120px;
@@ -237,6 +258,7 @@ body {
   width: 100px;
   margin: 0;
   font-size: 8px;
+  line-height: 1.5;
 }
 .hero__info02__carousel__nav {
   width: 50%;
@@ -277,6 +299,9 @@ body {
   .hero__info01 h2 {
     font-size: 32px;
   }
+  .hero__info01 p {
+    line-height: 30px;
+  }
   .hero__info01 img {
     position: absolute;
     right: 0;
@@ -287,9 +312,13 @@ body {
   }
   .hero__info02__content {
     width: 380px;
+    padding-right: 0;
   }
   .hero__info02 h2 {
     font-size: 30px;
+  }
+  .hero__info02 p {
+    line-height: 30px;
   }
   .hero__info02__carousel {
     width: 207px;
@@ -298,6 +327,7 @@ body {
   .hero__info02__carousel p {
     width: 134px;
     font-size: 14px;
+    line-height: 1.5;
   }
 }
 @media (min-width: 1200px) {
@@ -330,6 +360,7 @@ body {
   }
   .hero__info02__content {
     width: 460px;
+    padding-right: 10px;
   }
   .hero__info02 h2 {
     font-size: 40px;
@@ -341,6 +372,8 @@ body {
   padding: 40px 12px;
   display: flex;
   background-color: #004E89;
+  justify-content: center;
+  align-items: center;
 }
 .campagne img {
   display: none;
@@ -356,12 +389,65 @@ body {
   font-size: 24px;
   width: 268px;
   text-align: center;
+  line-height: 45px;
 }
 .campagne__contenus p {
   font-size: 14px;
   color: white;
+  width: 242px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 28px;
 }
 
+@media (min-width: 768px) {
+  .campagne {
+    padding: 57px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .campagne img {
+    display: block;
+    width: 336px;
+    height: 290px;
+  }
+  .campagne h2 {
+    width: 334px;
+    font-size: 30px;
+    text-align: right;
+    align-self: right;
+  }
+  .campagne p {
+    text-align: right;
+    align-self: flex-end;
+  }
+  .campagne .btn {
+    align-self: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .campagne {
+    padding: 57px 50px;
+    display: flex;
+  }
+  .campagne img {
+    width: 497px;
+    height: 439px;
+  }
+  .campagne h2 {
+    width: 446px;
+    font-size: 40px;
+    text-align: right;
+    align-self: right;
+  }
+  .campagne p {
+    text-align: right;
+    align-self: flex-end;
+  }
+  .campagne .btn {
+    align-self: flex-end;
+  }
+}
 /*****************FIN CAMPAGNE***********************/
 .services {
   display: none;
