@@ -1,0 +1,55 @@
+@use "variables";
+.alert{
+    background-color: variables.$grisFoncer;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 0;
+    height:25px;
+    .btn-close{
+        background: url(../assets/images/btnX.svg);
+        background-repeat: no-repeat;
+        background-size: 17px;
+        background-position: center;
+        opacity: 1;
+        width:0px;
+        height:0px;
+        padding: 1rem 1rem;
+    }
+    p{
+        margin:0;
+    }
+    a{
+        color:variables.$orange;
+        text-decoration: none;
+    }
+}
+
+@media (min-width:768px){
+    .alert{
+        height:51px;
+        font-size: 20px;
+        .btn-close{
+            background-size:32px;
+            width:32px;
+            height:20px;
+        }
+    }
+    .ligne_separation{
+        height:17px;
+    }
+}
+
+@media (min-width:1200px){
+    .alert{
+        height:79px;
+        font-size: 36px;
+        .btn-close{
+            background-size:45px;
+            width:45px;
+            height:45px;
+        }
+    }
+    .ligne_separation{
+        height:30px;
+    }
+}

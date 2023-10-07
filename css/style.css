@@ -1,72 +1,4 @@
 @charset "UTF-8";
-* {
-  font-family: lato;
-}
-
-body {
-  background-color: #EBEBEB;
-}
-
-.ligne_separation {
-  height: 13px;
-}
-
-/***************** DÉBUT ALERT***********************/
-.alert {
-  background-color: #AEB4A9;
-  font-size: 10px;
-  font-weight: 400;
-  margin-bottom: 0;
-  height: 25px;
-}
-.alert .btn-close {
-  background: url(../assets/images/btnX.svg);
-  background-repeat: no-repeat;
-  background-size: 17px;
-  background-position: center;
-  opacity: 1;
-  width: 0px;
-  height: 0px;
-  padding: 1rem 1rem;
-}
-.alert p {
-  margin: 0;
-}
-.alert a {
-  color: #F75C03;
-  text-decoration: none;
-}
-
-@media (min-width: 768px) {
-  .alert {
-    height: 51px;
-    font-size: 20px;
-  }
-  .alert .btn-close {
-    background-size: 32px;
-    width: 32px;
-    height: 20px;
-  }
-  .ligne_separation {
-    height: 17px;
-  }
-}
-@media (min-width: 1200px) {
-  .alert {
-    height: 79px;
-    font-size: 36px;
-  }
-  .alert .btn-close {
-    background-size: 45px;
-    width: 45px;
-    height: 45px;
-  }
-  .ligne_separation {
-    height: 30px;
-  }
-}
-/***************** FIN ALERT***********************/
-/***************** DÉBUT NAV***********************/
 nav {
   font-size: 20px;
 }
@@ -156,12 +88,77 @@ nav .navbar-nav {
     font-size: 28px;
   }
 }
-/***************** FIN NAV***********************/
+.alert {
+  background-color: #AEB4A9;
+  font-size: 10px;
+  font-weight: 400;
+  margin-bottom: 0;
+  height: 25px;
+}
+.alert .btn-close {
+  background: url(../assets/images/btnX.svg);
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: center;
+  opacity: 1;
+  width: 0px;
+  height: 0px;
+  padding: 1rem 1rem;
+}
+.alert p {
+  margin: 0;
+}
+.alert a {
+  color: #F75C03;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .alert {
+    height: 51px;
+    font-size: 20px;
+  }
+  .alert .btn-close {
+    background-size: 32px;
+    width: 32px;
+    height: 20px;
+  }
+  .ligne_separation {
+    height: 17px;
+  }
+}
+@media (min-width: 1200px) {
+  .alert {
+    height: 79px;
+    font-size: 36px;
+  }
+  .alert .btn-close {
+    background-size: 45px;
+    width: 45px;
+    height: 45px;
+  }
+  .ligne_separation {
+    height: 30px;
+  }
+}
+/****DÉBUT GÉNÉRAL******/
+* {
+  font-family: lato;
+}
+
+body {
+  background-color: #EBEBEB;
+}
+
+.ligne_separation {
+  height: 13px;
+}
+
+/****FIN GÉNÉRAL******/
 /***************** DÉBUT HERO***********************/
 .hero {
-  width: 100vw;
-  height: 80vh;
-  padding: 15px 15px;
+  padding: 40px 12px;
+  display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -255,8 +252,8 @@ nav .navbar-nav {
 
 @media (min-width: 768px) {
   .hero {
-    padding: 0 50px;
-    display: grid;
+    padding: 57px 50px;
+    display: flex;
   }
   .hero__titre {
     align-self: flex-start;
@@ -304,6 +301,10 @@ nav .navbar-nav {
   }
 }
 @media (min-width: 1200px) {
+  .hero {
+    padding: 75px 60px;
+    display: flex;
+  }
   .hero__titre h1 {
     font-size: 80px;
   }
@@ -335,10 +336,33 @@ nav .navbar-nav {
   }
 }
 /*****************FIN HERO***********************/
+/*****************DÉBUT CAMPAGNE***********************/
 .campagne {
+  padding: 40px 12px;
+  display: flex;
+  background-color: #004E89;
+}
+.campagne img {
   display: none;
 }
+.campagne__contenus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.campagne__contenus h2 {
+  color: white;
+  font-size: 24px;
+  width: 268px;
+  text-align: center;
+}
+.campagne__contenus p {
+  font-size: 14px;
+  color: white;
+}
 
+/*****************FIN CAMPAGNE***********************/
 .services {
   display: none;
 }

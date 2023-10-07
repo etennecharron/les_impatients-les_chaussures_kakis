@@ -1,6 +1,10 @@
 
-@use "variables";
+@use "partials/variables";
+@use "partials/sections";
+@use "partials/navbar";
+@use "partials/alert";
 
+/****DÉBUT GÉNÉRAL******/
 *{
     font-family: lato;
 }
@@ -10,170 +14,12 @@ body{
 .ligne_separation{
     height:13px;
 }
-/***************** DÉBUT ALERT***********************/
-.alert{
-    background-color: variables.$grisFoncer;
-    font-size: 10px;
-    font-weight: 400;
-    margin-bottom: 0;
-    height:25px;
-    .btn-close{
-        background: url(../assets/images/btnX.svg);
-        background-repeat: no-repeat;
-        background-size: 17px;
-        background-position: center;
-        opacity: 1;
-        width:0px;
-        height:0px;
-        padding: 1rem 1rem;
-    }
-    p{
-        margin:0;
-    }
-    a{
-        color:variables.$orange;
-        text-decoration: none;
-    }
-}
-
-@media (min-width:768px){
-    .alert{
-        height:51px;
-        font-size: 20px;
-        .btn-close{
-            background-size:32px;
-            width:32px;
-            height:20px;
-        }
-    }
-    .ligne_separation{
-        height:17px;
-    }
-}
-
-@media (min-width:1200px){
-    .alert{
-        height:79px;
-        font-size: 36px;
-        .btn-close{
-            background-size:45px;
-            width:45px;
-            height:45px;
-        }
-    }
-    .ligne_separation{
-        height:30px;
-    }
-}
-
-
-/***************** FIN ALERT***********************/
-
-
-
-/***************** DÉBUT NAV***********************/
-nav{
-font-size:20px;
-.ligne_separation{
-    display: none;
-}
-.logo{
-    width:39px;
-}
-.navbar-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-}
-
-}
-.nav-lien{
-    font-size:14px;
-    font-weight: 900;
-    text-decoration: none;
-    color:black;
-      /*
-    &:hover{
-      
-        color:variables.$orange;
-        text-decoration: underline;text-decoration-thickness:1.5px;
-        text-underline-offset: 8px;
-        
-    }
-    */
-}
-.nav-item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:5px 0;
-    width: 100%;
-    border: variables.$bleu 3px solid;
-    border-radius: 40px;
-&:hover{
-  background-color: variables.$orange;
-  .nav-lien{
-    color: white;
-  }
-}
-}
-.navbar-light .navbar-toggler-icon{
-    background-image: url(../assets/images/menu_hamburger.svg);
-}
-.navbar-light .navbar-toggler{
-    border: none;
-}
-
-@media(min-width:768px){
-    nav{
-        .ligne_separation{
-            display:block;
-        }
-        .logo{
-            width:48px;
-        }
-
-        .nav-lien{
-            font-size:18px;
-            font-weight: 300;
-        }
-        .nav-item{
-            border:none;
-            border-radius: 40px;
-        &:hover{
-          background-color:variables.$gris;
-          .nav-lien{
-            color:variables.$orange;
-            text-decoration: underline;text-decoration-thickness:1.5px;
-            text-underline-offset: 8px;
-          }
-        }
-        }
-    }
-}
-@media(min-width:1200px){
-    nav{
-        .logo{
-            width:96px;
-        }
-        .nav-lien{
-            font-size:28px;
-        }
-    }
-}
-
-
-
-/***************** FIN NAV***********************/
-
+/****FIN GÉNÉRAL******/
 
 
 /***************** DÉBUT HERO***********************/
 .hero{
-    width:100vw;
-    height:80vh;
-    padding:15px 15px;
+    @include sections.sectionsTelephone;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,10 +115,8 @@ font-size:20px;
 
 
 @media (min-width:768px){
-
     .hero{
-        padding:0 50px;
-        display: grid;
+        @include sections.sectionsTablette;
         &__titre{
             align-self: flex-start;
             h1{
@@ -324,6 +168,7 @@ font-size:20px;
 
 @media (min-width:1200px){
     .hero{
+        @include sections.sectionsOrdinateur;
         &__titre{
             h1{
                 font-size:80px; 
@@ -358,9 +203,36 @@ font-size:20px;
     }
 }
 /*****************FIN HERO***********************/
+
+
+
+/*****************DÉBUT CAMPAGNE***********************/
 .campagne{
+@include sections.sectionsTelephone;
+background-color: variables.$bleu;
+img{
     display: none;
 }
+&__contenus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+h2{
+    color:white;
+    font-size: 24px;
+    width:268px;
+    text-align: center;
+}
+p{
+    font-size: 14px;
+    color: white;
+}
+}
+}
+
+
+/*****************FIN CAMPAGNE***********************/
 .services{
     display: none;
 }
