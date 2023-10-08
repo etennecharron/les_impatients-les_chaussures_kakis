@@ -196,7 +196,8 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  text-decoration-color: #004E89;
+  -webkit-text-decoration-color: #004E89;
+          text-decoration-color: #004E89;
 }
 .hero__info01 h2 {
   font-size: 20px;
@@ -225,7 +226,8 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  text-decoration-color: #F75C03;
+  -webkit-text-decoration-color: #F75C03;
+          text-decoration-color: #F75C03;
 }
 .hero__info02 h2 {
   font-size: 20px;
@@ -391,6 +393,7 @@ font-weight: 900; = black
 .campagne__contenus button {
   background-color: #EBEBEB;
   color: #F75C03;
+  padding: 0 10px;
   border: none;
   border-radius: 15px;
   font-size: 14px;
@@ -462,7 +465,8 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  text-decoration-color: #004E89;
+  -webkit-text-decoration-color: #004E89;
+          text-decoration-color: #004E89;
 }
 .services__contenus {
   padding-top: 20px;
@@ -481,7 +485,8 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  text-decoration-color: #F75C03;
+  -webkit-text-decoration-color: #F75C03;
+          text-decoration-color: #F75C03;
   font-size: 20px;
 }
 .services__contenus__wrapupDropdown .dropdown .dropdown-menu {
@@ -503,6 +508,7 @@ font-weight: 900; = black
 .services__contenus__wrapupDropdown .dropdown .dropdown-menu button {
   background-color: #EBEBEB;
   color: #F75C03;
+  padding: 0 10px;
   border: none;
   border-radius: 15px;
   font-size: 14px;
@@ -545,7 +551,8 @@ font-weight: 900; = black
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 3.5px;
-    text-decoration-color: #004E89;
+    -webkit-text-decoration-color: #004E89;
+            text-decoration-color: #004E89;
   }
 }
 @media (min-width: 1200px) {
@@ -578,7 +585,8 @@ font-weight: 900; = black
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 3.5px;
-    text-decoration-color: #004E89;
+    -webkit-text-decoration-color: #004E89;
+            text-decoration-color: #004E89;
   }
 }
 /*****************FIN SERVICES***********************/
@@ -590,13 +598,17 @@ font-weight: 900; = black
   align-items: center;
   background-color: #004E89;
 }
-.nouvelles h2 {
+.nouvelles__titre {
+  display: flex;
+}
+.nouvelles__titre h2 {
   font-size: 24px;
   color: white;
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  text-decoration-color: #F75C03;
+  -webkit-text-decoration-color: #F75C03;
+          text-decoration-color: #F75C03;
 }
 .nouvelles__content {
   display: flex;
@@ -606,6 +618,27 @@ font-weight: 900; = black
 .nouvelles__content button:nth-child(1) {
   display: none;
 }
+.nouvelles__content button {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 0 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+  font-size: 8px;
+  display: flex;
+}
+.nouvelles__content button .sousligne {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  -webkit-text-decoration-color: #F75C03;
+          text-decoration-color: #F75C03;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1px;
+}
 .nouvelles__content .card {
   position: relative;
   background-color: #D9D9D9;
@@ -614,7 +647,7 @@ font-weight: 900; = black
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border: none;
-  margin: 20px 0;
+  margin-top: 20px;
   width: 191px;
   height: 280px;
   padding-top: 185px;
@@ -629,10 +662,12 @@ font-weight: 900; = black
   font-size: 12px;
   font-weight: 900;
   text-align: left;
+  height: 29px;
 }
 .nouvelles__content .card button {
   background-color: #EBEBEB;
   color: #F75C03;
+  padding: 0 10px;
   border: none;
   border-radius: 15px;
   font-size: 14px;
@@ -643,6 +678,9 @@ font-weight: 900; = black
   text-decoration-thickness: 1px;
   box-shadow: 0 0 4px 0 #004E89;
   width: 100%;
+  margin: 0;
+  font-size: 8px;
+  text-underline-offset: 1px;
 }
 
 /*****************FIN NOUVELLES***********************/

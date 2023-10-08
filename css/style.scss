@@ -453,12 +453,16 @@ button{
     flex-direction: column;
     align-items: center;
     background-color: variables.$bleu;
-    h2{
-        font-size: 24px;
-        color:white;
-        @include base.sousligne;
-        text-decoration-color: variables.$orange;
+    &__titre{
+        display: flex;
+        h2{
+            font-size: 24px;
+            color:white;
+            @include base.sousligne;
+            text-decoration-color: variables.$orange;
+        }
     }
+   
     &__content{
         button:nth-child(1){
             display:none;
@@ -466,6 +470,18 @@ button{
         display: flex;
         flex-direction: column;
         align-items: center;
+        button{
+            @include base.btn;
+            margin-top: 20px;
+            font-size: 8px;
+            display: flex;
+            .sousligne{
+                @include base.sousligne;
+                text-decoration-color: variables.$orange;
+                text-decoration-thickness: 1px;
+                text-underline-offset:1px;
+            }
+        }
         .card{
             position: relative;
             background-color: variables.$grisFoncer;
@@ -474,7 +490,7 @@ button{
             text-align: center;
             box-shadow: 0 5px 10px rgba(0,0,0,.2);
             border:none;
-            margin:20px 0;
+            margin-top:20px;
             width:191px;
             height:280px;
             padding-top: 185px;
@@ -488,13 +504,17 @@ button{
                 font-size: 12px;
                 font-weight:900;
                 text-align: left;
+                height:29px;
             }
-            button{
+            button{d
                 @include base.btn;
                 @include base.sousligne;
                 text-decoration-thickness: 1px;
                 box-shadow: 0 0 4px 0 variables.$bleu;
                 width: 100%;
+                margin: 0;
+                font-size: 8px;
+                text-underline-offset:1px;
             }
         }
     }
