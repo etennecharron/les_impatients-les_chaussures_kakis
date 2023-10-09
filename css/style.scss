@@ -5,7 +5,7 @@
 @use "partials/navbar";
 @use "partials/alerte";
 @use "partials/base";
-
+@use "partials/cartes";
 /**aide mémoire pour font lato
 font-weight: 300; = light
 font-weight: 400; = regular
@@ -491,40 +491,7 @@ button{
             }
         }
         .card{
-            position: relative;
-            background-color: variables.$grisFoncer;
-            padding: 1.5em .5em .5em;
-            border-radius: 2em;
-            text-align: center;
-            box-shadow: 0 5px 10px rgba(0,0,0,.2);
-            border:none;
-            margin-top:20px;
-            margin: 20px 0 0 0;
-            width:191px;
-            height:273px;
-            padding-top: 185px;
-            img{
-                border-radius: 2em;
-                position: absolute;
-                top:0;
-                left:0;
-            }
-            h4{
-                font-size: 12px;
-                font-weight:900;
-                text-align: left;
-                height:29px;
-            }
-            button{
-                @include base.btn;
-                @include base.sousligne;
-                text-decoration-thickness: 1px;
-                box-shadow: 0 0 4px 0 variables.$bleu;
-                width: 100%;
-                margin: 0;
-                font-size: 8px;
-                text-underline-offset:1px;
-            }
+            @include cartes.carte;
         }
     }
 }
@@ -601,9 +568,37 @@ button{
 }
 
 /*****************FIN NOUVELLES***********************/
+
+
+
+/*****************DÉBUT TÉMOIGNAGE***********************/
 .temoignage{
-    display: none;
+    @include sections.sectionsTelephone;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        @include base.sousligne;
+        text-decoration-color:variables.$bleu;
+        font-size: 24px;
+    }
+    &__content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .card{
+            @include cartes.carte;
+            .ide
+            h4{
+                font-size:8px;
+            }
+        }
+        img:nth-child(2){
+            display: none;
+        }
+    }
 }
+/*****************FIN TÉMOIGNAGE***********************/
 .espace{
     display: none;
 }
