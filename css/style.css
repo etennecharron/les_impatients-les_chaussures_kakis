@@ -196,8 +196,7 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  -webkit-text-decoration-color: #004E89;
-          text-decoration-color: #004E89;
+  text-decoration-color: #004E89;
 }
 .hero__info01 h2 {
   font-size: 20px;
@@ -226,8 +225,7 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  -webkit-text-decoration-color: #F75C03;
-          text-decoration-color: #F75C03;
+  text-decoration-color: #F75C03;
 }
 .hero__info02 h2 {
   font-size: 20px;
@@ -393,7 +391,7 @@ font-weight: 900; = black
 .campagne__contenus button {
   background-color: #EBEBEB;
   color: #F75C03;
-  padding: 0 10px;
+  padding: 5px 10px;
   border: none;
   border-radius: 15px;
   font-size: 14px;
@@ -465,8 +463,7 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  -webkit-text-decoration-color: #004E89;
-          text-decoration-color: #004E89;
+  text-decoration-color: #004E89;
 }
 .services__contenus {
   padding-top: 20px;
@@ -485,8 +482,7 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  -webkit-text-decoration-color: #F75C03;
-          text-decoration-color: #F75C03;
+  text-decoration-color: #F75C03;
   font-size: 20px;
 }
 .services__contenus__wrapupDropdown .dropdown .dropdown-menu {
@@ -508,7 +504,7 @@ font-weight: 900; = black
 .services__contenus__wrapupDropdown .dropdown .dropdown-menu button {
   background-color: #EBEBEB;
   color: #F75C03;
-  padding: 0 10px;
+  padding: 5px 10px;
   border: none;
   border-radius: 15px;
   font-size: 14px;
@@ -547,12 +543,14 @@ font-weight: 900; = black
   .services__contenus__wrapupDropdown__titre {
     display: flex;
   }
+  .services__contenus__wrapupDropdown__titre h2 {
+    font-size: 30px;
+  }
   .services__contenus__wrapupDropdown__titre h2:nth-child(1) {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 3.5px;
-    -webkit-text-decoration-color: #004E89;
-            text-decoration-color: #004E89;
+    text-decoration-color: #004E89;
   }
 }
 @media (min-width: 1200px) {
@@ -581,12 +579,14 @@ font-weight: 900; = black
   .services__contenus__wrapupDropdown__titre {
     display: flex;
   }
+  .services__contenus__wrapupDropdown__titre h2 {
+    font-size: 40px;
+  }
   .services__contenus__wrapupDropdown__titre h2:nth-child(1) {
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 3.5px;
-    -webkit-text-decoration-color: #004E89;
-            text-decoration-color: #004E89;
+    text-decoration-color: #004E89;
   }
 }
 /*****************FIN SERVICES***********************/
@@ -607,10 +607,10 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  -webkit-text-decoration-color: #F75C03;
-          text-decoration-color: #F75C03;
+  text-decoration-color: #F75C03;
 }
 .nouvelles__content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -621,7 +621,7 @@ font-weight: 900; = black
 .nouvelles__content button {
   background-color: #EBEBEB;
   color: #F75C03;
-  padding: 0 10px;
+  padding: 5px 10px;
   border: none;
   border-radius: 15px;
   font-size: 14px;
@@ -634,8 +634,7 @@ font-weight: 900; = black
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
-  -webkit-text-decoration-color: #F75C03;
-          text-decoration-color: #F75C03;
+  text-decoration-color: #F75C03;
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
 }
@@ -648,8 +647,9 @@ font-weight: 900; = black
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border: none;
   margin-top: 20px;
+  margin: 20px 0 0 0;
   width: 191px;
-  height: 280px;
+  height: 273px;
   padding-top: 185px;
 }
 .nouvelles__content .card img {
@@ -667,7 +667,7 @@ font-weight: 900; = black
 .nouvelles__content .card button {
   background-color: #EBEBEB;
   color: #F75C03;
-  padding: 0 10px;
+  padding: 5px 10px;
   border: none;
   border-radius: 15px;
   font-size: 14px;
@@ -683,6 +683,75 @@ font-weight: 900; = black
   text-underline-offset: 1px;
 }
 
+@media (min-width: 768px) {
+  .nouvelles {
+    padding: 57px 50px;
+    display: flex;
+  }
+  .nouvelles__titre {
+    align-self: flex-start;
+  }
+  .nouvelles__titre h2 {
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .nouvelles__titre h2:nth-child(3) {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3.5px;
+    text-decoration-color: #F75C03;
+  }
+  .nouvelles__content {
+    margin-top: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .nouvelles__content button:nth-child(1) {
+    display: block;
+  }
+  .nouvelles__content button:nth-child(5) {
+    display: none;
+  }
+  .nouvelles__content .card {
+    width: 160px;
+    height: 250px;
+    padding-top: 150px;
+    margin: 20px 10px 0 10px;
+  }
+  .nouvelles__content .card h4 {
+    font-size: 10px;
+  }
+  .nouvelles__content .card button {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .nouvelles {
+    padding: 75px 60px;
+    display: flex;
+  }
+  .nouvelles__titre h2 {
+    font-size: 40px;
+  }
+  .nouvelles__content {
+    margin-top: 30px;
+  }
+  .nouvelles__content button:nth-child(1) {
+    font-size: 14px;
+  }
+  .nouvelles__content .card {
+    height: 320px;
+    width: 220px;
+    padding-top: 210px;
+  }
+  .nouvelles__content .card h4 {
+    font-size: 14px;
+  }
+  .nouvelles__content .card button {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
 /*****************FIN NOUVELLES***********************/
 .temoignage {
   display: none;

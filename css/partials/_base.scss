@@ -15,7 +15,7 @@ body{
 @mixin btn{
     background-color: variables.$gris;
     color:variables.$orange;
-    padding: 0 10px;
+    padding: 5px 10px;
     border: none;
     border-radius: 15px;
     font-size: 14px;

@@ -396,6 +396,10 @@ button{
                 }
                 &__titre{
                     display:flex;
+                    h2{
+                        font-size: 30px;
+                    }
+                    
                     h2:nth-child(1){
                         @include base.sousligne;
                         text-decoration-color:variables.$bleu;
@@ -430,6 +434,9 @@ button{
                 }
                 &__titre{
                     display:flex;
+                    h2{
+                        font-size: 40px;
+                    }
                     h2:nth-child(1){
                         @include base.sousligne;
                         text-decoration-color:variables.$bleu;
@@ -464,6 +471,7 @@ button{
     }
    
     &__content{
+        width: 100%;
         button:nth-child(1){
             display:none;
         }
@@ -491,8 +499,9 @@ button{
             box-shadow: 0 5px 10px rgba(0,0,0,.2);
             border:none;
             margin-top:20px;
+            margin: 20px 0 0 0;
             width:191px;
-            height:280px;
+            height:273px;
             padding-top: 185px;
             img{
                 border-radius: 2em;
@@ -506,7 +515,7 @@ button{
                 text-align: left;
                 height:29px;
             }
-            button{d
+            button{
                 @include base.btn;
                 @include base.sousligne;
                 text-decoration-thickness: 1px;
@@ -515,6 +524,77 @@ button{
                 margin: 0;
                 font-size: 8px;
                 text-underline-offset:1px;
+            }
+        }
+    }
+}
+
+@media (min-width:768px){
+    .nouvelles{
+        @include sections.sectionsTablette;
+        &__titre{
+            align-self: flex-start;
+            h2{
+                font-size: 30px;
+                text-decoration: none;
+                &:nth-child(3){
+                    @include base.sousligne;
+                    text-decoration-color: variables.$orange;
+                }
+            }
+        }
+        &__content{
+            margin-top: 20px;
+            justify-content: space-around;
+            button:nth-child(1){
+                display:block;
+            }
+            button:nth-child(5){
+                display:none;
+            }
+            flex-direction: row;
+            .card{
+                width:160px;
+                height:250px;
+                padding-top:150px;
+                margin: 20px 10px 0 10px;
+                h4{
+                    font-size: 10px;
+                }
+                button{
+                    margin-top:20px;
+                }
+            }
+
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .nouvelles{
+        @include sections.sectionsOrdinateur;
+        &__titre{
+            h2{
+                font-size: 40px;
+            }
+        }
+        
+        &__content{
+            margin-top: 30px;
+            button:nth-child(1){
+                font-size: 14px;
+            }
+            .card{
+                height:320px;
+                width:220px;
+                padding-top: 210px;
+                h4{
+                    font-size: 14px;
+                }
+                button{
+                    margin-top: 15px;
+                    font-size: 14px;
+                }
             }
         }
     }
