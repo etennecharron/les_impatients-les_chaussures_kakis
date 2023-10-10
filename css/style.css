@@ -652,7 +652,7 @@ font-weight: 900; = black
   height: 273px;
   padding-top: 185px;
 }
-.nouvelles__content .card img {
+.nouvelles__content .card img:nth-child(1) {
   border-radius: 2em;
   position: absolute;
   top: 0;
@@ -769,9 +769,11 @@ font-weight: 900; = black
   font-size: 24px;
 }
 .temoignage__content {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: space-around;
 }
 .temoignage__content .card {
   position: relative;
@@ -786,8 +788,11 @@ font-weight: 900; = black
   width: 191px;
   height: 273px;
   padding-top: 185px;
+  width: 240px;
+  height: 330px;
+  padding-top: 230px;
 }
-.temoignage__content .card img {
+.temoignage__content .card img:nth-child(1) {
   border-radius: 2em;
   position: absolute;
   top: 0;
@@ -817,13 +822,78 @@ font-weight: 900; = black
   font-size: 8px;
   text-underline-offset: 1px;
 }
-.temoignage__content .card .ide h4 {
-  font-size: 8px;
+.temoignage__content .card .identiter {
+  display: flex;
+  flex-direction: row;
 }
-.temoignage__content img:nth-child(2) {
+.temoignage__content .card .identiter img {
+  width: 11px;
+  height: 7px;
+}
+.temoignage__content .card .identiter h4 {
+  font-size: 8px;
+  font-weight: 900;
+  margin: 0;
+  height: 20px;
+}
+.temoignage__content .card p {
+  font-size: 8px;
+  font-weight: 300;
+}
+.temoignage__content .imgCoter {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .temoignage {
+    padding: 57px 50px;
+    display: flex;
+  }
+  .temoignage h2 {
+    font-size: 30px;
+    align-self: flex-start;
+  }
+  .temoignage__content {
+    justify-content: space-between;
+  }
+  .temoignage__content .imgCoter {
+    display: block;
+    width: 378px;
+    height: 304px;
+  }
+}
+@media (min-width: 1200px) {
+  .temoignage {
+    padding: 75px 60px;
+    display: flex;
+  }
+  .temoignage h2 {
+    font-size: 40px;
+  }
+  .temoignage__content {
+    justify-content: space-between;
+  }
+  .temoignage__content .card {
+    width: 400px;
+    height: 585px;
+    padding-top: 379px;
+  }
+  .temoignage__content .card .identiter h4 {
+    font-size: 14px;
+  }
+  .temoignage__content .card .identiter img {
+    width: 23px;
+    height: 17px;
+  }
+  .temoignage__content .card p {
+    font-size: 14px;
+  }
+  .temoignage__content .imgCoter {
+    display: block;
+    width: 531px;
+    height: 522px;
+  }
+}
 /*****************FIN TÉMOIGNAGE***********************/
 .espace {
   display: none;

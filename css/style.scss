@@ -583,21 +583,95 @@ button{
         font-size: 24px;
     }
     &__content{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-content: space-around;
         .card{
             @include cartes.carte;
-            .ide
-            h4{
+            width:240px;
+            height:330px;
+            padding-top: 230px;
+            .identiter{
+                display: flex;
+                flex-direction: row;
+                img{
+                    width: 11px;
+                    height: 7px;
+                }
+                h4{
+                    font-size:8px;
+                    font-weight: 900;
+                    margin:0;
+                    height:20px;
+                }
+            }
+            p{
                 font-size:8px;
+                font-weight: 300;
             }
         }
-        img:nth-child(2){
+        .imgCoter{
             display: none;
         }
     }
 }
+
+
+@media (min-width:768px){
+    .temoignage{
+        @include sections.sectionsTablette;
+        h2{
+            font-size: 30px;
+            align-self: flex-start;
+        }
+        &__content{
+            justify-content: space-between;
+            .imgCoter{
+                display: block;
+                width: 378px;
+                height: 304px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px){
+    .temoignage{
+        @include sections.sectionsOrdinateur;
+        h2{
+            font-size: 40px;
+        }
+        &__content{
+            justify-content: space-between;
+            .card{
+                width: 400px;
+                height:585px;
+                padding-top: 379px;
+                .identiter{
+                    h4{
+                        font-size: 14px;
+                    }
+                    img{
+                        width: 23px;
+                        height: 17px;
+                    }
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            .imgCoter{
+                display: block;
+                width: 531px;
+                height: 522px;
+            }
+        }
+    }
+}
+
 /*****************FIN TÉMOIGNAGE***********************/
 .espace{
     display: none;
