@@ -909,4 +909,12 @@ font-weight: 900; = black
 
 footer {
   display: none;
+}
+
+/*****************Erreur 404***********************/
+.cercle_beige {
+  width: 150px;
+  position: absolute;
+  left: 400px;
+  top: 125px;
 }/*# sourceMappingURL=style.css.map */
