@@ -676,6 +676,121 @@ button{
 .espace{
     display: none;
 }
-footer{
-    display: none;
+
+/*****************DÉBUT BAS PAGE***********************/
+.footer__bas{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+    "a   b   c";
+   
 }
+
+.bas__impliquer{
+    grid-area: a; 
+    text-align: left;
+}
+.bas__connaitre{
+    grid-area: b; 
+    text-align: left;
+}
+.bas__inscription{
+    grid-area: c; 
+    text-align: left;
+}
+
+.footer__compagnie{
+    @media (min-width:1200px){
+    background-color: #EBEBEB;
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+h2{
+       
+    text-align: center;
+    margin:40px 0;
+}
+h2:nth-child(3){
+    @include base.sousligne;
+    text-decoration-color: variables.$orange;
+}
+   
+}
+
+.compagne__logos{
+display: grid;
+gap: 50px;
+justify-content: center;
+grid-template-areas: 
+"a   b"
+"c   d"
+"e   f"
+"g   h"; 
+
+ img{
+    width: 100px;
+ }
+}
+
+
+@media (min-width:768px){
+    .compagne__logos{
+    grid-template-areas: 
+    "a   b   c "
+    "d   e   f"
+    "g   .   h";
+
+    img{
+        width: 200px;
+     }
+}
+}
+
+
+@media (min-width:1200px){
+
+    .compagne__logos{
+grid-template-areas: 
+"a   b   c   d"
+"e   f   g   h";
+
+}
+}
+
+
+
+
+@for $index from 1 through 8 {
+    .image-compagnie-0#{$index} {
+        
+    }
+  }
+
+  .image-compagnie-01{
+    grid-area: a;
+  }
+  .image-compagnie-02{
+    grid-area: b;
+  }
+  .image-compagnie-03{
+    grid-area: c;
+  }
+  .image-compagnie-04{
+    grid-area: d;
+  }
+  .image-compagnie-05{
+    grid-area: e;
+  }
+  .image-compagnie-06{
+    grid-area: f;
+  }
+  .image-compagnie-07{
+    grid-area: g;
+  }
+  .image-compagnie-08{
+    grid-area: h;
+  }
+
+/*****************FIN BAS PAGE***********************/
