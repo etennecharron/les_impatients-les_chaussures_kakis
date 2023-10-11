@@ -932,7 +932,7 @@ font-weight: 900; = black
 }
 .footer__compagnie h2 {
   text-align: center;
-  margin: 40px 0;
+  margin: 20px 0;
 }
 .footer__compagnie h2:nth-child(3) {
   text-decoration: underline;

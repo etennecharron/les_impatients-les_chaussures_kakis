@@ -710,7 +710,7 @@ button{
 h2{
        
     text-align: center;
-    margin:40px 0;
+    margin:20px 0;
 }
 h2:nth-child(3){
     @include base.sousligne;
@@ -758,16 +758,6 @@ grid-template-areas:
 
 }
 }
-
-
-
-
-@for $index from 1 through 8 {
-    .image-compagnie-0#{$index} {
-        
-    }
-  }
-
   .image-compagnie-01{
     grid-area: a;
   }
