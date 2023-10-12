@@ -18,12 +18,13 @@
         position: absolute;
         top:0;
         left:0;
+        object-fit: cover;
     }
     h4{
         font-size: 12px;
         font-weight:900;
         text-align: left;
-        height:29px;
+       
     }
     button{
         @include base.btn;

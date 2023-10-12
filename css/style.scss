@@ -673,11 +673,63 @@ button{
 }
 
 /*****************FIN TÉMOIGNAGE***********************/
+
+
+
+/*****************DÉBUT ESPACE***********************/
+
 .espace{
-    display: none;
+    @include sections.sectionsTelephone;
+    background-color: variables.$bleu;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__titre{
+        display: flex;
+        h2{
+            color:white;
+            font-size: 24px;
+            @include base.sousligne;
+            text-decoration-color:variables.$orange;
+            padding-top:10px; 
+        }
+    }
+    &__contenus{
+        display: flex;
+        flex-direction: column;
+        &__btn{
+            @include base.btn;
+            margin-top: 30px;
+        &:nth-child(1){
+            display: none;
+        }
+    }
+        .card{
+            @include cartes.carte;
+            padding-top: 165px;
+            height: 280px;
+            h4{
+                height: 50px;
+            }
+            img{
+                height:170px;
+                width: 100%; 
+            }
+        }
+    }
 }
 
-/*****************DÉBUT BAS PAGE***********************/
+
+/*****************FIN ESPACE***********************/
+
+
+
+
+
+
+
+/*****************DÉBUT FOOTER***********************/
 .footer__bas{
     display: grid;
     gap: 15px;
@@ -783,4 +835,4 @@ grid-template-areas:
     grid-area: h;
   }
 
-/*****************FIN BAS PAGE***********************/
+/*****************FIN FOOTER***********************/

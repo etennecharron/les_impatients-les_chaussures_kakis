@@ -657,12 +657,13 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .nouvelles__content .card h4 {
   font-size: 12px;
   font-weight: 900;
   text-align: left;
-  height: 29px;
 }
 .nouvelles__content .card button {
   background-color: #EBEBEB;
@@ -797,12 +798,13 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .temoignage__content .card h4 {
   font-size: 12px;
   font-weight: 900;
   text-align: left;
-  height: 29px;
 }
 .temoignage__content .card button {
   background-color: #EBEBEB;
@@ -895,11 +897,102 @@ font-weight: 900; = black
   }
 }
 /*****************FIN TÉMOIGNAGE***********************/
+/*****************DÉBUT ESPACE***********************/
 .espace {
+  padding: 40px 12px;
+  display: flex;
+  background-color: #004E89;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.espace__titre {
+  display: flex;
+}
+.espace__titre h2 {
+  color: white;
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  text-decoration-color: #F75C03;
+  padding-top: 10px;
+}
+.espace__contenus {
+  display: flex;
+  flex-direction: column;
+}
+.espace__contenus__btn {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-top: 30px;
+}
+.espace__contenus__btn:nth-child(1) {
   display: none;
 }
+.espace__contenus .card {
+  position: relative;
+  background-color: #D9D9D9;
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin-top: 20px;
+  margin: 20px 0 0 0;
+  width: 191px;
+  height: 273px;
+  padding-top: 185px;
+  padding-top: 165px;
+  height: 280px;
+}
+.espace__contenus .card img:nth-child(1) {
+  border-radius: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.espace__contenus .card h4 {
+  font-size: 12px;
+  font-weight: 900;
+  text-align: left;
+}
+.espace__contenus .card button {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  text-decoration-thickness: 1px;
+  box-shadow: 0 0 4px 0 #004E89;
+  width: 100%;
+  margin: 0;
+  font-size: 8px;
+  text-underline-offset: 1px;
+}
+.espace__contenus .card h4 {
+  height: 50px;
+}
+.espace__contenus .card img {
+  height: 170px;
+  width: 100%;
+}
 
-/*****************DÉBUT BAS PAGE***********************/
+/*****************FIN ESPACE***********************/
+/*****************DÉBUT FOOTER***********************/
 .footer__bas {
   display: grid;
   gap: 15px;
@@ -996,4 +1089,4 @@ font-weight: 900; = black
   grid-area: h;
 }
 
-/*****************FIN BAS PAGE***********************//*# sourceMappingURL=style.css.map */
+/*****************FIN FOOTER***********************//*# sourceMappingURL=style.css.map */
