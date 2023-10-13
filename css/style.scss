@@ -720,6 +720,67 @@ button{
     }
 }
 
+@media (min-width:768px){
+    .espace{
+        @include sections.sectionsTablette;
+        &__titre{
+            align-self: flex-start;
+            h2{
+                font-size: 30px;
+                text-decoration: none;
+            }
+            h2:nth-child(3){
+                @include base.sousligne;
+                text-decoration-color: variables.$orange;
+            }
+            
+        }
+
+        &__contenus{
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            &__btn:nth-child(1){
+                display: block;
+            }
+            &__btn:nth-child(4){
+                display: none;
+            }
+        }
+
+    }
+}
+
+
+@media (min-width:1200px){
+    .espace{
+        @include sections.sectionsOrdinateur;
+        &__titre{
+            h2{
+                font-size:40px;
+            }
+        }
+        &__contenus{
+            margin-top: 40px;
+            .card{
+                width:354px;
+                height:495px;
+                padding-top: 240px;
+                img{
+                    height:240px;
+                }
+                h4{
+                    font-size:28px;
+                    height:180px;
+                }
+                button{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
 
 /*****************FIN ESPACE***********************/
 

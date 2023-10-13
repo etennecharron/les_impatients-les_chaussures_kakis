@@ -991,6 +991,64 @@ font-weight: 900; = black
   width: 100%;
 }
 
+@media (min-width: 768px) {
+  .espace {
+    padding: 57px 50px;
+    display: flex;
+  }
+  .espace__titre {
+    align-self: flex-start;
+  }
+  .espace__titre h2 {
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .espace__titre h2:nth-child(3) {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3.5px;
+    text-decoration-color: #F75C03;
+  }
+  .espace__contenus {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .espace__contenus__btn:nth-child(1) {
+    display: block;
+  }
+  .espace__contenus__btn:nth-child(4) {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .espace {
+    padding: 75px 60px;
+    display: flex;
+  }
+  .espace__titre h2 {
+    font-size: 40px;
+  }
+  .espace__contenus {
+    margin-top: 40px;
+  }
+  .espace__contenus .card {
+    width: 354px;
+    height: 495px;
+    padding-top: 240px;
+  }
+  .espace__contenus .card img {
+    height: 240px;
+  }
+  .espace__contenus .card h4 {
+    font-size: 28px;
+    height: 180px;
+  }
+  .espace__contenus .card button {
+    font-size: 14px;
+  }
+}
 /*****************FIN ESPACE***********************/
 /*****************DÉBUT FOOTER***********************/
 .footer__bas {
