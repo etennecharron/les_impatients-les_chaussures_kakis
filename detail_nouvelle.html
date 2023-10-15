@@ -11,10 +11,91 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
+<body id="detailNouvelle">
+    <header>
+        <div class="alert alert-dismissible fade show d-flex justify-content-around align-items-center" role="alert">
+            <p>Ce site est développé par des étudiants</p>
+            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+            <a href="https://impatients.ca/">Site web original</a>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+        </div>
+        <!-- Nav barre à faire correctement avec bootstrap -->
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid">
+
+                <!--DÉBUT LOGO-->
+                <a href="" class="navbar-brand">
+                    <img src="assets/images/logo.png" alt="logo" class="logo">
+                </a>
+                <!--FIN LOGO-->
+
+                <!--DÉBUT BTN HAMBURGER-->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--FIN BTN HAMBURGER-->
+
+                <!--DÉBUT CONTENUS NAV-->
+                <div id="mainNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a href="" class=" nav-lien">Accueil</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Ateliers</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Collection</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Événements</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Boutique</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Contact</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">En</a>
+                        </li>
+                    </ul>
+                    <!--FIN CONTENUS NAV-->
+                </div>
+            </div>
+        </nav>
 
 
+
+
+        <section class="titreNouvelle">
+            <div class="titreNouvelle__filAriane">
+                <p>Les impatients / Nouvelles /</p><p>&nbsp</p><p class="titreNouvelle__filAriane__nomNouvelle"> Clôture de Miroir Miroir 2e édition</p> 
+            </div>
+            <div class="titreNouvelle__titre">
+                <h1>CLÔTURE DE MIROIR MIROIR 2E ÉDITION</h1>
+            </div>
+        </section>
 
 
 
@@ -22,8 +103,7 @@
 
 
     
-  <!-- Ajout Swiper -->  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Ajout Swiper -->    
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
          <!-- Ajout GSAP -->  
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>   

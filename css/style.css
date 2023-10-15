@@ -1147,4 +1147,29 @@ font-weight: 900; = black
   grid-area: h;
 }
 
-/*****************FIN FOOTER***********************//*# sourceMappingURL=style.css.map */
+/*****************FIN FOOTER***********************/
+/********************************************DÉTAIL NOUVELLE***********************************************/
+#detailNouvelle .titreNouvelle {
+  padding: 40px 12px;
+  display: flex;
+  background-color: #004E89;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#detailNouvelle .titreNouvelle__filAriane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#detailNouvelle .titreNouvelle__filAriane p {
+  font-size: 10px;
+}
+#detailNouvelle .titreNouvelle__titre {
+  text-align: center;
+}
+#detailNouvelle .titreNouvelle__titre h1 {
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */

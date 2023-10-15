@@ -897,3 +897,31 @@ grid-template-areas:
   }
 
 /*****************FIN FOOTER***********************/
+
+
+
+/********************************************DÉTAIL NOUVELLE***********************************************/
+
+#detailNouvelle .titreNouvelle{
+    @include sections.sectionsTelephone;
+    background-color: variables.$bleu;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__filAriane{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 10px;
+        }
+    }
+    &__titre{
+        text-align: center;
+        h1{
+            font-size: 24px;
+        }
+    }
+}
