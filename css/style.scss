@@ -6,7 +6,6 @@
 @use "partials/alerte";
 @use "partials/base";
 @use "partials/cartes";
-@use "partials/erreur404";
 /**aide mémoire pour font lato
 font-weight: 300; = light
 font-weight: 400; = regular
@@ -674,20 +673,255 @@ button{
 }
 
 /*****************FIN TÉMOIGNAGE***********************/
+
+
+
+/*****************DÉBUT ESPACE***********************/
+
 .espace{
-    display: none;
+    @include sections.sectionsTelephone;
+    background-color: variables.$bleu;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__titre{
+        display: flex;
+        h2{
+            color:white;
+            font-size: 24px;
+            @include base.sousligne;
+            text-decoration-color:variables.$orange;
+            padding-top:10px; 
+        }
+    }
+    &__contenus{
+        display: flex;
+        flex-direction: column;
+        &__btn{
+            @include base.btn;
+            margin-top: 30px;
+        &:nth-child(1){
+            display: none;
+        }
+    }
+        .card{
+            @include cartes.carte;
+            padding-top: 165px;
+            height: 280px;
+            h4{
+                height: 50px;
+            }
+            img{
+                height:170px;
+                width: 100%; 
+            }
+        }
+    }
 }
-footer{
-    display: none;
+
+@media (min-width:768px){
+    .espace{
+        @include sections.sectionsTablette;
+        &__titre{
+            align-self: flex-start;
+            h2{
+                font-size: 30px;
+                text-decoration: none;
+            }
+            h2:nth-child(3){
+                @include base.sousligne;
+                text-decoration-color: variables.$orange;
+            }
+            
+        }
+
+        &__contenus{
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            &__btn:nth-child(1){
+                display: block;
+            }
+            &__btn:nth-child(4){
+                display: none;
+            }
+        }
+
+    }
 }
 
 
+@media (min-width:1200px){
+    .espace{
+        @include sections.sectionsOrdinateur;
+        &__titre{
+            h2{
+                font-size:40px;
+            }
+        }
+        &__contenus{
+            margin-top: 40px;
+            .card{
+                width:354px;
+                height:495px;
+                padding-top: 240px;
+                img{
+                    height:240px;
+                }
+                h4{
+                    font-size:28px;
+                    height:180px;
+                }
+                button{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
 
-/*****************Erreur 404***********************/
+/*****************FIN ESPACE***********************/
 
-.cercle_beige{
-    width: 150px;
-    position: absolute;
-    left: 400px;
-    top: 125px;
+
+
+
+
+
+
+/*****************DÉBUT FOOTER***********************/
+.footer__bas{
+    display: grid;
+    gap: 15px;
+    grid-template-areas: 
+    "a   b   c";
+   
+}
+
+.bas__impliquer{
+    grid-area: a; 
+    text-align: left;
+}
+.bas__connaitre{
+    grid-area: b; 
+    text-align: left;
+}
+.bas__inscription{
+    grid-area: c; 
+    text-align: left;
+}
+
+.footer__compagnie{
+    @media (min-width:1200px){
+    background-color: #EBEBEB;
+    h2{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+h2{
+       
+    text-align: center;
+    margin:20px 0;
+}
+h2:nth-child(3){
+    @include base.sousligne;
+    text-decoration-color: variables.$orange;
+}
+   
+}
+
+.compagne__logos{
+display: grid;
+gap: 50px;
+justify-content: center;
+grid-template-areas: 
+"a   b"
+"c   d"
+"e   f"
+"g   h"; 
+
+ img{
+    width: 100px;
+ }
+}
+
+
+@media (min-width:768px){
+    .compagne__logos{
+    grid-template-areas: 
+    "a   b   c "
+    "d   e   f"
+    "g   .   h";
+
+    img{
+        width: 200px;
+     }
+}
+}
+
+
+@media (min-width:1200px){
+
+    .compagne__logos{
+grid-template-areas: 
+"a   b   c   d"
+"e   f   g   h";
+
+}
+}
+  .image-compagnie-01{
+    grid-area: a;
+  }
+  .image-compagnie-02{
+    grid-area: b;
+  }
+  .image-compagnie-03{
+    grid-area: c;
+  }
+  .image-compagnie-04{
+    grid-area: d;
+  }
+  .image-compagnie-05{
+    grid-area: e;
+  }
+  .image-compagnie-06{
+    grid-area: f;
+  }
+  .image-compagnie-07{
+    grid-area: g;
+  }
+  .image-compagnie-08{
+    grid-area: h;
+  }
+
+/*****************FIN FOOTER***********************/
+
+
+
+/********************************************DÉTAIL NOUVELLE***********************************************/
+
+#detailNouvelle .titreNouvelle{
+    @include sections.sectionsTelephone;
+    background-color: variables.$bleu;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__filAriane{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 10px;
+        }
+    }
+    &__titre{
+        text-align: center;
+        h1{
+            font-size: 24px;
+        }
+    }
 }
