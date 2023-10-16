@@ -1,6 +1,7 @@
 wp*
 !wordpress/wp-content
 wordpress/index.php
+wordpress/.htaccess
 license.txt
 readme.html
 xmlrpc.php
