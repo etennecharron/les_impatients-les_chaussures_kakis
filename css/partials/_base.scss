@@ -10,6 +10,10 @@ body{
 .ligne_separation{
     height:13px;
 }
+em{
+    color:variables.$orange;
+    font-style: normal;
+}
 
 //style commun des boutons 
 @mixin btn{
