@@ -94,6 +94,7 @@ nav .navbar-nav {
   font-weight: 400;
   margin-bottom: 0;
   height: 25px;
+  border-radius: 0;
 }
 .alert .btn-close {
   background: url(../assets/images/btnX.svg);
@@ -657,8 +658,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .nouvelles__content .card h4 {
   font-size: 12px;
@@ -798,8 +798,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .temoignage__content .card h4 {
   font-size: 12px;
@@ -957,8 +956,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .espace__contenus .card h4 {
   font-size: 12px;
@@ -1166,10 +1164,26 @@ font-weight: 900; = black
 }
 #detailNouvelle .titreNouvelle__filAriane p {
   font-size: 10px;
+  word-spacing: 3px;
+}
+#detailNouvelle .titreNouvelle__filAriane__nomNouvelle {
+  color: #F75C03;
 }
 #detailNouvelle .titreNouvelle__titre {
   text-align: center;
 }
 #detailNouvelle .titreNouvelle__titre h1 {
   font-size: 24px;
+  margin: 0;
+  width: 200px;
+}
+
+#detailNouvelle .texte01 {
+  padding: 40px 12px;
+  display: flex;
+  margin: 40px 12px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #D9D9D9;
 }/*# sourceMappingURL=style.css.map */

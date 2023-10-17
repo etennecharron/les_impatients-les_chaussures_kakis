@@ -916,12 +916,28 @@ grid-template-areas:
         justify-content: center;
         p{
             font-size: 10px;
+            word-spacing:3px;
+        }
+        &__nomNouvelle{
+            color: variables.$orange;
         }
     }
     &__titre{
         text-align: center;
         h1{
             font-size: 24px;
+            margin: 0;
+            width: 200px;
         }
     }
+}
+
+#detailNouvelle .texte01{
+@include sections.sectionsTelephone;
+margin:40px 12px;
+border-radius: 40px;
+display: flex;
+flex-direction: column;
+background-color: variables.$grisFoncer;
+
 }
