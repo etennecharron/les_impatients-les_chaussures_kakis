@@ -1152,6 +1152,7 @@ font-weight: 900; = black
 
 /*****************FIN FOOTER***********************/
 /********************************************DÉTAIL NOUVELLE***********************************************/
+/*****************DÉBUT TITRE DE LA NOUVELLE***********************/
 #detailNouvelle .titreNouvelle {
   padding: 40px 12px;
   display: flex;
@@ -1183,7 +1184,42 @@ font-weight: 900; = black
   width: 200px;
 }
 
+@media (min-width: 768px) {
+  #detailNouvelle .titreNouvelle {
+    padding: 57px 50px;
+    display: flex;
+  }
+  #detailNouvelle .titreNouvelle__filAriane p {
+    font-size: 14px;
+  }
+  #detailNouvelle .titreNouvelle__titre h1 {
+    font-size: 30px;
+    width: 634px;
+  }
+}
+@media (min-width: 1200px) {
+  #detailNouvelle .titreNouvelle {
+    padding: 57px 50px;
+    display: flex;
+  }
+  #detailNouvelle .titreNouvelle__filAriane {
+    align-self: flex-start;
+  }
+  #detailNouvelle .titreNouvelle__filAriane p {
+    font-size: 14px;
+  }
+  #detailNouvelle .titreNouvelle__titre {
+    align-self: flex-start;
+  }
+  #detailNouvelle .titreNouvelle__titre h1 {
+    font-size: 40px;
+    width: 768px;
+  }
+}
+/*****************FIN TITRE DE LA NOUVELLE***********************/
+/*****************DÉBUT SECTION TEXTE01***********************/
 #detailNouvelle .sectionTexte01 {
+  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
   border-radius: 40px;
@@ -1192,8 +1228,24 @@ font-weight: 900; = black
   flex-direction: column;
   align-items: center;
 }
+#detailNouvelle .sectionTexte01 p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+}
+#detailNouvelle .sectionTexte01 h2 {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  align-self: flex-start;
+  line-height: 28px;
+  margin-bottom: 0;
+}
 
+/*****************FIN SECTION TEXTE01***********************/
+/*****************DÉBUT SECTION IMAGES***********************/
 #detailNouvelle .sectionImg {
+  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
   border-radius: 40px;
@@ -1212,7 +1264,10 @@ font-weight: 900; = black
   object-fit: contain;
 }
 
+/*****************FINT SECTION IMAGES***********************/
+/*****************DÉBUT SECTION TEXTE02***********************/
 #detailNouvelle .sectionTexte02 {
+  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
   border-radius: 40px;
@@ -1220,4 +1275,6 @@ font-weight: 900; = black
   display: flex;
   flex-direction: column;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*****************FIN SECTION TEXTE02***********************//*# sourceMappingURL=style.css.map */
