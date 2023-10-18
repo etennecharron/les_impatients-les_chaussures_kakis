@@ -4,9 +4,13 @@
 *{
     font-family: lato;
 }
+header{
+    width: 100%;
+}
 body{
     background-color: variables.$gris;
 }
+
 .ligne_separation{
     height:13px;
 }

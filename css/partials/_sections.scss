@@ -1,26 +1,40 @@
 @use "sass:color";
 @use "variables";
-
-@mixin sectionsTelephone{
+@mixin sectionsTelephone {
     padding: 40px 12px;
     display: flex;
 }
-@mixin sectionsTablette{
+
+@mixin sectionsTablette {
     padding: 57px 50px;
     display: flex;
 }
-@mixin sectionsOrdinateur{
+
+@mixin sectionsOrdinateur {
     padding: 75px 60px;
     display: flex;
 }
 
-@mixin sectionNouvelleTelephone{
-box-shadow: 0 4px 4px 0 color.adjust(variables.$bleuOmbre,$alpha:-0.75);
-margin:40px 12px;
-padding: 40px 20px;
-border-radius: 40px;
-background-color: variables.$grisFoncer;
-display: flex;
-flex-direction: column;
-align-items: center;
+@mixin sectionNouvelleTelephone {
+    box-shadow: 0 4px 4px 0 color.adjust(variables.$bleuOmbre, $alpha: -0.75);
+    margin: 40px 12px;
+    padding: 40px 20px;
+    border-radius: 40px;
+    background-color: variables.$grisFoncer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+@mixin sectionNouvelleTabletteOrdinateur{
+    box-shadow: 0 4px 4px 0 color.adjust(variables.$bleuOmbre, $alpha: -0.75);
+    margin: 40px 66px;
+    padding: 57px 50px;
+    border-radius: 40px;
+    background-color: variables.$grisFoncer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1068px;
+}
+

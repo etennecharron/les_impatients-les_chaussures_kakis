@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les Impatients - Les chaussures kakis</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-
     <header>
         <div class="alert alert-dismissible fade show d-flex justify-content-around align-items-center" role="alert">
             <p>Ce site est développé par des étudiants</p>
@@ -88,342 +87,341 @@
                 </div>
             </div>
         </nav>
+    </header>
+    <main>
+        <!------------------------DÉBUT HERO------------------------->
+        <section class="hero d-flex flex-column">
+            <!--DÉBUT TITRE "LES IMPATIENTS"-->
+            <div class="hero__titre d-flex align-items-center">
+                <h1>LES</h1><img src="assets/images/fleche.svg" alt="">
+                <h1>IMPATIENTS</h1>
+            </div>
+            <!--FIN TITRE "LES IMPATIENTS"-->
 
-        <main>
-            <!------------------------DÉBUT HERO------------------------->
-            <section class="hero d-flex flex-column">
-                <!--DÉBUT TITRE "LES IMPATIENTS"-->
-                <div class="hero__titre d-flex align-items-center">
-                    <h1>LES</h1><img src="assets/images/fleche.svg" alt="">
-                    <h1>IMPATIENTS</h1>
-                </div>
-                <!--FIN TITRE "LES IMPATIENTS"-->
-
-                <!--DÉBUT INFO #1-->
-                <div class="hero__info01 d-flex align-items-center">
-                    <img src="assets/images/personnage01.svg" alt="petite image de coté">
-                    <div class="hero__info01__content">
-                        <div class="d-flex">
-                            <h2>Une maison</h2>
-                            <h2>&nbsp</h2>
-                            <h2>pour tous</h2>
-                        </div>
-                        <p>Les Impatients viennent en aide aux personnes ayant des problèmes de santé mentale par le
-                            biais de l’expression artistique.</p>
+            <!--DÉBUT INFO #1-->
+            <div class="hero__info01 d-flex align-items-center">
+                <img src="assets/images/personnage01.svg" alt="petite image de coté">
+                <div class="hero__info01__content">
+                    <div class="d-flex">
+                        <h2>Une maison</h2>
+                        <h2>&nbsp</h2>
+                        <h2>pour tous</h2>
                     </div>
-
+                    <p>Les Impatients viennent en aide aux personnes ayant des problèmes de santé mentale par le
+                        biais de l’expression artistique.</p>
                 </div>
-                <!--FIN INFO #1-->
 
-                <!--DÉBUT INFO #2-->
-                <div class="hero__info02 d-flex align-items-center">
-                    <div class="hero__info02__content">
-                        <div class="d-flex">
-                            <h2>Pour plus d’</h2>
-                            <h2> informations</h2>
-                        </div>
-                        <p>Naviguer avec les boutons du caroussel pour obtenir plus d’informations sur la fondation.</p>
+            </div>
+            <!--FIN INFO #1-->
+
+            <!--DÉBUT INFO #2-->
+            <div class="hero__info02 d-flex align-items-center">
+                <div class="hero__info02__content">
+                    <div class="d-flex">
+                        <h2>Pour plus d’</h2>
+                        <h2> informations</h2>
                     </div>
-                    <!--Il va potentiellement utiliser swiper pour le caroussel d'image, a voir -->
-                    <div class="hero__info02__carousel d-flex flex-column justify-content-center align-items-center">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                        <div class="hero__info02__carousel__nav d-flex justify-content-around">
-                            <button></button><button></button><button></button>
-                        </div>
+                    <p>Naviguer avec les boutons du caroussel pour obtenir plus d’informations sur la fondation.</p>
+                </div>
+                <!--Il va potentiellement utiliser swiper pour le caroussel d'image, a voir -->
+                <div class="hero__info02__carousel d-flex flex-column justify-content-center align-items-center">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <div class="hero__info02__carousel__nav d-flex justify-content-around">
+                        <button></button><button></button><button></button>
                     </div>
                 </div>
-                <!--FIN INFO #2-->
-                </div>
-            </section>
-            <!------------------------FIN HERO------------------------->
+            </div>
+            <!--FIN INFO #2-->
+            </div>
+        </section>
+        <!------------------------FIN HERO------------------------->
 
 
 
-            <!------------------------DÉBUT CAMPAGNE------------------------->
-            <section class="campagne">
-                <img src="assets/images/personnage02.svg" alt="image de coté">
-                <div class="campagne__contenus">
-                    <h2>CAMPAGNE DE LEVÉE
-                        DE FONDS</h2>
-                    <p>Il y a quelques semaines, nous avons fêté nos 30 ans. Pour notre anniversaire, on a soufflé des
-                        chandelles…et la maison a brûlé.
-                        Aidez-nous à maintenir nos activités et accueillir nos Impatients.</p>
-                    <button>Pour donner ></button>
-                </div>
-            </section>
-            <!------------------------FIN CAMPAGNE------------------------->
+        <!------------------------DÉBUT CAMPAGNE------------------------->
+        <section class="campagne">
+            <img src="assets/images/personnage02.svg" alt="image de coté">
+            <div class="campagne__contenus">
+                <h2>CAMPAGNE DE LEVÉE
+                    DE FONDS</h2>
+                <p>Il y a quelques semaines, nous avons fêté nos 30 ans. Pour notre anniversaire, on a soufflé des
+                    chandelles…et la maison a brûlé.
+                    Aidez-nous à maintenir nos activités et accueillir nos Impatients.</p>
+                <button>Pour donner ></button>
+            </div>
+        </section>
+        <!------------------------FIN CAMPAGNE------------------------->
 
 
-            <!------------------------FIN SERVICES------------------------->
-            <section class="services">
-                <div class="services__titre">
-                    <h2>Services offerts</h2>
-                </div>
-                <div class="services__contenus">
-                    <!-- utiliser le drop down bootstrap-->
-                    <div class="services__contenus__wrapupDropdown">
-                        <div class="services__contenus__wrapupDropdown__titre">
-                            <h2>Services</h2>
-                            <h2>&nbsp</h2>
-                            <h2>Offerts</h2>
-                        </div>
-                        <div>
-                            <div class="services__contenus__wrapupDropdown--sourligner__atelier dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownAtelier"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ateliers
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownAtelier">
-                                    <p>
-                                        Notre organisme est à même de transmettre son expertise aux centres et aux
-                                        groupes
-                                        travaillant avec une clientèle en santé mentale. Plusieurs lieux d’ateliers ont
-                                        été
-                                        ouverts au Québec en collaboration avec des établissements du milieu de la santé
-                                        et
-                                        avec des lieux de diffusion impliqués dans leur communauté. Plusieurs ont suivi.
-                                        Maintenant, nous avons 21 points de service dans 13 villes au Québec qui
-                                        accueillent
-                                        900 personnes par semaine.
-                                    </p>
-                                    <button>Voir les ateliers</button>
-                                </div>
-
+        <!------------------------FIN SERVICES------------------------->
+        <section class="services">
+            <div class="services__titre">
+                <h2>Services offerts</h2>
+            </div>
+            <div class="services__contenus">
+                <!-- utiliser le drop down bootstrap-->
+                <div class="services__contenus__wrapupDropdown">
+                    <div class="services__contenus__wrapupDropdown__titre">
+                        <h2>Services</h2>
+                        <h2>&nbsp</h2>
+                        <h2>Offerts</h2>
+                    </div>
+                    <div>
+                        <div class="services__contenus__wrapupDropdown--sourligner__atelier dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownAtelier"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ateliers
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownAtelier">
+                                <p>
+                                    Notre organisme est à même de transmettre son expertise aux centres et aux
+                                    groupes
+                                    travaillant avec une clientèle en santé mentale. Plusieurs lieux d’ateliers ont
+                                    été
+                                    ouverts au Québec en collaboration avec des établissements du milieu de la santé
+                                    et
+                                    avec des lieux de diffusion impliqués dans leur communauté. Plusieurs ont suivi.
+                                    Maintenant, nous avons 21 points de service dans 13 villes au Québec qui
+                                    accueillent
+                                    900 personnes par semaine.
+                                </p>
+                                <button>Voir les ateliers</button>
                             </div>
 
+                        </div>
 
-                            <div class="services__contenus__wrapupDropdown--sourligner__collection dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownCollection"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    La collection
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownCollection">
-                                    <p>
-                                        Depuis le début de nos activités, nous avons conservé une grande partie des
-                                        œuvres
-                                        produites par nos participants et participantes, ce qui constitue aujourd’hui un
-                                        patrimoine riche de 15 000 œuvres d’art. Il s’agit là d’une collection d’une
-                                        grande
-                                        originalité, pionnière au Canada dans son champ de collectionnement.
-                                    </p>
-                                    <button>Voir la collection</button>
-                                </div>
 
+                        <div class="services__contenus__wrapupDropdown--sourligner__collection dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownCollection"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                La collection
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownCollection">
+                                <p>
+                                    Depuis le début de nos activités, nous avons conservé une grande partie des
+                                    œuvres
+                                    produites par nos participants et participantes, ce qui constitue aujourd’hui un
+                                    patrimoine riche de 15 000 œuvres d’art. Il s’agit là d’une collection d’une
+                                    grande
+                                    originalité, pionnière au Canada dans son champ de collectionnement.
+                                </p>
+                                <button>Voir la collection</button>
                             </div>
 
+                        </div>
 
-                            <div class="services__contenus__wrapupDropdown--sourligner__evenement dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownEvenement"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ateliers
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownEvenement">
-                                    <p>
-                                        Nous disposons d’un espace galerie grâce auquel nous faisons connaître à un
-                                        large
-                                        public les œuvres produites dans nos ateliers. À cela s’ajoutent d’autres
-                                        activités
-                                        de diffusion régulièrement mises de l’avant à l’extérieur de notre centre.
-                                    </p>
-                                    <button>Voir les évenement</button>
-                                </div>
 
+                        <div class="services__contenus__wrapupDropdown--sourligner__evenement dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownEvenement"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ateliers
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownEvenement">
+                                <p>
+                                    Nous disposons d’un espace galerie grâce auquel nous faisons connaître à un
+                                    large
+                                    public les œuvres produites dans nos ateliers. À cela s’ajoutent d’autres
+                                    activités
+                                    de diffusion régulièrement mises de l’avant à l’extérieur de notre centre.
+                                </p>
+                                <button>Voir les évenement</button>
                             </div>
+
                         </div>
                     </div>
-                    <img src="assets/images/personnage03.svg" alt="image de coté">
                 </div>
-            </section>
-            <!------------------------FIN SERVICES------------------------->
+                <img src="assets/images/personnage03.svg" alt="image de coté">
+            </div>
+        </section>
+        <!------------------------FIN SERVICES------------------------->
 
 
-            <!------------------------DÉBUT NOUVELLE------------------------->
-            <section class="nouvelles">
-                <div class="nouvelles__titre">
-                    <h2>Les dernières </h2>
-                    <h2>&nbsp</h2>
-                    <h2>nouvelles</h2>
-                </div>
+        <!------------------------DÉBUT NOUVELLE------------------------->
+        <section class="nouvelles">
+            <div class="nouvelles__titre">
+                <h2>Les dernières </h2>
+                <h2>&nbsp</h2>
+                <h2>nouvelles</h2>
+            </div>
 
-                <div class="nouvelles__content">
-                    <button>Pour plus de nouvelles ></button>
-
-
-                    <!-- utiliser carte bootstrap-->
-
-                    <div class="nouvelles__content__carte card">
-                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
+            <div class="nouvelles__content">
+                <button>Pour plus de nouvelles ></button>
 
 
-
-                    <div class="nouvelles__content__carte card">
-                        <img src="assets/images/img_carte_nouvelles_02.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">PARLE MOI D'AMOUR... ET D'ESPOIR</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="nouvelles__content__carte card">
-                        <img src="assets/images/img_carte_nouvelles_03.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">ÉVÈNEMENT LECTURE</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-                    <button>Pour plus de <div>&nbsp</div>
-                        <div class="sousligne">nouvelles </div>
-                        <div>&nbsp</div> >
-                    </button>
-
-                </div>
-
-            </section>
-
-            <!------------------------FIN NOUVELLE------------------------->
-
-
-
-
-            <!------------------------DÉBUT TÉMOIGNAGE------------------------->
-            <section class="temoignage">
-                <!-- peut etre utiliser display flex pour les mettre l'un a coté de l'autre-->
-                <h2>Témoignage</h2>
                 <!-- utiliser carte bootstrap-->
 
-
-                <div class="temoignage__content">
-
-
-                    <div class="card">
-                        <img src="assets/images/img_carte_temoignage.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <div class="identiter">
-                                <h4 class="card-title">Jean Sébastien Saint-Amour</h4> 
-                                <img src="assets/images/ligne_separation.svg" alt="">
-                                <h4 class="card-title">Artiste</h4>
-                                <img src="assets/images/ligne_separation.svg" alt="">
-                                <h4 class="card-title">24 ans</h4>
-                            </div>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad.</p>
-                        </div>
+                <div class="nouvelles__content__carte card">
+                    <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
+                        alt="image de la nouvelle 1">
+                    <div class="card-body">
+                        <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
+                        <button>En savoir plus</button>
                     </div>
+                </div>
 
-                    <img class="imgCoter" src="assets/images/personnage04.svg" alt="image de coté">
+
+
+                <div class="nouvelles__content__carte card">
+                    <img src="assets/images/img_carte_nouvelles_02.png" class="card-img-top"
+                        alt="image de la nouvelle 1">
+                    <div class="card-body">
+                        <h4 class="card-title">PARLE MOI D'AMOUR... ET D'ESPOIR</h4>
+                        <button>En savoir plus</button>
+                    </div>
+                </div>
+
+
+
+
+                <div class="nouvelles__content__carte card">
+                    <img src="assets/images/img_carte_nouvelles_03.png" class="card-img-top"
+                        alt="image de la nouvelle 1">
+                    <div class="card-body">
+                        <h4 class="card-title">ÉVÈNEMENT LECTURE</h4>
+                        <button>En savoir plus</button>
+                    </div>
+                </div>
+
+                <button>Pour plus de <div>&nbsp</div>
+                    <div class="sousligne">nouvelles </div>
+                    <div>&nbsp</div> >
+                </button>
+
+            </div>
+
+        </section>
+
+        <!------------------------FIN NOUVELLE------------------------->
+
+
+
+
+        <!------------------------DÉBUT TÉMOIGNAGE------------------------->
+        <section class="temoignage">
+            <!-- peut etre utiliser display flex pour les mettre l'un a coté de l'autre-->
+            <h2>Témoignage</h2>
+            <!-- utiliser carte bootstrap-->
+
+
+            <div class="temoignage__content">
+
+
+                <div class="card">
+                    <img src="assets/images/img_carte_temoignage.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="identiter">
+                            <h4 class="card-title">Jean Sébastien Saint-Amour</h4>
+                            <img src="assets/images/ligne_separation.svg" alt="">
+                            <h4 class="card-title">Artiste</h4>
+                            <img src="assets/images/ligne_separation.svg" alt="">
+                            <h4 class="card-title">24 ans</h4>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad.</p>
+                    </div>
+                </div>
+
+                <img class="imgCoter" src="assets/images/personnage04.svg" alt="image de coté">
+            </div>
+        </section>
+
+
+        <!------------------------FIN TÉMOIGNAGE------------------------->
+
+
+
+        <!------------------------DÉBUT ESPACE------------------------->
+
+        <section class="espace">
+            <div class="espace__titre">
+                <h2>L'espace</h2>
+                <h2>&nbsp</h2>
+                <h2>Impatients</h2>
+            </div>
+            <div class="espace__contenus">
+                <button class="espace__contenus__btn">Pour plus d'articles ></button>
+                <!-- utiliser carte bootstrap-->
+                <div class="espace__contenus__carte card">
+                    <img src="assets/images/img_carte_espace_01.png" class="card-img-top" alt="image de la nouvelle 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Diane Frigon à l'espace d'exposition Aimant•é</h4>
+                        <button>Lire l’article</button>
+                    </div>
+                </div>
+                <!-- utiliser carte bootstrap-->
+                <div class="espace__contenus__carte card">
+                    <img src="assets/images/img_carte_espace_02.png" class="card-img-top" alt="image de la nouvelle 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Jocelyne Proulx et Annie Letendre À L’ESPACE D’EXPOSITION AIMANT•É</h4>
+                        <button>En savoir plus</button>
+                    </div>
+                </div>
+                <button class="espace__contenus__btn">Lire l’article</button>
+            </div>
+        </section>
+
+
+        <!------------------------FIN ESPACE------------------------->
+
+
+        <footer>
+            <section class="footer__compagnie">
+                <div class="d-flex justify-content-center">
+                    <h2>Nous poursuivons notre</h2>
+                    <h2>&nbsp</h2>
+                    <h2>action grâce à</h2>
+                </div>
+                <div class="compagne__logos">
+                    <img class='image-compagnie-01' src="assets/images/logo_01.png" alt="image compagnie 01">
+                    <img class='image-compagnie-02' src="assets/images/logo_02.png" alt="image compagnie 02">
+                    <img class='image-compagnie-03' src="assets/images/logo_03.png" alt="image compagnie 03">
+                    <img class='image-compagnie-04' src="assets/images/logo_04.png" alt="image compagnie 04">
+                    <img class='image-compagnie-05' src="assets/images/logo_05.png" alt="image compagnie 05">
+                    <img class='image-compagnie-06' src="assets/images/logo_06.png" alt="image compagnie 06">
+                    <img class='image-compagnie-07' src="assets/images/logo_07.png" alt="image compagnie 07">
+                    <img class='image-compagnie-08' src="assets/images/logo_08.png" alt="image compagnie 08">
                 </div>
             </section>
 
-
-            <!------------------------FIN TÉMOIGNAGE------------------------->
-
-
-
-             <!------------------------DÉBUT ESPACE------------------------->
-
-            <section class="espace">
-                <div class="espace__titre">
-                <h2>L'espace</h2><h2>&nbsp</h2><h2>Impatients</h2>
+            <section class="footer__bas">
+                <div class="bas__impliquer">
+                    <h4>Simpliquer</h4>
+                    <a href="">Offres d'emploi</a>
+                    <a href="">Devenir bénévole</a>
+                    <a href="">Nos partenaires</a>
+                    <img src="" alt="logo">
                 </div>
-                <div class="espace__contenus">
-                    <button class="espace__contenus__btn">Pour plus d'articles ></button>
-                    <!-- utiliser carte bootstrap-->
-                    <div class="espace__contenus__carte card">
-                        <img src="assets/images/img_carte_espace_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">Diane Frigon à l'espace d'exposition Aimant•é</h4>
-                            <button>Lire l’article</button>
-                        </div>
+                <div class="bas__connaitre">
+                    <h4>Nous connaître</h4>
+                    <a href="">À propos</a>
+                    <a href="">Mission</a>
+                    <a href="">Historique</a>
+                    <a href="">Presse</a>
+                    <a href="">Équipe</a>
+                    <a href="">CA</a>
+                    <button>Pour donner -></button>
+                </div>
+                <div class="bas__inscription">
+                    <h4>Inscrivez-vous à l'infolettre</h4>
+                    <div class="recherche"></div>
+                    <div class="icons">
+                        <div>instagram</div>
+                        <div>facebook</div>
+                        <div>youtube</div>
                     </div>
-                    <!-- utiliser carte bootstrap-->
-                    <div class="espace__contenus__carte card">
-                        <img src="assets/images/img_carte_espace_02.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">Jocelyne Proulx et Annie Letendre À L’ESPACE D’EXPOSITION AIMANT•É</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-                    <button class="espace__contenus__btn">Lire l’article</button>
+                    <a href="">Organisme de bienfaisance enregistré</a>
+                    <a href="">13484-5213-RR0001</a>
+                    <a href="">Téléphone</a>
+                    <a href="">514 842-1043</a>
+                    <p>© lesimpatientsleschaussureskakis</p>
                 </div>
             </section>
-
-
-                <!------------------------FIN ESPACE------------------------->
-
-
-            <footer>
-                <section class="footer__compagnie">
-                    <div class="d-flex justify-content-center">
-                    <h2>Nous poursuivons notre</h2><h2>&nbsp</h2><h2>action grâce à</h2>
-                    </div>
-                    <div class="compagne__logos">
-                        <img class='image-compagnie-01' src="assets/images/logo_01.png" alt="image compagnie 01">
-                        <img class='image-compagnie-02' src="assets/images/logo_02.png" alt="image compagnie 02">
-                        <img class='image-compagnie-03' src="assets/images/logo_03.png" alt="image compagnie 03">
-                        <img class='image-compagnie-04' src="assets/images/logo_04.png" alt="image compagnie 04">
-                        <img class='image-compagnie-05' src="assets/images/logo_05.png" alt="image compagnie 05">
-                        <img class='image-compagnie-06' src="assets/images/logo_06.png" alt="image compagnie 06">
-                        <img class='image-compagnie-07' src="assets/images/logo_07.png" alt="image compagnie 07">
-                        <img class='image-compagnie-08' src="assets/images/logo_08.png" alt="image compagnie 08">
-                    </div>
-                </section>
-
-                <section class="footer__bas">
-                    <div class="bas__impliquer">
-                        <h4>Simpliquer</h4>
-                        <a href="">Offres d'emploi</a>
-                        <a href="">Devenir bénévole</a>
-                        <a href="">Nos partenaires</a>
-                        <img src="" alt="logo">
-                    </div>
-                    <div class="bas__connaitre">
-                        <h4>Nous connaître</h4>
-                        <a href="">À propos</a>
-                        <a href="">Mission</a>
-                        <a href="">Historique</a>
-                        <a href="">Presse</a>
-                        <a href="">Équipe</a>
-                        <a href="">CA</a>
-                        <button>Pour donner -></button>
-                    </div>
-                    <div class="bas__inscription">
-                        <h4>Inscrivez-vous à l'infolettre</h4>
-                        <div class="recherche"></div>
-                        <div class="icons">
-                            <div>instagram</div>
-                            <div>facebook</div>
-                            <div>youtube</div>
-                        </div>
-                        <a href="">Organisme de bienfaisance enregistré</a>
-                        <a href="">13484-5213-RR0001</a>
-                        <a href="">Téléphone</a>
-                        <a href="">514 842-1043</a>
-                        <p>© lesimpatientsleschaussureskakis</p>
-                    </div>
-                </section>
-            </footer>
+        </footer>
 
 
 
-        </main>
-
-
-    </header>
+    </main>
 
 
 
@@ -432,19 +430,20 @@
 
 
 
-  <!-- Ajout Swiper -->  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-         <!-- Ajout GSAP -->  
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>   
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
-               <!-- Ajout Boostrap -->  
+
+
+    <!-- Ajout Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Ajout GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/EasePack.min.js"></script>
+    <!-- Ajout Boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
     <script src="script/script.js"></script>
 </body>
 
