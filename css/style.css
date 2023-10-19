@@ -667,8 +667,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .nouvelles__content .card h4 {
   font-size: 12px;
@@ -808,8 +807,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .temoignage__content .card h4 {
   font-size: 12px;
@@ -967,8 +965,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .espace__contenus .card h4 {
   font-size: 12px;
@@ -1325,8 +1322,7 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1350,8 +1346,7 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1389,14 +1384,11 @@ font-weight: 900; = black
 /*****************FIN SECTION TEXTE02***********************/
 /*****************DÉBUT SECTION IMAGE***********************/
 #detailNouvelle .sectionImg02 {
-  margin: 40px 66px;
-  padding: 57px 50px;
+  margin: 40px 12px;
 }
 #detailNouvelle .sectionImg02 img {
-  width: 351px;
-  height: 195px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*****************FIN SECTION IMAGE***********************//*# sourceMappingURL=style.css.map */
