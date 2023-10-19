@@ -1055,7 +1055,7 @@ h2{
 
 
 /*****************DÉBUT SECTION IMAGES***********************/
-#detailNouvelle .sectionImg{
+#detailNouvelle .sectionImg01{
     @include sections.sectionNouvelleTelephone;
     justify-content:space-evenly;
     img{
@@ -1069,22 +1069,29 @@ h2{
 }
 
 @media (min-width:768px){
-
-    #detailNouvelle .sectionImg{
+    #detailNouvelle .sectionImg01{
         @include sections.sectionNouvelleTabletteOrdinateur;
         display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
         
         img{
             margin:0;
             background-color:variables.$orange; // ENLEVER LE BACKGROUND COLOR LORSQU'IL VA Y AVOIR LES VRAIS IMAGES
-            width: 300px;
-            height:300px;
+            max-width: 210px;
+            max-height: 210px;
             border-radius: 35px;
             object-fit: cover;
         }
     }
-
 }
+
+ @media (min-width:1200px){
+    #detailNouvelle .sectionImg01{
+        display: flex;
+        flex-direction: row;
+    }
+ }
 
 /*****************FINT SECTION IMAGES***********************/
 
@@ -1093,4 +1100,25 @@ h2{
 #detailNouvelle .sectionTexte02{
     @include sections.sectionNouvelleTelephone;
 }
+
+@media (min-width:768px){
+    #detailNouvelle .sectionTexte02{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+    }
+}
 /*****************FIN SECTION TEXTE02***********************/
+
+
+/*****************DÉBUT SECTION IMAGE***********************/
+
+#detailNouvelle .sectionImg02{
+    margin: 40px 66px;
+    padding: 57px 50px;
+    img{
+    width:351px;
+    height:195px;
+    object-fit: cover;
+    }
+    
+}
+/*****************FIN SECTION IMAGE***********************/
