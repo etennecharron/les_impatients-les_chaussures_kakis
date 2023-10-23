@@ -1119,3 +1119,16 @@ h2{
     }
 }
 /*****************FIN SECTION IMAGE***********************/
+
+/*****************DÉBUT SECTION 404***********************/
+.bi-search {
+    margin-left: 150px;
+    color: variables.$orange;
+}
+
+.bar_recherche
+{
+    @include base.btn;   
+}
+
+/*****************FIN SECTION 404***********************/

@@ -12,6 +12,7 @@
      <!-- Ajout Boostrap -->  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="template-error-404 page-id-567">
@@ -90,20 +91,21 @@
 
  <!------------------------DÉBUT HERO------------------------->
 
- <section class="campagne">
+ <section class="campagne container-fluid justify-content-center">
+    <div class="row">
+    <div class="gsap_contenus col-lg-6 col-sm-12">
     <img src="assets/images/personnage02.svg" alt="image de coté">
-    <div>
-    <img class="cercle_beige" src="assets/images/cercle_beige.svg" alt="cercle_beige">
-    <h1>404</h1>    
+   <img src="assets/images/Group 7.svg" alt="" class="drawanim w-25 h-25">  
     </div>
-    <div class="campagne__contenus">
+    <div class="campagne__contenus col-lg-6 col-sm-12">
         <h2>Cette page n'est pas dessiné</h2>
         <p>Pour rechercher une information :</p>
         <p>Utiliser la loupe situé au dessous</p>
         <p>Pour signaler une erreur :</p>
         <a href="./contact.html"><p>Contacter nous</p></a>
         <button>Pour donner ></button>
-        <button>Recherche <img class="" src="./assets/images/loupe.svg" alt="loupe"></button>
+        <span class="bar_recherche">Rechercher <i class="w-25 h-25 bi bi-search"></i></span>
+    </div>    
     </div>
 </section> 
 <!------------------------DÉBUT FOOTER------------------------->
