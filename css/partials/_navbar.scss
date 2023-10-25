@@ -68,6 +68,7 @@ nav{
             .nav-item{
                 border:none;
                 border-radius: 40px;
+                width:auto;
             &:hover{
               background-color:variables.$gris;
               .nav-lien{

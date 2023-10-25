@@ -2,17 +2,14 @@
 @use "variables";
 @mixin sectionsTelephone {
     padding: 40px 12px;
-    display: flex;
 }
 
 @mixin sectionsTablette {
     padding: 57px 50px;
-    display: flex;
 }
 
 @mixin sectionsOrdinateur {
     padding: 75px 60px;
-    display: flex;
 }
 
 @mixin sectionNouvelleTelephone {
