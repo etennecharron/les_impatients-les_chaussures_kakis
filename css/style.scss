@@ -6,6 +6,7 @@
 @use "partials/alerte";
 @use "partials/base";
 @use "partials/cartes";
+@use "partials/derniereNouvelles";
 /**aide mémoire pour font lato
 font-weight: 300; = light
 font-weight: 400; = regular
@@ -456,114 +457,19 @@ button{
 /*****************DÉBUT NOUVELLES***********************/
 
 .nouvelles{
-    @include sections.sectionsTelephone;
-    flex-direction: column;
-    align-items: center;
-    background-color: variables.$bleu;
-    &__titre{
-        display: flex;
-        h2{
-            font-size: 24px;
-            color:white;
-            @include base.sousligne;
-            text-decoration-color: variables.$orange;
-        }
-    }
-   
-    &__content{
-        width: 100%;
-        button:nth-child(1){
-            display:none;
-        }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        button{
-            @include base.btn;
-            margin-top: 20px;
-            font-size: 8px;
-            display: flex;
-            .sousligne{
-                @include base.sousligne;
-                text-decoration-color: variables.$orange;
-                text-decoration-thickness: 1px;
-                text-underline-offset:1px;
-            }
-        }
-        .card{
-            @include cartes.carte;
-        }
-    }
+    @include derniereNouvelles.derniereNouvellesTelephone;
 }
 
 @media (min-width:768px){
     .nouvelles{
-        @include sections.sectionsTablette;
-        &__titre{
-            align-self: flex-start;
-            h2{
-                font-size: 30px;
-                text-decoration: none;
-                &:nth-child(3){
-                    @include base.sousligne;
-                    text-decoration-color: variables.$orange;
-                }
-            }
-        }
-        &__content{
-            margin-top: 20px;
-            justify-content: space-around;
-            button:nth-child(1){
-                display:block;
-            }
-            button:nth-child(5){
-                display:none;
-            }
-            flex-direction: row;
-            .card{
-                width:160px;
-                height:250px;
-                padding-top:150px;
-                margin: 20px 10px 0 10px;
-                h4{
-                    font-size: 10px;
-                }
-                button{
-                    margin-top:20px;
-                }
-            }
-
-        }
+        @include derniereNouvelles.derniereNouvellesTablette;
     }
-}
+    }
+
 
 @media (min-width:1200px){
     .nouvelles{
-        @include sections.sectionsOrdinateur;
-        &__titre{
-            h2{
-                font-size: 40px;
-            }
-        }
-        
-        &__content{
-            margin-top: 30px;
-            button:nth-child(1){
-                font-size: 14px;
-            }
-            .card{
-                height:320px;
-                width:220px;
-                padding-top: 210px;
-                h4{
-                    font-size: 14px;
-                }
-                button{
-                    margin-top: 15px;
-                    font-size: 14px;
-                }
-            }
-        }
+       @include derniereNouvelles.derniereNouvellesOrdinateur;
     }
 }
 
@@ -904,12 +810,16 @@ grid-template-areas:
 #detailNouvelle{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-.sectionsWrapup{
+#detailNouvelle main{
+    margin-bottom: 100px;
+}
+#detailNouvelle .sectionsWrapup{
     display: flex;
     flex-direction:column;
     align-items: center;
+    max-width: 1200px;
+    margin:auto;
 }
 /*****************DÉBUT TITRE DE LA NOUVELLE***********************/
 #detailNouvelle .titreNouvelle{
@@ -1056,40 +966,18 @@ h2{
 
 /*****************DÉBUT SECTION IMAGES***********************/
 #detailNouvelle .sectionImg01{
-    @include sections.sectionNouvelleTelephone;
-    justify-content:space-evenly;
-    img{
-        margin:20px 0;
-        background-color:variables.$orange; // ENLEVER LE BACKGROUND COLOR LORSQU'IL VA Y AVOIR LES VRAIS IMAGES
-        width: 300px;
-        height:300px;
-        border-radius: 35px;
-        object-fit: cover;
-    }
+   @include sections.sectionGroupeImgTelephone;
 }
 
 @media (min-width:768px){
     #detailNouvelle .sectionImg01{
-        @include sections.sectionNouvelleTabletteOrdinateur;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 40px;
-        
-        img{
-            margin:0;
-            background-color:variables.$orange; // ENLEVER LE BACKGROUND COLOR LORSQU'IL VA Y AVOIR LES VRAIS IMAGES
-            max-width: 210px;
-            max-height: 210px;
-            border-radius: 35px;
-            object-fit: cover;
-        }
+        @include sections.sectionGroupeImgTablette;
     }
 }
 
  @media (min-width:1200px){
     #detailNouvelle .sectionImg01{
-        display: flex;
-        flex-direction: row;
+        @include sections.sectionGroupeImgOrdinateur;
     }
  }
 
@@ -1099,6 +987,11 @@ h2{
 /*****************DÉBUT SECTION TEXTE02***********************/
 #detailNouvelle .sectionTexte02{
     @include sections.sectionNouvelleTelephone;
+    p{
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 28px;
+    }
 }
 
 @media (min-width:768px){
@@ -1132,3 +1025,92 @@ h2{
 }
 
 /*****************FIN SECTION 404***********************/
+
+
+/*****************DÉBUT SECTION TEXTE03***********************/
+
+.sectionTexte03{
+    @include sections.sectionNouvelleTelephone;
+    &__texte{
+        @include sections.sectionTexte;
+    }
+}
+
+@media (min-width:768px){
+    .sectionTexte03{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+    }
+}
+
+/*****************FIN SECTION TEXTE03***********************/
+
+
+/*****************DÉBUT SECTION TEXTE4***********************/
+
+.sectionTexte04{
+    @include sections.sectionNouvelleTelephone;
+    &__titre{
+    @include sections.sectionTitre;
+    }
+    &__texte{
+        @include sections.sectionTexte
+    }
+}
+
+@media (min-width:768px){
+    .sectionTexte04{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+    }
+}
+
+/*****************FIN SECTION TEXTE04***********************/
+
+/*****************DÉBUT SECTION IMAGE03***********************/
+#detailNouvelle .sectionImg03{
+    @include sections.sectionGroupeImgTelephone;
+ }
+ 
+ @media (min-width:768px){
+     #detailNouvelle .sectionImg03{
+         @include sections.sectionGroupeImgTablette;
+     }
+ }
+ 
+  @media (min-width:1200px){
+     #detailNouvelle .sectionImg03{
+         @include sections.sectionGroupeImgOrdinateur;
+     }
+  }
+
+/*****************FIN SECTION IMAGE03***********************/
+
+/*****************DÉBUT SECTION TEXTE05***********************/
+
+.sectionTexte05{
+    @include sections.sectionNouvelleTelephone;
+    &__texte{
+        @include sections.sectionTexte;
+    }
+}
+
+@media (min-width:768px){
+    .sectionTexte05{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+    }
+}
+
+/*****************FIN SECTION TEXTE05***********************/
+
+.btnAlbum{
+    @include base.btn;
+    box-shadow: 0 0 4px 0 variables.$bleu;
+    font-size: 10px;
+    @include base.sousligne;
+    text-decoration-thickness: 2px;
+}
+ @media (min-width:768px){
+    .btnAlbum{
+        align-self: flex-start;
+        margin: 0 66px;
+    }
+ }

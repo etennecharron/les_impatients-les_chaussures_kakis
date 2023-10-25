@@ -38,3 +38,51 @@
     max-width: 1068px;
 }
 
+
+@mixin sectionGroupeImgTelephone{
+    @include sectionNouvelleTelephone;
+    justify-content:space-evenly;
+    img{
+        margin:20px 0;
+        background-color:variables.$orange;
+        width: 300px;
+        height:300px;
+        border-radius: 35px;
+        object-fit: cover;
+    }
+}
+
+@mixin sectionGroupeImgTablette{
+        @include sectionNouvelleTabletteOrdinateur;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        img{
+            margin:0;
+            background-color:variables.$orange; // ENLEVER LE BACKGROUND COLOR LORSQU'IL VA Y AVOIR LES VRAIS IMAGES
+            max-width: 210px;
+            max-height: 210px;
+            border-radius: 35px;
+            object-fit: cover;
+        }
+    }
+
+@mixin sectionGroupeImgOrdinateur{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin sectionTexte{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+@mixin sectionTitre{
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    align-self: flex-start;
+    line-height: 28px;
+    margin-bottom: 0;
+}
