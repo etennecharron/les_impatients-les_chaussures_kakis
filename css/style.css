@@ -1188,11 +1188,21 @@ font-weight: 900; = black
 /*****************DÉBUT TITRE DE LA NOUVELLE***********************/
 .baniere {
   width: 100%;
-  height: 150px;
+  height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+@media (min-width: 768px) {
+  .baniere {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  .baniere {
+    height: 500px;
+  }
+}
 #detailNouvelle .titreNouvelle {
   padding: 40px 12px;
   background-color: #004E89;
@@ -1237,7 +1247,7 @@ font-weight: 900; = black
 }
 #detailNouvelle .titreNouvelle__wrapup__titreWrapup__description p {
   margin: 0px 10px 10px 10px;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1253,6 +1263,9 @@ font-weight: 900; = black
   #detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre h1 {
     font-size: 30px;
     width: 634px;
+  }
+  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__description p {
+    font-size: 14px;
   }
 }
 @media (min-width: 1200px) {

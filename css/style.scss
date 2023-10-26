@@ -997,8 +997,18 @@ font-weight: 900; = black
 /*****************DÉBUT TITRE DE LA NOUVELLE***********************/
 .baniere{
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover
+}
+@media(min-width:768px){
+    .baniere{
+        height: 300px;
+    }
+}
+@media(min-width:1200px){
+    .baniere{
+        height:500px;
+    }
 }
 #detailNouvelle .titreNouvelle {
     @include sections.sectionsTelephone;
@@ -1048,7 +1058,7 @@ font-weight: 900; = black
                 justify-content: flex-start;
                 p{
                     margin:0px 10px 10px 10px;
-                    font-size: 14px;
+                    font-size: 10px;
                 }
             }
 
@@ -1078,6 +1088,13 @@ font-weight: 900; = black
                         width: 634px;
                     }
                 }
+
+                &__description{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+
             }
 
         }
