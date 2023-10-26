@@ -90,6 +90,9 @@ nav .navbar-nav {
   }
 }
 .alert {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: #AEB4A9;
   font-size: 10px;
   font-weight: 400;
@@ -162,6 +165,10 @@ body {
 em {
   color: #F75C03;
   font-style: normal;
+}
+
+.desactiver {
+  display: none;
 }
 
 /**aide mémoire pour font lato

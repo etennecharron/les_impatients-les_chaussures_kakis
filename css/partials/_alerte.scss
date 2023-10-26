@@ -1,5 +1,8 @@
 @use "variables";
 .alert{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
     background-color: variables.$grisAlerte;
     font-size: 10px;
     font-weight: 400;

@@ -18,7 +18,9 @@ em{
     color:variables.$orange;
     font-style: normal;
 }
-
+.desactiver{
+    display: none;
+}
 //style commun des boutons 
 @mixin btn{
     background-color: variables.$gris;
