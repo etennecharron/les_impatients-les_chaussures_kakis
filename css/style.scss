@@ -716,48 +716,53 @@ font-weight: 900; = black
 .espace {
     @include sections.sectionsTelephone;
     background-color: variables.$bleu;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    &__titre {
-        display: flex;
-
-        h2 {
-            color: white;
-            font-size: 24px;
-            @include base.sousligne;
-            text-decoration-color: variables.$orange;
-            padding-top: 10px;
-        }
-    }
-
-    &__contenus {
+    &__wrapup {
+        max-width: 1200px;
+        margin: auto;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        &__btn {
-            @include base.btn;
-            margin-top: 30px;
+        &__titre {
+            display: flex;
 
-            &:nth-child(1) {
-                display: none;
+            h2 {
+                color: white;
+                font-size: 24px;
+                @include base.sousligne;
+                text-decoration-color: variables.$orange;
+                padding-top: 10px;
             }
         }
 
-        .card {
-            @include cartes.carte;
-            padding-top: 165px;
-            height: 280px;
+        &__contenus {
+            display: flex;
+            flex-direction: column;
 
-            h4 {
-                height: 50px;
+            &__btn {
+                @include base.btn;
+                margin-top: 30px;
+
+                &:nth-child(1) {
+                    display: none;
+                }
             }
 
-            img {
-                height: 170px;
-                width: 100%;
+            .card {
+                @include cartes.carte;
+                padding-top: 165px;
+                height: 280px;
+
+                h4 {
+                    height: 50px;
+                }
+
+                img {
+                    height: 170px;
+                    width: 100%;
+                }
             }
         }
     }
@@ -767,36 +772,38 @@ font-weight: 900; = black
     .espace {
         @include sections.sectionsTablette;
 
-        &__titre {
-            align-self: flex-start;
+        &__wrapup {
+            &__titre {
+                align-self: flex-start;
 
-            h2 {
-                font-size: 30px;
-                text-decoration: none;
+                h2 {
+                    font-size: 30px;
+                    text-decoration: none;
+                }
+
+                h2:nth-child(3) {
+                    @include base.sousligne;
+                    text-decoration-color: variables.$orange;
+                }
+
             }
 
-            h2:nth-child(3) {
-                @include base.sousligne;
-                text-decoration-color: variables.$orange;
+            &__contenus {
+                width: 100%;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                &__btn:nth-child(1) {
+                    display: block;
+                }
+
+                &__btn:nth-child(4) {
+                    display: none;
+                }
             }
 
         }
-
-        &__contenus {
-            width: 100%;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-
-            &__btn:nth-child(1) {
-                display: block;
-            }
-
-            &__btn:nth-child(4) {
-                display: none;
-            }
-        }
-
     }
 }
 
@@ -805,31 +812,33 @@ font-weight: 900; = black
     .espace {
         @include sections.sectionsOrdinateur;
 
-        &__titre {
-            h2 {
-                font-size: 40px;
+        &__wrapup {
+            &__titre {
+                h2 {
+                    font-size: 40px;
+                }
             }
-        }
 
-        &__contenus {
-            margin-top: 40px;
+            &__contenus {
+                margin-top: 40px;
 
-            .card {
-                width: 354px;
-                height: 495px;
-                padding-top: 240px;
+                .card {
+                    width: 354px;
+                    height: 495px;
+                    padding-top: 240px;
 
-                img {
-                    height: 240px;
-                }
+                    img {
+                        height: 240px;
+                    }
 
-                h4 {
-                    font-size: 28px;
-                    height: 180px;
-                }
+                    h4 {
+                        font-size: 28px;
+                        height: 180px;
+                    }
 
-                button {
-                    font-size: 14px;
+                    button {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -986,47 +995,64 @@ font-weight: 900; = black
 }
 
 /*****************DÉBUT TITRE DE LA NOUVELLE***********************/
+.baniere{
+    width: 100%;
+    height: 150px;
+    object-fit: cover
+}
 #detailNouvelle .titreNouvelle {
     @include sections.sectionsTelephone;
     background-color: variables.$bleu;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
-    &__titreWrapup {
-        width: 100%;
+    &__wrapup {
+        color: white;
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        align-self: center;
+        flex-direction: column;
 
-        &__filAriane {
+        &__titreWrapup {
+            width: 100%;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            align-self: center;
 
-            p {
-                font-size: 10px;
-                word-spacing: 3px;
+            &__filAriane {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    font-size: 10px;
+                    word-spacing: 3px;
+                }
+
+                &__nomNouvelle {
+                    color: variables.$orange;
+                }
             }
 
-            &__nomNouvelle {
-                color: variables.$orange;
+            &__titre {
+                text-align: center;
+
+                h1 {
+                    font-size: 24px;
+                    margin: 0;
+                    width: 200px;
+                }
             }
+
+            &__description{
+                display: flex;
+                justify-content: flex-start;
+                p{
+                    margin:0px 10px 10px 10px;
+                    font-size: 14px;
+                }
+            }
+
         }
-
-        &__titre {
-            text-align: center;
-
-            h1 {
-                font-size: 24px;
-                margin: 0;
-                width: 200px;
-            }
-        }
-
     }
 }
 
@@ -1034,23 +1060,27 @@ font-weight: 900; = black
     #detailNouvelle .titreNouvelle {
         @include sections.sectionsTablette;
 
-        &__titreWrapup {
-            align-self: center;
+        &__wrapup {
 
-            &__filAriane {
-                p {
-                    font-size: 14px;
+
+            &__titreWrapup {
+                align-self: center;
+
+                &__filAriane {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                &__titre {
+                    h1 {
+                        font-size: 30px;
+                        width: 634px;
+                    }
                 }
             }
 
-            &__titre {
-                h1 {
-                    font-size: 30px;
-                    width: 634px;
-                }
-            }
         }
-
     }
 }
 
@@ -1058,21 +1088,22 @@ font-weight: 900; = black
     #detailNouvelle .titreNouvelle {
         @include sections.sectionsTablette;
 
-        &__titreWrapup {
-            &__filAriane {
-                p {
-                    font-size: 14px;
+        &__wrapup {
+            &__titreWrapup {
+                &__filAriane {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+
+                &__titre {
+                    h1 {
+                        font-size: 40px;
+                    }
                 }
             }
 
-            &__titre {
-                h1 {
-                    font-size: 40px;
-                    width: 768px;
-                }
-            }
         }
-
     }
 }
 
