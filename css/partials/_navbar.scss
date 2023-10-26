@@ -1,5 +1,7 @@
 @use "variables";
 nav{
+    max-width: 1200px;
+    margin: auto;
     font-size:20px;
     .ligne_separation{
         display: none;
