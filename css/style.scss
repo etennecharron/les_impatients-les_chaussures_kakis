@@ -855,12 +855,34 @@ font-weight: 900; = black
 
 /*****************DÉBUT FOOTER***********************/
 .footer__bas {
+    background-color: grey;
+    padding: 40px;
+}
+
+
+@media (min-width:768px) {
+    .footer__bas {
+        display: grid;
+        gap: 15px;
+        
+        
+    grid-template-areas:
+    ".  a  . b  ."
+    ".  .  c .  .";
+    }
+}
+
+@media (min-width:1200px) {
+    .footer__bas {
+
     display: grid;
     gap: 15px;
     grid-template-areas:
         "a   b   c";
-
+    }
 }
+
+
 
 .bas__impliquer {
     grid-area: a;
