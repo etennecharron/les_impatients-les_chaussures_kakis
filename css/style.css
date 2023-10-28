@@ -182,6 +182,82 @@ em {
   display: none;
 }
 
+.heroGenerique {
+  padding: 40px 12px;
+  background-color: #004E89;
+}
+.heroGenerique__wrapup {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.heroGenerique__wrapup__titreWrapup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+}
+.heroGenerique__wrapup__titreWrapup__filAriane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroGenerique__wrapup__titreWrapup__filAriane p {
+  font-size: 10px;
+  word-spacing: 3px;
+}
+.heroGenerique__wrapup__titreWrapup__filAriane__actuel {
+  color: #F75C03;
+}
+.heroGenerique__wrapup__titreWrapup__titre {
+  text-align: center;
+}
+.heroGenerique__wrapup__titreWrapup__titre h1 {
+  font-size: 24px;
+  margin: 0;
+  width: 200px;
+}
+.heroGenerique__wrapup__titreWrapup__description {
+  display: flex;
+  justify-content: flex-start;
+}
+.heroGenerique__wrapup__titreWrapup__description p {
+  margin: 0px 10px 10px 10px;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .heroGenerique {
+    padding: 57px 50px;
+  }
+  .heroGenerique__wrapup__titreWrapup {
+    align-self: center;
+  }
+  .heroGenerique__wrapup__titreWrapup__filAriane p {
+    font-size: 14px;
+  }
+  .heroGenerique__wrapup__titreWrapup__titre h1 {
+    font-size: 30px;
+    width: 634px;
+  }
+  .heroGenerique__wrapup__titreWrapup__description p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  .heroGenerique {
+    padding: 57px 50px;
+  }
+  .heroGenerique__wrapup__titreWrapup__filAriane p {
+    font-size: 14px;
+  }
+  .heroGenerique__wrapup__titreWrapup__titre h1 {
+    font-size: 40px;
+  }
+}
 /**aide mémoire pour font lato
 font-weight: 300; = light
 font-weight: 400; = regular
@@ -694,8 +770,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .nouvelles__wrapup__content .card h4 {
   font-size: 12px;
@@ -836,8 +911,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .temoignage__wrapup__content .card h4 {
   font-size: 12px;
@@ -996,8 +1070,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .espace__wrapup__contenus .card h4 {
   font-size: 12px;
@@ -1220,8 +1293,7 @@ font-weight: 900; = black
 .baniere {
   width: 100%;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1231,7 +1303,7 @@ font-weight: 900; = black
 }
 @media (min-width: 1200px) {
   .baniere {
-    height: 500px;
+    height: 340px;
   }
 }
 #detailNouvelle .titreNouvelle {
@@ -1396,8 +1468,7 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1421,8 +1492,7 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1469,8 +1539,7 @@ font-weight: 900; = black
 }
 #detailNouvelle .sectionImg02 img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*****************FIN SECTION IMAGE***********************/
@@ -1581,8 +1650,7 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1606,8 +1674,7 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1670,4 +1737,5 @@ font-weight: 900; = black
     align-self: flex-start;
     margin: 0 66px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/***************************************************A PROPOS***************************************************//*# sourceMappingURL=style.css.map */

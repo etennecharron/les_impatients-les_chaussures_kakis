@@ -6,6 +6,7 @@
 @use "partials/base";
 @use "partials/cartes";
 @use "partials/derniereNouvelles";
+@use "partials/heroGenerique";
 /**aide mémoire pour font lato
 font-weight: 300; = light
 font-weight: 400; = regular
@@ -1029,7 +1030,7 @@ font-weight: 900; = black
 }
 @media(min-width:1200px){
     .baniere{
-        height:500px;
+        height:340px;
     }
 }
 #detailNouvelle .titreNouvelle {
@@ -1374,3 +1375,8 @@ font-weight: 900; = black
         margin: 0 66px;
     }
 }
+
+
+
+/***************************************************A PROPOS***************************************************/
+
