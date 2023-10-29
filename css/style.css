@@ -1764,4 +1764,48 @@ font-weight: 900; = black
     margin: 0 66px;
   }
 }
-/***************************************************A PROPOS***************************************************//*# sourceMappingURL=style.css.map */
+/***************************************************A PROPOS***************************************************/
+/***************************************************HISTOIRE***************************************************/
+.heroGenerique__wrapup__titreWrapup__filAriane {
+  margin-bottom: 20px;
+}
+
+.histoire__h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.histoire__1992 {
+  background-color: #F75C03;
+  padding: 20px;
+  margin-bottom: 200px;
+  margin-top: 200px;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.histoire__1999 {
+  background-color: #F75C03;
+  padding: 20px;
+  margin-bottom: 200px;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.histoire__2009 {
+  background-color: #F75C03;
+  padding: 20px;
+  margin-bottom: 200px;
+  border-radius: 20px;
+  opacity: 0;
+}
+
+.histoire__2011 {
+  background-color: #F75C03;
+  padding: 20px;
+  margin-bottom: 100px;
+  border-radius: 20px;
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */
