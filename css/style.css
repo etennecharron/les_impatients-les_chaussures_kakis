@@ -770,7 +770,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .nouvelles__wrapup__content .card h4 {
   font-size: 12px;
@@ -911,7 +912,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .temoignage__wrapup__content .card h4 {
   font-size: 12px;
@@ -1070,7 +1072,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .espace__wrapup__contenus .card h4 {
   font-size: 12px;
@@ -1293,7 +1296,8 @@ font-weight: 900; = black
 .baniere {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1468,7 +1472,8 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1492,7 +1497,8 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1539,7 +1545,8 @@ font-weight: 900; = black
 }
 #detailNouvelle .sectionImg02 img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*****************FIN SECTION IMAGE***********************/
@@ -1650,7 +1657,8 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1674,7 +1682,8 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1738,4 +1747,9 @@ font-weight: 900; = black
     margin: 0 66px;
   }
 }
-/***************************************************A PROPOS***************************************************//*# sourceMappingURL=style.css.map */
+/***************************************************A PROPOS***************************************************/
+.img_equipe {
+  -o-object-fit: none;
+     object-fit: none;
+  width: 100px;
+}/*# sourceMappingURL=style.css.map */
