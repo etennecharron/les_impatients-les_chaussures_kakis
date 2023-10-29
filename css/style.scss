@@ -855,9 +855,29 @@ font-weight: 900; = black
 
 
 /*****************DÉBUT FOOTER***********************/
+.bas_button{
+    
+    background-color: variables.$bleu;
+    border-radius: 40px;
+    border: 0;
+    
+}
+.bas__logo{
+    width: 50px;
+}
 .footer__bas {
     background-color: grey;
     padding: 40px;
+    
+    
+    @media (min-width:1200px) {
+       
+
+        h4 {
+            font-size: 40px;
+            text-align: left;
+        }
+    }
 }
 
 
@@ -945,7 +965,7 @@ font-weight: 900; = black
             "a   b   c "
             "d   e   f"
             "g   .   h";
-
+        padding: 40px;
         img {
             width: 200px;
         }
