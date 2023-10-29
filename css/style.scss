@@ -1298,6 +1298,7 @@ font-weight: 900; = black
 
 .bar_recherche {
     @include base.btn;
+    max-width: 470px;
 }
 
 /*****************FIN SECTION 404***********************/
