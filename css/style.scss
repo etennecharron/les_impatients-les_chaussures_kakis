@@ -855,9 +855,29 @@ font-weight: 900; = black
 
 
 /*****************DÉBUT FOOTER***********************/
+.bas_button{
+    
+    background-color: variables.$bleu;
+    border-radius: 40px;
+    border: 0;
+    
+}
+.bas__logo{
+    width: 50px;
+}
 .footer__bas {
     background-color: grey;
     padding: 40px;
+    
+    
+    @media (min-width:1200px) {
+       
+
+        h4 {
+            font-size: 40px;
+            text-align: left;
+        }
+    }
 }
 
 
@@ -945,7 +965,7 @@ font-weight: 900; = black
             "a   b   c "
             "d   e   f"
             "g   .   h";
-
+        padding: 40px;
         img {
             width: 200px;
         }
@@ -1380,7 +1400,58 @@ font-weight: 900; = black
 
 /***************************************************A PROPOS***************************************************/
 
+
 .img_equipe{
     object-fit: none;
     width: 100px;   
+}
+
+/***************************************************HISTOIRE***************************************************/
+.heroGenerique__wrapup__titreWrapup__filAriane{
+    margin-bottom: 20px;
+}
+
+.histoire__h1{
+   
+   
+   position: relative;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   
+  
+}
+
+.histoire__1992{
+    background-color: variables.$orange;
+    padding: 20px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.histoire__1999{
+    background-color: variables.$orange;
+    padding: 20px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.histoire__2009{
+    background-color: variables.$orange;
+    padding: 20px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.histoire__2011{
+    background-color: variables.$orange;
+    padding: 20px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    opacity: 0;
+
 }
