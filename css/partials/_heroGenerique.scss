@@ -6,7 +6,7 @@
 .heroGenerique{
     @include sections.sectionsTelephone;
     background-color: variables.$bleu;
-
+    margin-bottom: 65px;
     &__wrapup {
         color: white;
         display: flex;
@@ -89,6 +89,7 @@
 
 @media (min-width:1200px){
  .heroGenerique{
+    margin-bottom: 75px;
         @include sections.sectionsTablette;
         &__wrapup {
             &__titreWrapup {
