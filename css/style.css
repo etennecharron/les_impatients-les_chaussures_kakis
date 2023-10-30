@@ -189,7 +189,7 @@ em {
 .heroGenerique {
   padding: 40px 12px;
   background-color: #004E89;
-  margin-bottom: 65px;
+  margin-bottom: 40px;
 }
 .heroGenerique__wrapup {
   color: white;
@@ -254,7 +254,6 @@ em {
 }
 @media (min-width: 1200px) {
   .heroGenerique {
-    margin-bottom: 75px;
     padding: 57px 50px;
   }
   .heroGenerique__wrapup__titreWrapup__filAriane p {
@@ -1763,6 +1762,12 @@ font-weight: 900; = black
   }
 }
 /***************************************************DÉBUT A PROPOS***************************************************/
+#aPropos .sectionWrapup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*****************DÉBUT MISSION***********************/
 #aPropos .mission {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
@@ -1800,7 +1805,6 @@ font-weight: 900; = black
     flex-direction: column;
     align-items: center;
     max-width: 1068px;
-    margin: auto;
   }
 }
 /*****************FIN MISSION***********************/
@@ -1841,7 +1845,6 @@ font-weight: 900; = black
     flex-direction: column;
     align-items: center;
     max-width: 1068px;
-    margin: auto;
   }
 }
 /*****************FIN MISSION***********************/
@@ -1892,7 +1895,6 @@ font-weight: 900; = black
     flex-direction: column;
     align-items: center;
     max-width: 1068px;
-    margin: auto;
   }
 }
 /*****************DÉBUT ATELIER***********************/
@@ -1944,7 +1946,6 @@ font-weight: 900; = black
     flex-direction: column;
     align-items: center;
     max-width: 1068px;
-    margin: auto;
   }
 }
 /*****************FIN COLLECTION***********************/
@@ -1996,7 +1997,6 @@ font-weight: 900; = black
     flex-direction: column;
     align-items: center;
     max-width: 1068px;
-    margin: auto;
   }
 }
 /*****************FIN ÉVENEMENT***********************/
