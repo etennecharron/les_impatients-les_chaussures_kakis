@@ -855,6 +855,9 @@ font-weight: 900; = black
 
 
 /*****************DÉBUT FOOTER***********************/
+/* VERSION 
+
+
 .bas_button{
     
     background-color: variables.$bleu;
@@ -1014,7 +1017,42 @@ font-weight: 900; = black
 .image-compagnie-08 {
     grid-area: h;
 }
+*/
 
+/*********début footer haut*******/
+.footer__compagnie{
+    @include sections.sectionsTelephone;
+    &__titre{
+        margin-bottom: 25px;
+        h2{
+            text-align: center;
+            font-size:24px;
+        }
+        em{
+            color:#212529;
+            @include base.sousligne;
+            text-decoration-color: variables.$orange;
+        }
+    }
+    &__logos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items:center;
+        img{
+            width: 141px;
+            height:47px;
+            margin:14px 0 14px 0;
+            object-fit: cover;
+        }
+    }
+}
+/*********fin footer haut*******/
+
+/*********début footer bas*******/
+.footer__bas{
+
+}
+/*********fin footer bas*******/
 /*****************FIN FOOTER***********************/
 
 

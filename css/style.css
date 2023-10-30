@@ -1166,132 +1166,202 @@ font-weight: 900; = black
 }
 /*****************FIN ESPACE***********************/
 /*****************DÉBUT FOOTER***********************/
-.bas_button {
-  background-color: #004E89;
-  border-radius: 40px;
-  border: 0;
-}
+/* VERSION 
 
-.bas__logo {
-  width: 50px;
-}
 
+.bas_button{
+
+    background-color: variables.$bleu;
+    border-radius: 40px;
+    border: 0;
+
+}
+.bas__logo{
+    width: 50px;
+}
 .footer__bas {
-  background-color: grey;
-  padding: 40px;
-}
-@media (min-width: 1200px) {
-  .footer__bas h4 {
-    font-size: 40px;
-    text-align: left;
-  }
+    background-color: grey;
+    padding: 40px;
+
+
+    @media (min-width:1200px) {
+
+
+        h4 {
+            font-size: 40px;
+            text-align: left;
+        }
+    }
 }
 
-@media (min-width: 768px) {
-  .footer__bas {
+
+@media (min-width:768px) {
+    .footer__bas {
+        display: grid;
+        gap: 15px;
+
+
+    grid-template-areas:
+    ".  a  . b  ."
+    ".  .  c .  .";
+    }
+}
+
+@media (min-width:1200px) {
+    .footer__bas {
+
     display: grid;
     gap: 15px;
-    grid-template-areas: ".  a  . b  ." ".  .  c .  .";
-  }
+    grid-template-areas:
+        "a   b   c";
+    }
 }
-@media (min-width: 1200px) {
-  .footer__bas {
-    display: grid;
-    gap: 15px;
-    grid-template-areas: "a   b   c";
-  }
-}
+
+
+
 .bas__impliquer {
-  grid-area: a;
-  text-align: left;
+    grid-area: a;
+    text-align: left;
 }
 
 .bas__connaitre {
-  grid-area: b;
-  text-align: left;
+    grid-area: b;
+    text-align: left;
 }
 
 .bas__inscription {
-  grid-area: c;
-  text-align: left;
+    grid-area: c;
+    text-align: left;
 }
 
-@media (min-width: 1200px) {
-  .footer__compagnie {
-    background-color: #EBEBEB;
-  }
-  .footer__compagnie h2 {
-    font-size: 40px;
-    text-align: center;
-  }
+.footer__compagnie {
+    @media (min-width:1200px) {
+        background-color: #EBEBEB;
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+    }
+
+    h2 {
+
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    h2:nth-child(3) {
+        @include base.sousligne;
+        text-decoration-color: variables.$orange;
+    }
+
 }
-.footer__compagnie h2 {
+
+.compagne__logos {
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+    grid-template-areas:
+        "a   b"
+        "c   d"
+        "e   f"
+        "g   h";
+
+    img {
+        width: 100px;
+    }
+}
+
+
+@media (min-width:768px) {
+    .compagne__logos {
+        grid-template-areas:
+            "a   b   c "
+            "d   e   f"
+            "g   .   h";
+        padding: 40px;
+        img {
+            width: 200px;
+        }
+    }
+}
+
+
+@media (min-width:1200px) {
+
+    .compagne__logos {
+        grid-template-areas:
+            "a   b   c   d"
+            "e   f   g   h";
+
+    }
+}
+
+.image-compagnie-01 {
+    grid-area: a;
+}
+
+.image-compagnie-02 {
+    grid-area: b;
+}
+
+.image-compagnie-03 {
+    grid-area: c;
+}
+
+.image-compagnie-04 {
+    grid-area: d;
+}
+
+.image-compagnie-05 {
+    grid-area: e;
+}
+
+.image-compagnie-06 {
+    grid-area: f;
+}
+
+.image-compagnie-07 {
+    grid-area: g;
+}
+
+.image-compagnie-08 {
+    grid-area: h;
+}
+*/
+/*********début footer haut*******/
+.footer__compagnie {
+  padding: 40px 12px;
+}
+.footer__compagnie__titre {
+  margin-bottom: 25px;
+}
+.footer__compagnie__titre h2 {
   text-align: center;
-  margin: 20px 0;
+  font-size: 24px;
 }
-.footer__compagnie h2:nth-child(3) {
+.footer__compagnie__titre em {
+  color: #212529;
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
   text-decoration-color: #F75C03;
 }
-
-.compagne__logos {
+.footer__compagnie__logos {
   display: grid;
-  gap: 50px;
-  justify-content: center;
-  grid-template-areas: "a   b" "c   d" "e   f" "g   h";
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
 }
-.compagne__logos img {
-  width: 100px;
-}
-
-@media (min-width: 768px) {
-  .compagne__logos {
-    grid-template-areas: "a   b   c " "d   e   f" "g   .   h";
-    padding: 40px;
-  }
-  .compagne__logos img {
-    width: 200px;
-  }
-}
-@media (min-width: 1200px) {
-  .compagne__logos {
-    grid-template-areas: "a   b   c   d" "e   f   g   h";
-  }
-}
-.image-compagnie-01 {
-  grid-area: a;
+.footer__compagnie__logos img {
+  width: 141px;
+  height: 47px;
+  margin: 14px 0 14px 0;
+  object-fit: cover;
 }
 
-.image-compagnie-02 {
-  grid-area: b;
-}
-
-.image-compagnie-03 {
-  grid-area: c;
-}
-
-.image-compagnie-04 {
-  grid-area: d;
-}
-
-.image-compagnie-05 {
-  grid-area: e;
-}
-
-.image-compagnie-06 {
-  grid-area: f;
-}
-
-.image-compagnie-07 {
-  grid-area: g;
-}
-
-.image-compagnie-08 {
-  grid-area: h;
-}
-
+/*********fin footer haut*******/
+/*********début footer bas*******/
+/*********fin footer bas*******/
 /*****************FIN FOOTER***********************/
 /********************************************DÉTAIL NOUVELLE***********************************************/
 #detailNouvelle {
@@ -2151,6 +2221,10 @@ font-weight: 900; = black
 /***************************************************DÉBUT HUB DE SERVICES***************************************************/
 #hubService .card {
   max-width: 300px;
+}
+
+.section_hub_services .card {
+  color: orange;
 }
 
 /***************************************************FIN HUB DE SERVIC#ES***************************************************//*# sourceMappingURL=style.css.map */
