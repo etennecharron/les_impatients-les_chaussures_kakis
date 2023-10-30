@@ -1,4 +1,33 @@
 @charset "UTF-8";
+* {
+  font-family: lato;
+}
+
+a {
+  color: #F75C03;
+}
+
+header {
+  width: 100%;
+}
+
+body {
+  background-color: #EBEBEB;
+}
+
+.ligne_separation {
+  height: 13px;
+}
+
+em {
+  color: #F75C03;
+  font-style: normal;
+}
+
+.desactiver {
+  display: none;
+}
+
 nav {
   max-width: 1200px;
   margin: auto;
@@ -157,35 +186,6 @@ nav .navbar-nav {
     height: 30px;
   }
 }
-* {
-  font-family: lato;
-}
-
-a {
-  color: #F75C03;
-}
-
-header {
-  width: 100%;
-}
-
-body {
-  background-color: #EBEBEB;
-}
-
-.ligne_separation {
-  height: 13px;
-}
-
-em {
-  color: #F75C03;
-  font-style: normal;
-}
-
-.desactiver {
-  display: none;
-}
-
 .heroGenerique {
   padding: 40px 12px;
   background-color: #004E89;
@@ -263,6 +263,295 @@ em {
     font-size: 40px;
   }
 }
+/*************************DÉBUT FOOTER HAUT 350PX*********************************/
+.footer__compagnie {
+  padding: 40px 12px;
+}
+.footer__compagnie__titre {
+  margin-bottom: 25px;
+}
+.footer__compagnie__titre h2 {
+  text-align: center;
+  font-size: 24px;
+}
+.footer__compagnie__titre em {
+  color: #212529;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  text-decoration-color: #F75C03;
+}
+.footer__compagnie__logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  max-width: 350px;
+  margin: auto;
+}
+.footer__compagnie__logos img {
+  width: 141px;
+  height: 47px;
+  margin: 14px 0 14px 0;
+  object-fit: cover;
+}
+
+/*************************FIN FOOTER HAUT 350PX*********************************/
+/*************************DÉBUT FOOTER BAS 350PX*********************************/
+.footer__bas {
+  padding: 40px 12px;
+  padding: 40px 30px 12px 30px;
+  background-color: #004E89;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bas h4 {
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0;
+}
+.footer__bas a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+.footer__bas__logo02 {
+  width: 50px;
+  height: 50px;
+}
+.footer__bas__wrapup {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  max-width: 350px;
+}
+.footer__bas__wrapup__wrapupSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer__bas__wrapup__wrapupSection__impliquer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.footer__bas__wrapup__wrapupSection__impliquer__barre {
+  margin: 5px 0 5px 0;
+  height: 2px;
+  width: 125px;
+  background-color: #F75C03;
+}
+.footer__bas__wrapup__wrapupSection__impliquer__logo01 {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+.footer__bas__wrapup__wrapupSection__connaitre {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.footer__bas__wrapup__wrapupSection__connaitre__barre {
+  margin: 5px 0 5px 0;
+  height: 2px;
+  width: 125px;
+  background-color: #F75C03;
+}
+.footer__bas__wrapup__wrapupSection__inscription {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.footer__bas__wrapup__wrapupSection__inscription__barre {
+  margin: 5px 0 5px 0;
+  height: 2px;
+  width: 125px;
+  background-color: #F75C03;
+}
+.footer__bas__wrapup__wrapupSection__inscription__recherche {
+  width: 200px;
+}
+.footer__bas__wrapup__wrapupSection__inscription__icons img {
+  margin: 5px;
+}
+.footer__bas__wrapup__wrapupSection__inscription__contact p {
+  font-size: 8px;
+  margin: 3px;
+}
+.footer__bas__wrapup__wrapupSection__inscription__btn {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  width: 130px;
+  margin-top: 5px;
+}
+
+/*************************FIN FOOTER BAS 350PX*********************************/
+/*************************DÉBUT FOOTER HAUT 768PX*********************************/
+@media (min-width: 768px) {
+  .footer__compagnie {
+    padding: 57px 50px;
+  }
+  .footer__compagnie__titre h2 {
+    font-size: 30px;
+  }
+  .footer__compagnie__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 768px;
+  }
+  /*************************FIN FOOTER HAUT 768PX*********************************/
+  /*************************DÉBUT FOOTER BAS 768PX*********************************/
+  .footer__bas {
+    padding: 57px 50px;
+    justify-content: space-around;
+  }
+  .footer__bas__logo02 {
+    display: none;
+  }
+  .footer__bas__wrapup {
+    max-width: 768px;
+  }
+  .footer__bas__wrapup__wrapupSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__bas__wrapup__wrapupSection__impliquer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__bas__wrapup__wrapupSection__impliquer__barre {
+    margin: 5px 0 5px 0;
+    height: 2px;
+    width: 125px;
+    background-color: #F75C03;
+  }
+  .footer__bas__wrapup__wrapupSection__impliquer__logo01 {
+    display: block;
+  }
+  .footer__bas__wrapup__wrapupSection__connaitre {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__bas__wrapup__wrapupSection__connaitre__barre {
+    margin: 5px 0 5px 0;
+    height: 2px;
+    width: 125px;
+    background-color: #F75C03;
+  }
+  .footer__bas__wrapup__wrapupSection__inscription {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__bas__wrapup__wrapupSection__inscription__barre {
+    margin: 5px 0 5px 0;
+    height: 2px;
+    width: 125px;
+    background-color: #F75C03;
+  }
+}
+/*************************FIN FOOTER BAS 768PX*********************************/
+/*************************DÉBUT FOOTER HAUT 1200PX*********************************/
+@media (min-width: 1200px) {
+  .footer__compagnie {
+    padding: 57px 50px;
+  }
+  .footer__compagnie__titre h2 {
+    font-size: 40px;
+  }
+  .footer__compagnie__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+  }
+  .footer__compagnie__logos img {
+    width: 227px;
+    height: 75px;
+  }
+  /*************************FIN FOOTER HAUT 1200PX*********************************/
+  /*************************DÉBUT FOOTER BAS 1200PX*********************************/
+  .footer__bas {
+    padding: 57px 50px;
+    justify-content: space-around;
+  }
+  .footer__bas h4 {
+    font-size: 28px;
+  }
+  .footer__bas a {
+    font-size: 14px;
+  }
+  .footer__bas__logo02 {
+    display: none;
+  }
+  .footer__bas__wrapup {
+    max-width: 1200px;
+  }
+  .footer__bas__wrapup__wrapupSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer__bas__wrapup__wrapupSection__impliquer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__bas__wrapup__wrapupSection__impliquer__barre {
+    margin: 5px 0 5px 0;
+    height: 2px;
+    width: 125px;
+    background-color: #F75C03;
+  }
+  .footer__bas__wrapup__wrapupSection__impliquer__barre {
+    margin: 5px 0 25px 0;
+  }
+  .footer__bas__wrapup__wrapupSection__impliquer__logo01 {
+    display: block;
+  }
+  .footer__bas__wrapup__wrapupSection__connaitre {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__bas__wrapup__wrapupSection__connaitre__barre {
+    margin: 5px 0 5px 0;
+    height: 2px;
+    width: 125px;
+    background-color: #F75C03;
+  }
+  .footer__bas__wrapup__wrapupSection__connaitre__barre {
+    margin: 5px 0 25px 0;
+  }
+  .footer__bas__wrapup__wrapupSection__inscription {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .footer__bas__wrapup__wrapupSection__inscription__barre {
+    margin: 5px 0 5px 0;
+    height: 2px;
+    width: 125px;
+    background-color: #F75C03;
+  }
+  .footer__bas__wrapup__wrapupSection__inscription__barre {
+    margin: 5px 0 25px 0;
+  }
+  .footer__bas__wrapup__wrapupSection__inscription__barre:nth-child(4) {
+    margin: 25px 0 25px 0;
+  }
+  .footer__bas__wrapup__wrapupSection__inscription__contact p {
+    font-size: 14px;
+  }
+}
+/*************************FIN FOOTER BAS 1200PX*********************************/
 /**aide mémoire pour font lato
 font-weight: 300; = light
 font-weight: 400; = regular
@@ -1329,126 +1618,6 @@ font-weight: 900; = black
     grid-area: h;
 }
 */
-/*********début footer haut*******/
-.footer__compagnie {
-  padding: 40px 12px;
-}
-.footer__compagnie__titre {
-  margin-bottom: 25px;
-}
-.footer__compagnie__titre h2 {
-  text-align: center;
-  font-size: 24px;
-}
-.footer__compagnie__titre em {
-  color: #212529;
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3.5px;
-  text-decoration-color: #F75C03;
-}
-.footer__compagnie__logos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-.footer__compagnie__logos img {
-  width: 141px;
-  height: 47px;
-  margin: 14px 0 14px 0;
-  object-fit: cover;
-}
-
-/*********fin footer haut*******/
-/*********début footer bas*******/
-.footer__bas {
-  padding: 40px 12px;
-  padding: 40px 30px 12px 30px;
-  background-color: #004E89;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-.footer__bas h4 {
-  font-weight: 700;
-  font-size: 12px;
-  margin: 0;
-}
-.footer__bas a {
-  color: white;
-  text-decoration: none;
-  font-size: 10px;
-}
-.footer__bas__logo02 {
-  width: 50px;
-  height: 50px;
-}
-.footer__bas__wrapup {
-  display: flex;
-  flex-direction: column;
-}
-.footer__bas__wrapup__impliquer {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.footer__bas__wrapup__impliquer__barre {
-  margin: 5px 0 5px 0;
-  height: 2px;
-  width: 125px;
-  background-color: #F75C03;
-}
-.footer__bas__wrapup__impliquer__logo01 {
-  display: none;
-  width: 50px;
-  height: 50px;
-}
-.footer__bas__wrapup__connaitre {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.footer__bas__wrapup__connaitre__barre {
-  margin: 5px 0 5px 0;
-  height: 2px;
-  width: 125px;
-  background-color: #F75C03;
-}
-.footer__bas__wrapup__inscription {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-.footer__bas__wrapup__inscription__barre {
-  margin: 5px 0 5px 0;
-  height: 2px;
-  width: 125px;
-  background-color: #F75C03;
-}
-.footer__bas__wrapup__inscription__recherche {
-  width: 200px;
-}
-.footer__bas__wrapup__inscription__icons img {
-  margin: 5px;
-}
-.footer__bas__wrapup__inscription__contact p {
-  font-size: 8px;
-  margin: 3px;
-}
-.footer__bas__wrapup__inscription__btn {
-  background-color: #EBEBEB;
-  color: #F75C03;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 15px;
-  font-size: 14px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  width: 130px;
-  margin-top: 5px;
-}
-
-/*********fin footer bas*******/
-/*****************FIN FOOTER***********************/
 /********************************************DÉTAIL NOUVELLE***********************************************/
 #detailNouvelle {
   display: flex;

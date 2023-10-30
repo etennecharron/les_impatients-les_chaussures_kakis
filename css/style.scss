@@ -1,12 +1,13 @@
 @use "sass:color";
 @use "partials/variables";
 @use "partials/sections";
+@use "partials/base";
 @use "partials/navbar";
 @use "partials/alerte";
-@use "partials/base";
 @use "partials/cartes";
 @use "partials/derniereNouvelles";
 @use "partials/heroGenerique";
+@use "partials/footer";
 /**aide mémoire pour font lato
 font-weight: 300; = light
 font-weight: 400; = regular
@@ -1019,112 +1020,6 @@ font-weight: 900; = black
 }
 */
 
-/*********début footer haut*******/
-.footer__compagnie {
-    @include sections.sectionsTelephone;
-
-    &__titre {
-        margin-bottom: 25px;
-
-        h2 {
-            text-align: center;
-            font-size: 24px;
-        }
-
-        em {
-            color: #212529;
-            @include base.sousligne;
-            text-decoration-color: variables.$orange;
-        }
-    }
-
-    &__logos {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-
-        img {
-            width: 141px;
-            height: 47px;
-            margin: 14px 0 14px 0;
-            object-fit: cover;
-        }
-    }
-}
-
-/*********fin footer haut*******/
-
-/*********début footer bas*******/
-.footer__bas {
-    @include sections.sectionsTelephone;
-    padding: 40px 30px 12px 30px;
-    background-color: variables.$bleu;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    h4 {
-        font-weight: 700;
-        font-size: 12px;
-        margin: 0;
-    }
-
-    a {
-        color: white;
-        text-decoration: none;
-        font-size: 10px;
-    }
-
-    &__logo02 {
-        width: 50px;
-        height: 50px;
-    }
-
-    &__wrapup {
-        display: flex;
-        flex-direction: column;
-
-        // section impliquer
-        &__impliquer {
-            @include sections.footerSectionTelephone;
-
-            &__logo01 {
-                display: none;
-                width: 50px;
-                height: 50px;
-            }
-        }
-
-        &__connaitre {
-            @include sections.footerSectionTelephone;
-        }
-        &__inscription{
-            @include sections.footerSectionTelephone;
-            &__recherche{
-                width: 200px;
-            }
-            &__icons{
-                img{
-                    margin: 5px;
-                }
-            }
-            &__contact{
-                p{
-                    font-size: 8px;
-                    margin: 3px;
-                }
-            }
-            &__btn{
-                @include base.btn;
-                width: 130px;
-                margin-top: 5px;
-            }
-        }
-
-    }
-}
-
-/*********fin footer bas*******/
-/*****************FIN FOOTER***********************/
 
 
 
