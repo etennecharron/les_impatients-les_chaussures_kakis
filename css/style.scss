@@ -1020,38 +1020,109 @@ font-weight: 900; = black
 */
 
 /*********début footer haut*******/
-.footer__compagnie{
+.footer__compagnie {
     @include sections.sectionsTelephone;
-    &__titre{
+
+    &__titre {
         margin-bottom: 25px;
-        h2{
+
+        h2 {
             text-align: center;
-            font-size:24px;
+            font-size: 24px;
         }
-        em{
-            color:#212529;
+
+        em {
+            color: #212529;
             @include base.sousligne;
             text-decoration-color: variables.$orange;
         }
     }
-    &__logos{
+
+    &__logos {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-items:center;
-        img{
+        justify-items: center;
+
+        img {
             width: 141px;
-            height:47px;
-            margin:14px 0 14px 0;
+            height: 47px;
+            margin: 14px 0 14px 0;
             object-fit: cover;
         }
     }
 }
+
 /*********fin footer haut*******/
 
 /*********début footer bas*******/
-.footer__bas{
+.footer__bas {
+    @include sections.sectionsTelephone;
+    padding: 40px 30px 12px 30px;
+    background-color: variables.$bleu;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    h4 {
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0;
+    }
 
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    &__logo02 {
+        width: 50px;
+        height: 50px;
+    }
+
+    &__wrapup {
+        display: flex;
+        flex-direction: column;
+
+        // section impliquer
+        &__impliquer {
+            @include sections.footerSectionTelephone;
+
+            &__logo01 {
+                display: none;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &__connaitre {
+            @include sections.footerSectionTelephone;
+        }
+        &__inscription{
+            @include sections.footerSectionTelephone;
+            &__recherche{
+                width: 200px;
+            }
+            &__icons{
+                img{
+                    margin: 5px;
+                }
+            }
+            &__contact{
+                p{
+                    font-size: 8px;
+                    margin: 3px;
+                }
+            }
+            &__btn{
+                @include base.btn;
+                width: 130px;
+                margin-top: 5px;
+            }
+        }
+
+    }
 }
+
 /*********fin footer bas*******/
 /*****************FIN FOOTER***********************/
 
@@ -1076,21 +1147,24 @@ font-weight: 900; = black
 }
 
 /*****************DÉBUT TITRE DE LA NOUVELLE***********************/
-.baniere{
+.baniere {
     width: 100%;
     height: 200px;
     object-fit: cover
 }
-@media(min-width:768px){
-    .baniere{
+
+@media(min-width:768px) {
+    .baniere {
         height: 300px;
     }
 }
-@media(min-width:1200px){
-    .baniere{
-        height:340px;
+
+@media(min-width:1200px) {
+    .baniere {
+        height: 340px;
     }
 }
+
 #detailNouvelle .titreNouvelle {
     @include sections.sectionsTelephone;
     background-color: variables.$bleu;
@@ -1134,11 +1208,12 @@ font-weight: 900; = black
                 }
             }
 
-            &__description{
+            &__description {
                 display: flex;
                 justify-content: flex-start;
-                p{
-                    margin:0px 10px 10px 10px;
+
+                p {
+                    margin: 0px 10px 10px 10px;
                     font-size: 10px;
                 }
             }
@@ -1170,8 +1245,8 @@ font-weight: 900; = black
                     }
                 }
 
-                &__description{
-                    p{
+                &__description {
+                    p {
                         font-size: 14px;
                     }
                 }
@@ -1438,71 +1513,82 @@ font-weight: 900; = black
 
 
 /***************************************************DÉBUT A PROPOS***************************************************/
-#aPropos .sectionWrapup{
+#aPropos .sectionWrapup {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /*****************DÉBUT MISSION***********************/
-#aPropos .mission{
+#aPropos .mission {
     @include sections.sectionNouvelleTelephone;
-    &__wrapup{
-        h2{
+
+    &__wrapup {
+        h2 {
             @include sections.sectionTitre;
         }
-        p{
+
+        p {
             @include sections.sectionTexte;
         }
     }
 
 }
-@media (min-width:768px){
-    #aPropos .mission{
+
+@media (min-width:768px) {
+    #aPropos .mission {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
+
 /*****************FIN MISSION***********************/
 
 /*****************DÉBUT VALEUR***********************/
-#aPropos .valeur{
+#aPropos .valeur {
     @include sections.sectionNouvelleTelephone;
-    &__wrapup{
-        h2{
+
+    &__wrapup {
+        h2 {
             @include sections.sectionTitre;
         }
-        li{
+
+        li {
             @include sections.sectionTexte;
         }
     }
 
 }
-@media (min-width:768px){
-    #aPropos .valeur{
+
+@media (min-width:768px) {
+    #aPropos .valeur {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
 
 /*****************FIN MISSION***********************/
-#aPropos .atelier{
+#aPropos .atelier {
     @include sections.sectionNouvelleTelephone;
-    &__wrapup{
-        h2{
+
+    &__wrapup {
+        h2 {
             @include sections.sectionTitre;
         }
-        p{
+
+        p {
             @include sections.sectionTexte;
             margin-bottom: 25px;
         }
-        button{
+
+        button {
             @include base.btn;
             box-shadow: 0 0 4px 0 variables.$bleu;
         }
     }
 
 }
-@media (min-width:768px){
-    #aPropos .atelier{
+
+@media (min-width:768px) {
+    #aPropos .atelier {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
@@ -1510,81 +1596,91 @@ font-weight: 900; = black
 /*****************DÉBUT ATELIER***********************/
 
 /*****************DÉBUT COLLECTION***********************/
-#aPropos .collection{
+#aPropos .collection {
     @include sections.sectionNouvelleTelephone;
-    &__wrapup{
-        h2{
+
+    &__wrapup {
+        h2 {
             @include sections.sectionTitre;
         }
-        p{
+
+        p {
             @include sections.sectionTexte;
             margin-bottom: 25px;
         }
-        button{
+
+        button {
             @include base.btn;
             box-shadow: 0 0 4px 0 variables.$bleu;
         }
     }
 
 }
-@media (min-width:768px){
-    #aPropos .collection{
+
+@media (min-width:768px) {
+    #aPropos .collection {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
+
 /*****************FIN COLLECTION***********************/
 
 /*****************DÉBUT ÉVENEMENT***********************/
-#aPropos .evenements{
+#aPropos .evenements {
     @include sections.sectionNouvelleTelephone;
-    &__wrapup{
-        h2{
+
+    &__wrapup {
+        h2 {
             @include sections.sectionTitre;
         }
-        p{
+
+        p {
             @include sections.sectionTexte;
             margin-bottom: 25px;
         }
-        button{
+
+        button {
             @include base.btn;
             box-shadow: 0 0 4px 0 variables.$bleu;
         }
     }
 
 }
-@media (min-width:768px){
-    #aPropos .evenements{
+
+@media (min-width:768px) {
+    #aPropos .evenements {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
+
 /*****************FIN ÉVENEMENT***********************/
 
 /*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
 
 
-#equipe .img_equipe{
-    object-fit:cover;
-    width: 100%;   
+#equipe .img_equipe {
+    object-fit: cover;
+    width: 100%;
 }
 
 /*************************************************** DÉBUT HISTOIRE***************************************************/
-.heroGenerique__wrapup__titreWrapup__filAriane{
+.heroGenerique__wrapup__titreWrapup__filAriane {
     margin-bottom: 20px;
 }
 
-.histoire__h1{
-   
-   
-   position: relative;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   
-  
+.histoire__h1 {
+
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
 
-.histoire__1992{
+.histoire__1992 {
     background-color: variables.$orange;
     padding: 20px;
     margin-bottom: 200px;
@@ -1593,7 +1689,7 @@ font-weight: 900; = black
     opacity: 0;
 }
 
-.histoire__1999{
+.histoire__1999 {
     background-color: variables.$orange;
     padding: 20px;
     margin-bottom: 200px;
@@ -1601,7 +1697,7 @@ font-weight: 900; = black
     opacity: 0;
 }
 
-.histoire__2009{
+.histoire__2009 {
     background-color: variables.$orange;
     padding: 20px;
     margin-bottom: 200px;
@@ -1609,7 +1705,7 @@ font-weight: 900; = black
     opacity: 0;
 }
 
-.histoire__2011{
+.histoire__2011 {
     background-color: variables.$orange;
     padding: 20px;
     margin-bottom: 100px;
@@ -1731,11 +1827,12 @@ font-weight: 900; = black
 /***************************************************FIN ERREUR 404***************************************************/
 
 /***************************************************DÉBUT HUB DE SERVICES***************************************************/
-#hubService .card{
+#hubService .card {
     max-width: 300px;
 }
 
-.section_hub_services .card{
-    color:orange;
+.section_hub_services .card {
+    color: orange;
 }
+
 /***************************************************FIN HUB DE SERVIC#ES***************************************************/
