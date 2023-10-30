@@ -1456,3 +1456,115 @@ font-weight: 900; = black
     opacity: 0;
 
 }
+
+/***************************************************DÉBUT ERREUR 404***************************************************/
+
+.erreur {
+    @include sections.sectionsTelephone;
+    background-color: variables.$bleu;
+
+    &__wrapup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+
+        img {
+            display: none;
+        }
+
+        &__contenus {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                color: white;
+                font-size: 24px;
+                width: 268px;
+                text-align: center;
+                line-height: 45px;
+            }
+
+            p {
+                font-size: 14px;
+                color: white;
+                width: 242px;
+                text-align: center;
+                font-weight: 300;
+                line-height: 28px;
+            }
+
+            button {
+                @include base.btn;
+            }
+        }
+    }
+}
+
+@media (min-width:768px) {
+    .erreur {
+        @include sections.sectionsTablette;
+        justify-content: space-between;
+
+        &__wrapup {
+            justify-content: space-between;
+
+            img {
+                display: block;
+                width: 336px;
+                height: 290px;
+            }
+
+            h2 {
+                width: 334px;
+                font-size: 30px;
+                text-align: right;
+                align-self: flex-end;
+            }
+
+            p {
+                text-align: right;
+                align-self: flex-end;
+            }
+
+            button {
+                align-self: flex-end;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .erreur {
+        @include sections.sectionsOrdinateur;
+
+        &__wrapup {
+            img {
+                width: 497px;
+                height: 439px;
+            }
+
+            h2 {
+                width: 446px;
+                font-size: 40px;
+                text-align: right;
+                align-self: right;
+            }
+
+            p {
+                text-align: right;
+                align-self: flex-end;
+            }
+
+            button {
+                align-self: flex-end;
+            }
+        }
+
+    }
+}
+
+/***************************************************FIN ERREUR 404***************************************************/
