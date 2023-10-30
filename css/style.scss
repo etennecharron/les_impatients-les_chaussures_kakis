@@ -1401,8 +1401,17 @@ font-weight: 900; = black
 
 /***************************************************DÉBUT A PROPOS***************************************************/
 
+/*****************DÉBUT MISSION***********************/
 #aPropos .mission{
     @include sections.sectionNouvelleTelephone;
+    &__wrapup{
+        h2{
+            @include sections.sectionTitre;
+        }
+        p{
+            @include sections.sectionTexte;
+        }
+    }
 
 }
 @media (min-width:768px){
@@ -1411,13 +1420,81 @@ font-weight: 900; = black
         margin: auto;
     }
 }
+/*****************FIN MISSION***********************/
 
+/*****************DÉBUT VALEUR***********************/
+#aPropos .valeur{
+    @include sections.sectionNouvelleTelephone;
+    &__wrapup{
+        h2{
+            @include sections.sectionTitre;
+        }
+        li{
+            @include sections.sectionTexte;
+        }
+    }
+
+}
+@media (min-width:768px){
+    #aPropos .valeur{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+        margin: auto;
+    }
+}
+
+/*****************FIN MISSION***********************/
+#aPropos .atelier{
+    @include sections.sectionNouvelleTelephone;
+    &__wrapup{
+        h2{
+            @include sections.sectionTitre;
+        }
+        p{
+            @include sections.sectionTexte;
+        }
+    }
+
+}
+@media (min-width:768px){
+    #aPropos .atelier{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+        margin: auto;
+    }
+}
+
+/*****************DÉBUT ATELIER***********************/
+
+/*****************DÉBUT COLLECTION***********************/
+#aPropos .collection{
+    @include sections.sectionNouvelleTelephone;
+    &__wrapup{
+        h2{
+            @include sections.sectionTitre;
+        }
+        p{
+            @include sections.sectionTexte;
+        }
+        button{
+            
+        }
+    }
+
+}
+@media (min-width:768px){
+    #aPropos .collection{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+        margin: auto;
+    }
+}
+/*****************FIN COLLECTION***********************/
+
+/*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
 
 
 #equipe .img_equipe{
     object-fit:cover;
-    width: 100px;   
+    width: 100%;   
 }
 
 /*************************************************** DÉBUT HISTOIRE***************************************************/
