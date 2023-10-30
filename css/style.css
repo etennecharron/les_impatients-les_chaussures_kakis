@@ -161,6 +161,10 @@ nav .navbar-nav {
   font-family: lato;
 }
 
+a {
+  color: #F75C03;
+}
+
 header {
   width: 100%;
 }
@@ -1864,6 +1868,17 @@ font-weight: 900; = black
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
+  margin-bottom: 25px;
+}
+#aPropos .atelier__wrapup button {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 4px 0 #004E89;
 }
 
 @media (min-width: 768px) {
@@ -1905,7 +1920,19 @@ font-weight: 900; = black
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
+  margin-bottom: 25px;
 }
+#aPropos .collection__wrapup button {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 4px 0 #004E89;
+}
+
 @media (min-width: 768px) {
   #aPropos .collection {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
@@ -1921,6 +1948,58 @@ font-weight: 900; = black
   }
 }
 /*****************FIN COLLECTION***********************/
+/*****************DÉBUT ÉVENEMENT***********************/
+#aPropos .evenements {
+  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
+  margin: 40px 12px;
+  padding: 40px 20px;
+  border-radius: 40px;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#aPropos .evenements__wrapup h2 {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  align-self: flex-start;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+#aPropos .evenements__wrapup p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+#aPropos .evenements__wrapup button {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 4px 0 #004E89;
+}
+
+@media (min-width: 768px) {
+  #aPropos .evenements {
+    box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
+    margin: 40px 66px;
+    padding: 57px 50px;
+    border-radius: 40px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1068px;
+    margin: auto;
+  }
+}
+/*****************FIN ÉVENEMENT***********************/
 /*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
 #equipe .img_equipe {
@@ -1971,4 +2050,101 @@ font-weight: 900; = black
   margin-bottom: 100px;
   border-radius: 20px;
   opacity: 0;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/***************************************************DÉBUT ERREUR 404***************************************************/
+.erreur {
+  padding: 40px 12px;
+  background-color: #004E89;
+}
+.erreur__wrapup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.erreur__wrapup img {
+  display: none;
+}
+.erreur__wrapup__contenus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.erreur__wrapup__contenus h2 {
+  color: white;
+  font-size: 24px;
+  width: 268px;
+  text-align: center;
+  line-height: 45px;
+}
+.erreur__wrapup__contenus p {
+  font-size: 14px;
+  color: white;
+  width: 242px;
+  text-align: center;
+  font-weight: 300;
+  line-height: 28px;
+}
+.erreur__wrapup__contenus button {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .erreur {
+    padding: 57px 50px;
+    justify-content: space-between;
+  }
+  .erreur__wrapup {
+    justify-content: space-between;
+  }
+  .erreur__wrapup img {
+    display: block;
+    width: 336px;
+    height: 290px;
+  }
+  .erreur__wrapup h2 {
+    width: 334px;
+    font-size: 30px;
+    text-align: right;
+    align-self: flex-end;
+  }
+  .erreur__wrapup p {
+    text-align: right;
+    align-self: flex-end;
+  }
+  .erreur__wrapup button {
+    align-self: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  .erreur {
+    padding: 75px 60px;
+  }
+  .erreur__wrapup img {
+    width: 497px;
+    height: 439px;
+  }
+  .erreur__wrapup h2 {
+    width: 446px;
+    font-size: 40px;
+    text-align: right;
+    align-self: right;
+  }
+  .erreur__wrapup p {
+    text-align: right;
+    align-self: flex-end;
+  }
+  .erreur__wrapup button {
+    align-self: flex-end;
+  }
+}
+/***************************************************FIN ERREUR 404***************************************************//*# sourceMappingURL=style.css.map */

@@ -1451,6 +1451,11 @@ font-weight: 900; = black
         }
         p{
             @include sections.sectionTexte;
+            margin-bottom: 25px;
+        }
+        button{
+            @include base.btn;
+            box-shadow: 0 0 4px 0 variables.$bleu;
         }
     }
 
@@ -1473,9 +1478,11 @@ font-weight: 900; = black
         }
         p{
             @include sections.sectionTexte;
+            margin-bottom: 25px;
         }
         button{
-            
+            @include base.btn;
+            box-shadow: 0 0 4px 0 variables.$bleu;
         }
     }
 
@@ -1487,6 +1494,32 @@ font-weight: 900; = black
     }
 }
 /*****************FIN COLLECTION***********************/
+
+/*****************DÉBUT ÉVENEMENT***********************/
+#aPropos .evenements{
+    @include sections.sectionNouvelleTelephone;
+    &__wrapup{
+        h2{
+            @include sections.sectionTitre;
+        }
+        p{
+            @include sections.sectionTexte;
+            margin-bottom: 25px;
+        }
+        button{
+            @include base.btn;
+            box-shadow: 0 0 4px 0 variables.$bleu;
+        }
+    }
+
+}
+@media (min-width:768px){
+    #aPropos .evenements{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+        margin: auto;
+    }
+}
+/*****************FIN ÉVENEMENT***********************/
 
 /*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
