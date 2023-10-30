@@ -1399,15 +1399,28 @@ font-weight: 900; = black
 
 
 
-/***************************************************A PROPOS***************************************************/
+/***************************************************DÉBUT A PROPOS***************************************************/
+
+#aPropos .mission{
+    @include sections.sectionNouvelleTelephone;
+
+}
+@media (min-width:768px){
+    #aPropos .mission{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+        margin: auto;
+    }
+}
+
+/***************************************************FIN A PROPOS***************************************************/
 
 
-.img_equipe{
-    object-fit: none;
+#equipe .img_equipe{
+    object-fit:cover;
     width: 100px;   
 }
 
-/***************************************************HISTOIRE***************************************************/
+/*************************************************** DÉBUT HISTOIRE***************************************************/
 .heroGenerique__wrapup__titreWrapup__filAriane{
     margin-bottom: 20px;
 }
