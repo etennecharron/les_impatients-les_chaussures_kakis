@@ -292,7 +292,8 @@ nav .navbar-nav {
   width: 141px;
   height: 47px;
   margin: 14px 0 14px 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*************************FIN FOOTER HAUT 350PX*********************************/
@@ -1022,22 +1023,7 @@ font-weight: 900; = black
   flex-direction: column;
   align-items: center;
 }
-.nouvelles__wrapup__content button:nth-child(1) {
-  display: none;
-}
-.nouvelles__wrapup__content button {
-  background-color: #EBEBEB;
-  color: #F75C03;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 15px;
-  font-size: 14px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  margin-top: 20px;
-  font-size: 8px;
-  display: flex;
-}
-.nouvelles__wrapup__content button .sousligne {
+.nouvelles__wrapup__content .sousligne {
   text-decoration: underline;
   text-decoration-thickness: 3px;
   text-underline-offset: 3.5px;
@@ -1045,7 +1031,7 @@ font-weight: 900; = black
   text-decoration-thickness: 1px;
   text-underline-offset: 1px;
 }
-.nouvelles__wrapup__content .card {
+.nouvelles__wrapup .card {
   position: relative;
   background-color: #D9D9D9;
   padding: 1.5em 0.5em 0.5em;
@@ -1059,19 +1045,20 @@ font-weight: 900; = black
   height: 273px;
   padding-top: 185px;
 }
-.nouvelles__wrapup__content .card img:nth-child(1) {
+.nouvelles__wrapup .card img:nth-child(1) {
   border-radius: 2em;
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.nouvelles__wrapup__content .card h4 {
+.nouvelles__wrapup .card h4 {
   font-size: 12px;
   font-weight: 900;
   text-align: left;
 }
-.nouvelles__wrapup__content .card button {
+.nouvelles__wrapup .card button {
   background-color: #EBEBEB;
   color: #F75C03;
   padding: 5px 10px;
@@ -1088,6 +1075,17 @@ font-weight: 900; = black
   margin: 0;
   font-size: 8px;
   text-underline-offset: 1px;
+}
+.nouvelles__wrapup__btn {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+  align-self: center;
 }
 
 @media (min-width: 768px) {
@@ -1112,12 +1110,6 @@ font-weight: 900; = black
     justify-content: space-around;
     flex-direction: row;
   }
-  .nouvelles__wrapup__content button:nth-child(1) {
-    display: block;
-  }
-  .nouvelles__wrapup__content button:nth-child(5) {
-    display: none;
-  }
   .nouvelles__wrapup__content .card {
     width: 160px;
     height: 250px;
@@ -1126,9 +1118,6 @@ font-weight: 900; = black
   }
   .nouvelles__wrapup__content .card h4 {
     font-size: 10px;
-  }
-  .nouvelles__wrapup__content .card button {
-    margin-top: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -1141,19 +1130,12 @@ font-weight: 900; = black
   .nouvelles__wrapup__content {
     margin-top: 30px;
   }
-  .nouvelles__wrapup__content button:nth-child(1) {
-    font-size: 14px;
-  }
   .nouvelles__wrapup__content .card {
     height: 320px;
     width: 220px;
     padding-top: 210px;
   }
   .nouvelles__wrapup__content .card h4 {
-    font-size: 14px;
-  }
-  .nouvelles__wrapup__content .card button {
-    margin-top: 15px;
     font-size: 14px;
   }
 }
@@ -1205,7 +1187,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .temoignage__wrapup__content .card h4 {
   font-size: 12px;
@@ -1364,7 +1347,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .espace__wrapup__contenus .card h4 {
   font-size: 12px;
@@ -1640,7 +1624,8 @@ font-weight: 900; = black
 .baniere {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1815,7 +1800,8 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1839,7 +1825,8 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1886,7 +1873,8 @@ font-weight: 900; = black
 }
 #detailNouvelle .sectionImg02 img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*****************FIN SECTION IMAGE***********************/
@@ -1998,7 +1986,8 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -2022,7 +2011,8 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -2328,7 +2318,8 @@ font-weight: 900; = black
 /*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
 #equipe .img_equipe {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
