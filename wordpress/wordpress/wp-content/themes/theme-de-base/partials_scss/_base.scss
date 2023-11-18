@@ -1,0 +1,44 @@
+@use "sass:color";
+@use "variables";
+
+*{
+    font-family: lato;
+}
+a{
+    color:variables.$orange;
+}
+header{
+    width: 100%;
+}
+body{
+    background-color: variables.$gris;
+}
+
+.ligne_separation{
+    height:13px;
+}
+em{
+    color:variables.$orange;
+    font-style: normal;
+}
+.desactiver{
+    display: none;
+}
+//style commun des boutons 
+@mixin btn{
+    background-color: variables.$gris;
+    color:variables.$orange;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    box-shadow: 0 4px 4px 0 color.adjust(black,$alpha:-0.75);
+}
+
+// mixin pour souligner des mots
+@mixin sousligne{
+    text-decoration: underline;
+    text-decoration-thickness:3px;
+    text-underline-offset: 3.5px;
+    // rajouter " text-decoration-color: couleurChoisis" pour changer la couleur
+}

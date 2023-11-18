@@ -1,0 +1,39 @@
+@use "variables";
+@use "base";
+@mixin carte{
+    position: relative;
+    background-color: variables.$grisFoncer;
+    padding: 1.5em .5em .5em;
+    border-radius: 2em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border:none;
+    margin-top:20px;
+    margin: 20px 0 0 0;
+    width:191px;
+    height:273px;
+    padding-top: 185px;
+    img:nth-child(1){
+        border-radius: 2em;
+        position: absolute;
+        top:0;
+        left:0;
+        object-fit: cover;
+    }
+    h4{
+        font-size: 12px;
+        font-weight:900;
+        text-align: left;
+       
+    }
+    button{
+        @include base.btn;
+        @include base.sousligne;
+        text-decoration-thickness: 1px;
+        box-shadow: 0 0 4px 0 variables.$bleu;
+        width: 100%;
+        margin: 0;
+        font-size: 8px;
+        text-underline-offset:1px;
+    }
+}

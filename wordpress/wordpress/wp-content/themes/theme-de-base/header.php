@@ -21,6 +21,10 @@
 	 Supprimer cette fonction briserait vos extensions et diverses fonctionnalités WordPress. 
 	 Vous pouvez la déplacer si désiré, mais garder là. */
 ?>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
@@ -34,6 +38,7 @@
 >
 
 <header>
+	<!--  CODE DE BASE, JE L'AI MIT EN COMMENTAIRE POUR POTENTIELLEMENT LE RÉETULISER DANS NOTRE CODE PLUS TARD :D
 	<h1>
 		<a href="<?php echo esc_url( home_url( '/' ) ); // Lien vers la page d'accueil ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><?php bloginfo( 'name' ); // Affiche le nom du site ?></a>
 	</h1>
@@ -49,42 +54,77 @@
 		// Affiche la description de site se trouvant dans "General Settings" dans l'admin WordPress
 		bloginfo( 'description' ); 
 	?>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+	-->
+
+
+	<nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid">
+
+                <!--DÉBUT LOGO-->
+                <a href="" class="navbar-brand">
+                    <img src="assets/images/logo.png" alt="logo" class="logo">
+                </a>
+                <!--FIN LOGO-->
+
+                <!--DÉBUT BTN HAMBURGER-->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--FIN BTN HAMBURGER-->
+
+                <!--DÉBUT CONTENUS NAV-->
+                <div id="mainNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item">
+                            <a href="" class=" nav-lien">Accueil</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Ateliers</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Collection</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Événements</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Boutique</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">Contact</a>
+                        </li>
+                        <li>
+                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-lien">En</a>
+                        </li>
+                    </ul>
+                    <!--FIN CONTENUS NAV-->
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
 </header>
 
 <main><!-- Débute le contenu principal de notre site -->

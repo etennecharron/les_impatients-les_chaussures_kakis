@@ -1,0 +1,108 @@
+@use "variables";
+@use "base";
+@use "sections";
+@use "cartes";
+
+@mixin derniereNouvellesTelephone {
+    @include sections.sectionsTelephone;
+    flex-direction: column;
+    align-items: center;
+    background-color: variables.$bleu;
+    &__wrapup {
+        max-width:1200px;
+        margin: auto;
+        &__titre {
+            display: flex;
+            h2 {
+                font-size: 24px;
+                color: white;
+                @include base.sousligne;
+                text-decoration-color: variables.$orange;
+            }
+        }
+
+        &__content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                .sousligne {
+                    @include base.sousligne;
+                    text-decoration-color: variables.$orange;
+                    text-decoration-thickness: 1px;
+                    text-underline-offset: 1px;
+                }
+            }
+            .card {
+                @include cartes.carte;
+            }
+
+            &__btn{
+            @include base.btn;
+            margin-top: 10px;
+            align-self: center;
+            }
+        }
+    }
+@mixin derniereNouvellesTablette {
+    @include sections.sectionsTablette;
+
+    &__wrapup {
+        &__titre {
+            align-self: flex-start;
+
+            h2 {
+                font-size: 30px;
+                text-decoration: none;
+
+                &:nth-child(3) {
+                    @include base.sousligne;
+                    text-decoration-color: variables.$orange;
+                }
+            }
+        }
+
+        &__content {
+            margin-top: 20px;
+            justify-content: space-around;
+            flex-direction: row;
+
+            .card {
+                width: 160px;
+                height: 250px;
+                padding-top: 150px;
+                margin: 20px 10px 0 10px;
+
+                h4 {
+                    font-size: 10px;
+                }
+            }
+
+        }
+    }
+}
+
+@mixin derniereNouvellesOrdinateur {
+    @include sections.sectionsOrdinateur;
+
+    &__wrapup {
+        &__titre {
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        &__content {
+            margin-top: 30px;
+            .card {
+                height: 320px;
+                width: 220px;
+                padding-top: 210px;
+
+                h4 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

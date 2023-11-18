@@ -1,0 +1,70 @@
+@use "variables";
+.alert{
+    background-color: variables.$grisAlerte;
+    font-size: 10px;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0;
+    height:25px;
+    border-radius:0;
+    &__wrapup{
+        display: flex;
+        justify-content:space-evenly;
+        align-items:center;
+        max-width: 1200px;
+        height:100%;
+        margin: auto;
+    }
+
+    .btn-close{
+        background: url(../assets/images/btnX.svg);
+        background-repeat: no-repeat;
+        background-size: 17px;
+        background-position: center;
+        opacity: 1;
+        top:auto;
+        right: 5px;
+        width:20px;
+        height:20px;
+        padding: 0;
+        
+    }
+    p{
+        margin:0;
+    }
+    a{
+        color:variables.$orange;
+        text-decoration: none;
+    }
+}
+
+@media (min-width:768px){
+    .alert{
+        height:51px;
+        font-size: 20px;
+        .btn-close{
+            background-size:32px;
+            width:40px;
+            height:40px;
+        }
+    }
+    .ligne_separation{
+        height:17px;
+    }
+}
+
+@media (min-width:1200px){
+    .alert{
+        height:79px;
+        font-size: 36px;
+        .btn-close{
+            background-size:45px;
+            width:50px;
+            height:50px;
+            right: 20px;
+        }
+    }
+    .ligne_separation{
+        height:30px;
+    }
+}

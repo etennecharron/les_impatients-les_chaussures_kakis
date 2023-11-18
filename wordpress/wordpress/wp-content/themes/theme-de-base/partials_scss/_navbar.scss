@@ -1,0 +1,97 @@
+@use "variables";
+nav{
+    max-width: 1200px;
+    margin: auto;
+    font-size:20px;
+    .ligne_separation{
+        display: none;
+    }
+    .logo{
+        width:39px;
+    }
+    .navbar-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+    
+    }
+    .nav-lien{
+        font-size:14px;
+        font-weight: 900;
+        text-decoration: none;
+        color:black;
+          /*
+        &:hover{
+          
+            color:variables.$orange;
+            text-decoration: underline;text-decoration-thickness:1.5px;
+            text-underline-offset: 8px;
+            
+        }
+        */
+    }
+    .nav-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:5px 0;
+        width: 100%;
+        border: variables.$bleu 3px solid;
+        border-radius: 40px;
+    &:hover{
+      background-color: variables.$orange;
+      .nav-lien{
+        color: white;
+      }
+    }
+    }
+    .navbar-light .navbar-toggler-icon{
+        background-image: url(../assets/images/menu_hamburger.svg);
+    }
+    .navbar-light .navbar-toggler{
+        border: none;
+    }
+    
+    @media(min-width:768px){
+        nav{
+            .ligne_separation{
+                display:block;
+            }
+            .logo{
+                width:48px;
+            }
+    
+            .nav-lien{
+                font-size:18px;
+                font-weight: 300;
+            }
+            .nav-item{
+                border:none;
+                border-radius: 40px;
+                width:auto;
+            &:hover{
+              background-color:variables.$gris;
+              .nav-lien{
+                color:variables.$orange;
+                text-decoration: underline;text-decoration-thickness:1.5px;
+                text-underline-offset: 8px;
+              }
+            }
+            }
+        }
+    }
+    @media(min-width:1200px){
+        nav{
+            .logo{
+                width:96px;
+            }
+            .nav-lien{
+                font-size:28px;
+            }
+        }
+    }
+    
+    
+    
