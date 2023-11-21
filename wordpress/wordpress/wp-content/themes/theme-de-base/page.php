@@ -10,7 +10,6 @@ if ( have_posts() ) :
 	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
 	while ( have_posts() ) : the_post(); 
 ?>
-
 	<article>
 		<h2>
 			<?php the_title(); // Titre de la page ?>
