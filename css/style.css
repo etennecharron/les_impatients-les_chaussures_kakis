@@ -51,15 +51,6 @@ nav .navbar-nav {
   font-weight: 900;
   text-decoration: none;
   color: black;
-  /*
-  &:hover{
-
-      color:variables.$orange;
-      text-decoration: underline;text-decoration-thickness:1.5px;
-      text-underline-offset: 8px;
-
-  }
-  */
 }
 
 .nav-item {
@@ -103,7 +94,7 @@ nav .navbar-nav {
     width: auto;
   }
   nav .nav-item:hover {
-    background-color: #EBEBEB;
+    background-color: transparent;
   }
   nav .nav-item:hover .nav-lien {
     color: #F75C03;

@@ -72,7 +72,7 @@ nav{
                 border-radius: 40px;
                 width:auto;
             &:hover{
-              background-color:variables.$gris;
+              background-color:transparent;
               .nav-lien{
                 color:variables.$orange;
                 text-decoration: underline;text-decoration-thickness:1.5px;

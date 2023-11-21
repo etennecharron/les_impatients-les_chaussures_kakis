@@ -22,15 +22,6 @@ nav{
         font-weight: 900;
         text-decoration: none;
         color:black;
-          /*
-        &:hover{
-          
-            color:variables.$orange;
-            text-decoration: underline;text-decoration-thickness:1.5px;
-            text-underline-offset: 8px;
-            
-        }
-        */
     }
     .nav-item{
         display: flex;
@@ -72,7 +63,7 @@ nav{
                 border-radius: 40px;
                 width:auto;
             &:hover{
-              background-color:variables.$gris;
+              background-color:transparent;
               .nav-lien{
                 color:variables.$orange;
                 text-decoration: underline;text-decoration-thickness:1.5px;

@@ -118,7 +118,7 @@ nav .navbar-nav {
     width: auto;
   }
   nav .nav-item:hover {
-    background-color: #EBEBEB;
+    background-color: transparent;
   }
   nav .nav-item:hover .nav-lien {
     color: #F75C03;

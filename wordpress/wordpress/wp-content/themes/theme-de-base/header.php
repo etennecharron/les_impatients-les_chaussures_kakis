@@ -62,7 +62,7 @@
 
                 <!--DÉBUT LOGO-->
                 <a href="" class="navbar-brand">
-                    <img src="assets/images/logo.png" alt="logo" class="logo">
+                <img class="logo" src="<?php bloginfo('template_url'); ?>/images/logo.png">
                 </a>
                 <!--FIN LOGO-->
 
