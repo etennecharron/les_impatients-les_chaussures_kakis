@@ -1721,13 +1721,93 @@ font-weight: 900; = black
 
 /***************************************************FIN ERREUR 404***************************************************/
 
+
+
+
 /***************************************************DÉBUT HUB DE SERVICES***************************************************/
-#hubService .card {
-    max-width: 300px;
+#hubNouvelles .sectionServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titre{
+        width:100%;
+        max-width: 375px;
+        margin:40px 12px;
+        padding:0 30px;
+        h2{
+            font-size: 24px;
+        }
+    }
+    &__wrapup {
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+.card:nth-child(1){
+    margin-top:0;
+}
+        .card {
+            @include sections.sectionNouvelleTelephone;
+            max-width: 375px;
+            width: 100%;
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+
+                .card-title {
+                    align-self: center;
+                }
+
+                .card-text {
+                    text-align: justify;
+                }
+
+                .btn {
+                    @include base.sousligne;
+                    align-self: flex-end;
+                    text-decoration-thickness: 1.5px;
+                    color: variables.$orange;
+                }
+            }
+        }
+    }
 }
 
-.section_hub_services .card {
-    color: orange;
+
+
+@media (min-width:768px) {
+    #hubNouvelles .sectionServices {
+        &__titre{
+            max-width: 768px;
+        }
+        &__wrapup {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            .card{
+                width: 348px;
+            }
+        }
+    }
+
+}
+
+@media (min-width:1200px){
+    #hubNouvelles .sectionServices{
+        &__titre{
+            max-width: 1200px;
+        }
+        &__wrapup{
+            max-width:1200px;
+            flex-wrap: nowrap;
+        }
+    }
 }
 
 /***************************************************FIN HUB DE SERVIC#ES***************************************************/

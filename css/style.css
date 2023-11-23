@@ -2445,12 +2445,84 @@ font-weight: 900; = black
 }
 /***************************************************FIN ERREUR 404***************************************************/
 /***************************************************DÉBUT HUB DE SERVICES***************************************************/
-#hubService .card {
-  max-width: 300px;
+#hubNouvelles .sectionServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hubNouvelles .sectionServices__titre {
+  width: 100%;
+  max-width: 375px;
+  margin: 40px 12px;
+  padding: 0 30px;
+}
+#hubNouvelles .sectionServices__titre h2 {
+  font-size: 24px;
+}
+#hubNouvelles .sectionServices__wrapup {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#hubNouvelles .sectionServices__wrapup .card:nth-child(1) {
+  margin-top: 0;
+}
+#hubNouvelles .sectionServices__wrapup .card {
+  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
+  margin: 40px 12px;
+  padding: 40px 20px;
+  border-radius: 40px;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 375px;
+  width: 100%;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .card-title {
+  align-self: center;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .card-text {
+  text-align: justify;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .btn {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  align-self: flex-end;
+  text-decoration-thickness: 1.5px;
+  color: #F75C03;
 }
 
-.section_hub_services .card {
-  color: orange;
+@media (min-width: 768px) {
+  #hubNouvelles .sectionServices__titre {
+    max-width: 768px;
+  }
+  #hubNouvelles .sectionServices__wrapup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  #hubNouvelles .sectionServices__wrapup .card {
+    width: 348px;
+  }
 }
-
+@media (min-width: 1200px) {
+  #hubNouvelles .sectionServices__titre {
+    max-width: 1200px;
+  }
+  #hubNouvelles .sectionServices__wrapup {
+    max-width: 1200px;
+    flex-wrap: nowrap;
+  }
+}
 /***************************************************FIN HUB DE SERVIC#ES***************************************************//*# sourceMappingURL=style.css.map */
