@@ -160,6 +160,119 @@ if ( have_posts() ) :
         </section>
         <!------------------------FIN SERVICES------------------------->
 
+        <!------------------------DÉBUT NOUVELLE------------------------->
+        <section class="nouvelles">
+            <div class="nouvelles__wrapup">
+                <div class="nouvelles__wrapup__titre">
+                    <h2>Les dernières </h2>
+                    <h2>&nbsp</h2>
+                    <h2>nouvelles</h2>
+                </div>
+                <div class="nouvelles__wrapup__content">
+                    <!-- utiliser carte bootstrap-->
+                    <div class="nouvelles__wrapup__content__carte card">
+                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
+                            alt="image de la nouvelle 1">
+                        <div class="card-body">
+                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
+                            <button>En savoir plus</button>
+                        </div>
+                    </div>
+                    <div class="nouvelles__wrapup__content__carte card">
+                        <img src="assets/images/img_carte_nouvelles_02.png" class="card-img-top"
+                            alt="image de la nouvelle 1">
+                        <div class="card-body">
+                            <h4 class="card-title">PARLE MOI D'AMOUR... ET D'ESPOIR</h4>
+                            <button>En savoir plus</button>
+                        </div>
+                    </div>
+                    <div class="nouvelles__wrapup__content__carte card">
+                        <img src="assets/images/img_carte_nouvelles_03.png" class="card-img-top"
+                            alt="image de la nouvelle 1">
+                        <div class="card-body">
+                            <h4 class="card-title">ÉVÈNEMENT LECTURE</h4>
+                            <button>En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="nouvelles__wrapup__btn">Pour plus de nouvelles</button>
+            </div>
+        </section>
+
+        <!------------------------FIN NOUVELLE------------------------->
+
+
+         <!------------------------DÉBUT TÉMOIGNAGE------------------------->
+         <section class="temoignage">
+            <div class="temoignage__wrapup">
+                <!-- peut etre utiliser display flex pour les mettre l'un a coté de l'autre-->
+                <h2>Témoignage</h2>
+                <!-- utiliser carte bootstrap-->
+
+
+                <div class="temoignage__wrapup__content">
+                    <div class="card">
+                        <img src="assets/images/img_carte_temoignage.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <div class="identiter">
+                                <h4 class="card-title">Jean Sébastien Saint-Amour</h4>
+                                <img src="assets/images/ligne_separation.svg" alt="">
+                                <h4 class="card-title">Artiste</h4>
+                                <img src="assets/images/ligne_separation.svg" alt="">
+                                <h4 class="card-title">24 ans</h4>
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad.</p>
+                        </div>
+                    </div>
+
+                    <img class="imgCoter" src="assets/images/personnage04.svg" alt="image de coté">
+                </div>
+            </div>
+        </section>
+
+
+        <!------------------------FIN TÉMOIGNAGE------------------------->
+
+        <!------------------------DÉBUT ESPACE------------------------->
+
+        <section class="espace">
+            <div class="espace__wrapup">
+                <div class="espace__wrapup__titre">
+                    <h2>L'espace</h2>
+                    <h2>&nbsp</h2>
+                    <h2>Impatients</h2>
+                </div>
+                <div class="espace__wrapup__contenus">
+                    <button class="espace__wrapup__contenus__btn">Pour plus d'articles ></button>
+                    <!-- utiliser carte bootstrap-->
+                    <div class="espace__wrapup__contenus__carte card">
+                        <img src="assets/images/img_carte_espace_01.png" class="card-img-top"
+                            alt="image de la nouvelle 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Diane Frigon à l'espace d'exposition Aimant•é</h4>
+                            <button>Lire l’article</button>
+                        </div>
+                    </div>
+                    <!-- utiliser carte bootstrap-->
+                    <div class="espace__wrapup__contenus__carte card">
+                        <img src="assets/images/img_carte_espace_02.png" class="card-img-top"
+                            alt="image de la nouvelle 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Jocelyne Proulx et Annie Letendre À L’ESPACE D’EXPOSITION AIMANT•É
+                            </h4>
+                            <button>En savoir plus</button>
+                        </div>
+                    </div>
+                    <button class="espace__wrapup__contenus__btn">Lire l’article</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!------------------------FIN ESPACE------------------------->
+
 
 <?php
 
