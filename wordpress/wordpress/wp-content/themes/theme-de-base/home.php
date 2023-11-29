@@ -117,46 +117,6 @@ if ( have_posts() ) :
                             endwhile; 
                             endif;
                             ?>
-
-                        <!--
-                            <div class="services__wrapup__contenus__wrapupDropdown--sourligner__collection dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownCollection"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    La collection
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownCollection">
-                                    <p>
-                                        Depuis le début de nos activités, nous avons conservé une grande partie des
-                                        œuvres
-                                        produites par nos participants et participantes, ce qui constitue aujourd’hui un
-                                        patrimoine riche de 15 000 œuvres d’art. Il s’agit là d’une collection d’une
-                                        grande
-                                        originalité, pionnière au Canada dans son champ de collectionnement.
-                                    </p>
-                                    <button>Voir la collection</button>
-                                </div>
-
-                            </div>
-
-
-                            <div class="services__wrapup__contenus__wrapupDropdown--sourligner__evenement dropdown">
-                                <button class="btn dropdown-toggle" type="button" id="dropdownEvenement"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ateliers
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownEvenement">
-                                    <p>
-                                        Nous disposons d’un espace galerie grâce auquel nous faisons connaître à un
-                                        large
-                                        public les œuvres produites dans nos ateliers. À cela s’ajoutent d’autres
-                                        activités
-                                        de diffusion régulièrement mises de l’avant à l’extérieur de notre centre.
-                                    </p>
-                                    <button>Voir les évenement</button>
-                                </div>
-
-                            </div>
--->
                         </div>
 
                     </div>
@@ -175,8 +135,17 @@ if ( have_posts() ) :
                     <h2>nouvelles</h2>
                 </div>
                 <div class="nouvelles__wrapup__content">
+
+                <?php
+            $nouvelles = new WP_Query("post_type=nouvelle");
+            if ( $nouvelles->have_posts() ) : 
+	        while ( $nouvelles->have_posts() ) : $nouvelles->the_post(); 
+            ?>
+                
+
                     <!-- utiliser carte bootstrap-->
                     <div class="nouvelles__wrapup__content__carte card">
+                        
                         <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
                             alt="image de la nouvelle 1">
                         <div class="card-body">
@@ -184,6 +153,13 @@ if ( have_posts() ) :
                             <button>En savoir plus</button>
                         </div>
                     </div>
+
+                    <?php 
+                            endwhile; 
+                            endif;
+                            ?>
+
+<!--
                     <div class="nouvelles__wrapup__content__carte card">
                         <img src="assets/images/img_carte_nouvelles_02.png" class="card-img-top"
                             alt="image de la nouvelle 1">
@@ -192,6 +168,8 @@ if ( have_posts() ) :
                             <button>En savoir plus</button>
                         </div>
                     </div>
+
+
                     <div class="nouvelles__wrapup__content__carte card">
                         <img src="assets/images/img_carte_nouvelles_03.png" class="card-img-top"
                             alt="image de la nouvelle 1">
@@ -200,6 +178,9 @@ if ( have_posts() ) :
                             <button>En savoir plus</button>
                         </div>
                     </div>
+
+                        -->
+
                 </div>
                 <button class="nouvelles__wrapup__btn">Pour plus de nouvelles</button>
             </div>
