@@ -91,30 +91,34 @@ if ( have_posts() ) :
                             <h2>Offerts</h2>
                         </div>
                         <div>
+
+                        <?php
+                        $services= new WP_Query("post_type=service");
+                        if ( $services->have_posts() ) : 
+                            while ( $services->have_posts() ) : $services->the_post(); ?>
+                    
+
                             <div class="services__wrapup__contenus__wrapupDropdown--sourligner__atelier dropdown">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownAtelier"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    Ateliers
+                                    <?php the_title(); ?>
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownAtelier">
                                     <p>
-                                        Notre organisme est à même de transmettre son expertise aux centres et aux
-                                        groupes
-                                        travaillant avec une clientèle en santé mentale. Plusieurs lieux d’ateliers ont
-                                        été
-                                        ouverts au Québec en collaboration avec des établissements du milieu de la santé
-                                        et
-                                        avec des lieux de diffusion impliqués dans leur communauté. Plusieurs ont suivi.
-                                        Maintenant, nous avons 21 points de service dans 13 villes au Québec qui
-                                        accueillent
-                                        900 personnes par semaine.
+
+                                        <?php the_content(); ?>
                                     </p>
                                     <button>Voir les ateliers</button>
                                 </div>
 
                             </div>
 
+                            <?php 
+                            endwhile; 
+                            endif;
+                            ?>
 
+                        <!--
                             <div class="services__wrapup__contenus__wrapupDropdown--sourligner__collection dropdown">
                                 <button class="btn dropdown-toggle" type="button" id="dropdownCollection"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -152,7 +156,9 @@ if ( have_posts() ) :
                                 </div>
 
                             </div>
+-->
                         </div>
+
                     </div>
                     <img src="<?php bloginfo('template_url'); ?>/images/personnage03.svg" alt="image de coté">
                 </div>
