@@ -145,11 +145,9 @@ if ( have_posts() ) :
 
                     <!-- utiliser carte bootstrap-->
                     <div class="nouvelles__wrapup__content__carte card">
-                        
-                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
+                    <?php the_post_thumbnail("medium", array("class" => "card-img-top")); ?>
                         <div class="card-body">
-                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
+                            <h4 class="card-title"><?php the_title(); ?></h4>
                             <button>En savoir plus</button>
                         </div>
                     </div>
@@ -158,28 +156,6 @@ if ( have_posts() ) :
                             endwhile; 
                             endif;
                             ?>
-
-<!--
-                    <div class="nouvelles__wrapup__content__carte card">
-                        <img src="assets/images/img_carte_nouvelles_02.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">PARLE MOI D'AMOUR... ET D'ESPOIR</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-
-                    <div class="nouvelles__wrapup__content__carte card">
-                        <img src="assets/images/img_carte_nouvelles_03.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">ÉVÈNEMENT LECTURE</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-                        -->
 
                 </div>
                 <button class="nouvelles__wrapup__btn">Pour plus de nouvelles</button>
@@ -199,13 +175,15 @@ if ( have_posts() ) :
 
                 <div class="temoignage__wrapup__content">
                     <div class="card">
-                        <img src="assets/images/img_carte_temoignage.png" class="card-img-top" alt="...">
+
+                    <img src="<?php bloginfo('template_url'); ?>/images/img_carte_temoignage.png" alt="temoin">
+                        
                         <div class="card-body">
                             <div class="identiter">
                                 <h4 class="card-title">Jean Sébastien Saint-Amour</h4>
-                                <img src="assets/images/ligne_separation.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/images/ligne_separation.svg" alt="temoin">
                                 <h4 class="card-title">Artiste</h4>
-                                <img src="assets/images/ligne_separation.svg" alt="">
+                                <img src="<?php bloginfo('template_url'); ?>/images/ligne_separation.svg" alt="temoin">
                                 <h4 class="card-title">24 ans</h4>
                             </div>
                             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -214,7 +192,7 @@ if ( have_posts() ) :
                         </div>
                     </div>
 
-                    <img class="imgCoter" src="assets/images/personnage04.svg" alt="image de coté">
+                    <img class="imgCoter" src="<?php bloginfo('template_url'); ?>/images/personnage04.svg" alt="temoin">
                 </div>
             </div>
         </section>
@@ -234,24 +212,32 @@ if ( have_posts() ) :
                 <div class="espace__wrapup__contenus">
                     <button class="espace__wrapup__contenus__btn">Pour plus d'articles ></button>
                     <!-- utiliser carte bootstrap-->
-                    <div class="espace__wrapup__contenus__carte card">
+
+                    <?php
+            $articles = new WP_Query("post_type=article");
+            if ( $articles->have_posts() ) : 
+	        while ( $articles->have_posts() ) : $articles->the_post(); 
+            ?>
+                
+
+                <div class="espace__wrapup__contenus__carte card">
                         <img src="assets/images/img_carte_espace_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
+                            alt="image de la nouvelle">
                         <div class="card-body">
-                            <h4 class="card-title">Diane Frigon à l'espace d'exposition Aimant•é</h4>
+                            <h4 class="card-title"><?php the_title(); ?></h4>
                             <button>Lire l’article</button>
                         </div>
                     </div>
+
+
+                    <?php 
+                            endwhile; 
+                            endif;
+                            ?>
+
+
                     <!-- utiliser carte bootstrap-->
-                    <div class="espace__wrapup__contenus__carte card">
-                        <img src="assets/images/img_carte_espace_02.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">Jocelyne Proulx et Annie Letendre À L’ESPACE D’EXPOSITION AIMANT•É
-                            </h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
+
                     <button class="espace__wrapup__contenus__btn">Lire l’article</button>
                 </div>
             </div>

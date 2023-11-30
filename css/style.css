@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 * {
   font-family: lato;
 }
@@ -51,6 +66,15 @@ nav .navbar-nav {
   font-weight: 900;
   text-decoration: none;
   color: black;
+  /*
+  &:hover{
+
+      color:variables.$orange;
+      text-decoration: underline;text-decoration-thickness:1.5px;
+      text-underline-offset: 8px;
+
+  }
+  */
 }
 
 .nav-item {
@@ -177,6 +201,51 @@ nav .navbar-nav {
     height: 30px;
   }
 }
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 .heroGenerique {
   padding: 40px 12px;
   background-color: #004E89;
@@ -254,6 +323,21 @@ nav .navbar-nav {
     font-size: 40px;
   }
 }
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 /*************************DÉBUT FOOTER HAUT 350PX*********************************/
 .footer__compagnie {
   padding: 40px 12px;
@@ -283,8 +367,7 @@ nav .navbar-nav {
   width: 141px;
   height: 47px;
   margin: 14px 0 14px 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*************************FIN FOOTER HAUT 350PX*********************************/
@@ -630,7 +713,7 @@ font-weight: 900; = black
 .hero__info02__carousel {
   width: 120px;
   height: 130px;
-  background-image: url(../assets/images/cercle.png);
+  background-image: url(images/cercle.png);
   background-repeat: no-repeat;
   background-size: 100%;
   font-size: 8px;
@@ -1041,8 +1124,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .nouvelles__wrapup .card h4 {
   font-size: 12px;
@@ -1066,6 +1148,9 @@ font-weight: 900; = black
   margin: 0;
   font-size: 8px;
   text-underline-offset: 1px;
+}
+.nouvelles__wrapup .card img {
+  height: 180px;
 }
 .nouvelles__wrapup__btn {
   background-color: #EBEBEB;
@@ -1106,6 +1191,9 @@ font-weight: 900; = black
     height: 250px;
     padding-top: 150px;
     margin: 20px 10px 0 10px;
+  }
+  .nouvelles__wrapup__content .card img {
+    height: 18;
   }
   .nouvelles__wrapup__content .card h4 {
     font-size: 10px;
@@ -1178,8 +1266,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .temoignage__wrapup__content .card h4 {
   font-size: 12px;
@@ -1338,8 +1425,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .espace__wrapup__contenus .card h4 {
   font-size: 12px;
@@ -1615,8 +1701,7 @@ font-weight: 900; = black
 .baniere {
   width: 100%;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1791,8 +1876,7 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1816,8 +1900,7 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1864,8 +1947,7 @@ font-weight: 900; = black
 }
 #detailNouvelle .sectionImg02 img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*****************FIN SECTION IMAGE***********************/
@@ -1977,8 +2059,7 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -2002,8 +2083,7 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -2309,8 +2389,7 @@ font-weight: 900; = black
 /*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
 #equipe .img_equipe {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -2456,84 +2535,12 @@ font-weight: 900; = black
 }
 /***************************************************FIN ERREUR 404***************************************************/
 /***************************************************DÉBUT HUB DE SERVICES***************************************************/
-#hubNouvelles .sectionServices {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#hubNouvelles .sectionServices__titre {
-  width: 100%;
-  max-width: 375px;
-  margin: 40px 12px;
-  padding: 0 30px;
-}
-#hubNouvelles .sectionServices__titre h2 {
-  font-size: 24px;
-}
-#hubNouvelles .sectionServices__wrapup {
-  width: 100%;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
-}
-#hubNouvelles .sectionServices__wrapup .card:nth-child(1) {
-  margin-top: 0;
-}
-#hubNouvelles .sectionServices__wrapup .card {
-  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
-  margin: 40px 12px;
-  padding: 40px 20px;
-  border-radius: 40px;
-  background-color: #D9D9D9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 375px;
-  width: 100%;
-}
-#hubNouvelles .sectionServices__wrapup .card .card-body {
-  display: flex;
-  flex-direction: column;
-}
-#hubNouvelles .sectionServices__wrapup .card .card-body .card-title {
-  align-self: center;
-}
-#hubNouvelles .sectionServices__wrapup .card .card-body .card-text {
-  text-align: justify;
-}
-#hubNouvelles .sectionServices__wrapup .card .card-body .btn {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3.5px;
-  align-self: flex-end;
-  text-decoration-thickness: 1.5px;
-  color: #F75C03;
+#hubService .card {
+  max-width: 300px;
 }
 
-@media (min-width: 768px) {
-  #hubNouvelles .sectionServices__titre {
-    max-width: 768px;
-  }
-  #hubNouvelles .sectionServices__wrapup {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  #hubNouvelles .sectionServices__wrapup .card {
-    width: 348px;
-  }
+.section_hub_services .card {
+  color: orange;
 }
-@media (min-width: 1200px) {
-  #hubNouvelles .sectionServices__titre {
-    max-width: 1200px;
-  }
-  #hubNouvelles .sectionServices__wrapup {
-    max-width: 1200px;
-    flex-wrap: nowrap;
-  }
-}
+
 /***************************************************FIN HUB DE SERVIC#ES***************************************************//*# sourceMappingURL=style.css.map */

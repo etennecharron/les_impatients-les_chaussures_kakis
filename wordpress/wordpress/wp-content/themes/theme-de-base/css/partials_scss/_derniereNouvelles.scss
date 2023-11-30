@@ -7,7 +7,7 @@
     @include sections.sectionsTelephone;
     flex-direction: column;
     align-items: center;
-    background-color: variables.$bleu;
+    background-color:variables.$bleu;
     &__wrapup {
         max-width:1200px;
         margin: auto;
@@ -35,6 +35,9 @@
             }
             .card {
                 @include cartes.carte;
+                img{
+                    height:180px;
+                }
             }
 
             &__btn{
@@ -72,6 +75,9 @@
                 height: 250px;
                 padding-top: 150px;
                 margin: 20px 10px 0 10px;
+                img{
+                    height: 145px;
+                }
 
                 h4 {
                     font-size: 10px;
@@ -98,7 +104,9 @@
                 height: 320px;
                 width: 220px;
                 padding-top: 210px;
-
+                img{
+                    height: 200px;
+                }
                 h4 {
                     font-size: 14px;
                 }
