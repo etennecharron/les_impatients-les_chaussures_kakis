@@ -68,10 +68,10 @@ get_header(); // Affiche header.php
 
             <!-------------------------------sDÉBUT DE LA SECTION IMAGE01----------------------------->
             <section class="sectionImg01">
-                <img src="assets/images/img_detailNouvelle_01.png" alt="image 01" />
-                <img src="assets/images/img_detailNouvelle_02.png" alt="image 02" />
-                <img src="assets/images/img_detailNouvelle_03.png" alt="image 03" />
-                <img src="assets/images/img_detailNouvelle_04.png" alt="image 04" />
+            <img src="<?php bloginfo('template_url'); ?>/images/img_detailNouvelle_01.png" alt="image 01">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_detailNouvelle_02.png" alt="image 02">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_detailNouvelle_03.png" alt="image 03">
+            <img src="<?php bloginfo('template_url'); ?>/images/img_detailNouvelle_04.png" alt="image 04">
             </section>
             <!-------------------------------FIN DE LA SECTION IMAGE01----------------------------->
 
@@ -134,10 +134,10 @@ get_header(); // Affiche header.php
 
             <!-------------------------------sDÉBUT DE LA SECTION IMAGE03----------------------------->
             <section class="sectionImg03">
-                <img src="assets/images/detail_nouvelle_groupe_img02_01.png" alt="image 01" />
-                <img src="assets/images/detail_nouvelle_groupe_img02_02.png" alt="image 02" />
-                <img src="assets/images/detail_nouvelle_groupe_img02_03.png" alt="image 03" />
-                <img src="assets/images/detail_nouvelle_groupe_img02_04.png" alt="image 04" />
+            <img src="<?php bloginfo('template_url'); ?>/images/detail_nouvelle_groupe_img02_01.png" alt="image 01">
+            <img src="<?php bloginfo('template_url'); ?>/images/detail_nouvelle_groupe_img02_02.png" alt="image 02">
+            <img src="<?php bloginfo('template_url'); ?>/images/detail_nouvelle_groupe_img02_03.png" alt="image 03">
+            <img src="<?php bloginfo('template_url'); ?>/images/detail_nouvelle_groupe_img02_04.png" alt="image 04">
             </section>
             <!-------------------------------FIN DE LA SECTION IMAGE03----------------------------->
 
