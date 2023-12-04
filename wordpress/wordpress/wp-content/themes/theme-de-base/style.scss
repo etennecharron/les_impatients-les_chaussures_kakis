@@ -1040,16 +1040,16 @@ font-weight: 900; = black
 
 
 /********************************************DÉTAIL NOUVELLE***********************************************/
-#detailNouvelle {
+.nouvelle-template {
     display: flex;
     flex-direction: column;
 }
 
-#detailNouvelle main {
+.nouvelle-template main {
     margin-bottom: 100px;
 }
 
-#detailNouvelle .sectionsWrapup {
+.nouvelle-template .sectionsWrapup {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1076,7 +1076,7 @@ font-weight: 900; = black
     }
 }
 
-#detailNouvelle .titreNouvelle {
+.nouvelle-template .titreNouvelle {
     @include sections.sectionsTelephone;
     background-color: variables.$bleu;
 
@@ -1134,7 +1134,7 @@ font-weight: 900; = black
 }
 
 @media (min-width:768px) {
-    #detailNouvelle .titreNouvelle {
+    .nouvelle-template .titreNouvelle {
         @include sections.sectionsTablette;
 
         &__wrapup {
@@ -1169,7 +1169,7 @@ font-weight: 900; = black
 }
 
 @media (min-width:1200px) {
-    #detailNouvelle .titreNouvelle {
+    .nouvelle-template .titreNouvelle {
         @include sections.sectionsTablette;
 
         &__wrapup {
@@ -1197,7 +1197,7 @@ font-weight: 900; = black
 
 
 /*****************DÉBUT SECTION TEXTE01***********************/
-#detailNouvelle .sectionTexte01 {
+.nouvelle-template .sectionTexte01 {
     @include sections.sectionNouvelleTelephone;
 
     p {
@@ -1217,7 +1217,7 @@ font-weight: 900; = black
 }
 
 @media (min-width:768px) {
-    #detailNouvelle .sectionTexte01 {
+    .nouvelle-template .sectionTexte01 {
         @include sections.sectionNouvelleTabletteOrdinateur;
 
         p {
@@ -1238,7 +1238,7 @@ font-weight: 900; = black
 }
 
 @media(min-width:1200px) {
-    #detailNouvelle .sectionTexte01 {
+    .nouvelle-template .sectionTexte01 {
         p {
             font-size: 14px;
             font-weight: 300;
@@ -1262,18 +1262,18 @@ font-weight: 900; = black
 
 
 /*****************DÉBUT SECTION IMAGES***********************/
-#detailNouvelle .sectionImg01 {
+.nouvelle-template .sectionImg01 {
     @include sections.sectionGroupeImgTelephone;
 }
 
 @media (min-width:768px) {
-    #detailNouvelle .sectionImg01 {
+    .nouvelle-template .sectionImg01 {
         @include sections.sectionGroupeImgTablette;
     }
 }
 
 @media (min-width:1200px) {
-    #detailNouvelle .sectionImg01 {
+    .nouvelle-template .sectionImg01 {
         @include sections.sectionGroupeImgOrdinateur;
     }
 }
@@ -1282,7 +1282,7 @@ font-weight: 900; = black
 
 
 /*****************DÉBUT SECTION TEXTE02***********************/
-#detailNouvelle .sectionTexte02 {
+.nouvelle-template .sectionTexte02 {
     @include sections.sectionNouvelleTelephone;
 
     p {
@@ -1293,7 +1293,7 @@ font-weight: 900; = black
 }
 
 @media (min-width:768px) {
-    #detailNouvelle .sectionTexte02 {
+    .nouvelle-template .sectionTexte02 {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
@@ -1303,7 +1303,7 @@ font-weight: 900; = black
 
 /*****************DÉBUT SECTION IMAGE***********************/
 
-#detailNouvelle .sectionImg02 {
+.nouvelle-template .sectionImg02 {
     margin: 40px 12px;
 
     img {
@@ -1370,18 +1370,18 @@ font-weight: 900; = black
 /*****************FIN SECTION TEXTE04***********************/
 
 /*****************DÉBUT SECTION IMAGE03***********************/
-#detailNouvelle .sectionImg03 {
+.nouvelle-template .sectionImg03 {
     @include sections.sectionGroupeImgTelephone;
 }
 
 @media (min-width:768px) {
-    #detailNouvelle .sectionImg03 {
+    .nouvelle-template .sectionImg03 {
         @include sections.sectionGroupeImgTablette;
     }
 }
 
 @media (min-width:1200px) {
-    #detailNouvelle .sectionImg03 {
+    .nouvelle-template .sectionImg03 {
         @include sections.sectionGroupeImgOrdinateur;
     }
 }

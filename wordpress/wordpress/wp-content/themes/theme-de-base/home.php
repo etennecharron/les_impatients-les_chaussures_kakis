@@ -145,7 +145,9 @@ get_header(); // Affiche header.php
                     <?php the_post_thumbnail("medium", array("class" => "card-img-top")); ?>
                         <div class="card-body">
                             <h4 class="card-title"><?php the_title(); ?></h4>
+                            <a href="<?php the_permalink() ?>">
                             <button>En savoir plus</button>
+                            </a>
                         </div>
                     </div>
 
@@ -222,7 +224,9 @@ get_header(); // Affiche header.php
                             alt="image de la nouvelle">
                         <div class="card-body">
                             <h4 class="card-title"><?php the_title(); ?></h4>
+                            <a href="<?php the_permalink() ?>">
                             <button>Lire l’article</button>
+                            </a>
                         </div>
                     </div>
 

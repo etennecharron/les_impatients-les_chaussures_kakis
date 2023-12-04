@@ -10,7 +10,7 @@ get_header(); // Affiche header.php
 		
 		<main>
         <!-------------------------------DEBUT TITRE DE LA NOUVELLE----------------------------->
-        <img class="baniere" src="assets/images/detail_nouvelle_baniere.png" alt="">
+        <?php the_post_thumbnail("full", array("class" => "baniere",)); ?>
         <section class="titreNouvelle">
             <div class="titreNouvelle__wrapup">
                 <div class="titreNouvelle__wrapup__titreWrapup">
@@ -18,7 +18,7 @@ get_header(); // Affiche header.php
                         <p>Les impatients / Nouvelles /</p>
                         <p>&nbsp</p>
                         <p class="titreNouvelle__wrapup__titreWrapup__filAriane__nomNouvelle">
-                            Clôture de Miroir Miroir 2e édition
+                            <?php the_title(); ?>
                         </p>
                     </div>
                     <div class="titreNouvelle__wrapup__titreWrapup__description">
@@ -26,7 +26,7 @@ get_header(); // Affiche header.php
                         <p class="titreNouvelle__wrapup__titreWrapup__description__type">Évènement</p>
                     </div>
                     <div class="titreNouvelle__wrapup__titreWrapup__titre">
-                        <h1>CLÔTURE DE MIROIR MIROIR 2E ÉDITION</h1>
+                        <h1><?php the_title(); ?></h1>
                     </div>
                 </div>
             </div>

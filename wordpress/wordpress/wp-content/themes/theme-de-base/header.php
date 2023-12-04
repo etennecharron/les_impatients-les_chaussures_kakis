@@ -127,5 +127,4 @@
 
 
 </header>
-
-<main><!-- Débute le contenu principal de notre site -->
+<!-- Débute le contenu principal de notre site -->

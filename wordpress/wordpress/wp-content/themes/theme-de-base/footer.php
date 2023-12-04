@@ -4,7 +4,6 @@
 	/*-----------------------------------------------------------------------------------*/
 
 // Fermeture de la zone de contenu principale ?>
-</main>
 
 <footer>
             <section class="footer__compagnie">
