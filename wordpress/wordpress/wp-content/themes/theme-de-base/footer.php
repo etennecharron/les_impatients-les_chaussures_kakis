@@ -54,9 +54,9 @@
                             <div class="footer__bas__wrapup__wrapupSection__inscription__recherche"></div>
 
                             <div class="footer__bas__wrapup__wrapupSection__inscription__icons">
-							<img src="<?php bloginfo('template_url'); ?>/images/instagram_logo.svg" alt="instagram icon">
-							<img src="<?php bloginfo('template_url'); ?>/images/facebook_logo.svg" alt="facebook icon">
-							<img src="<?php bloginfo('template_url'); ?>/images/youtube_logo.svg" alt="youtube icon">
+							<a href="https://www.instagram.com/lesimpatients/"><img src="<?php bloginfo('template_url'); ?>/images/instagram_logo.svg" alt="instagram icon"></a>
+							<a href="https://www.facebook.com/organisme.les.impatients/"><img src="<?php bloginfo('template_url'); ?>/images/facebook_logo.svg" alt="facebook icon"></a>
+							<a href="https://www.youtube.com/user/LesImpatients"><img src="<?php bloginfo('template_url'); ?>/images/youtube_logo.svg" alt="youtube icon"></a>
                             </div>
                             <div class="footer__bas__wrapup__wrapupSection__inscription__contact">
                                 <p href="">Organisme de bienfaisance enregistré</p>
