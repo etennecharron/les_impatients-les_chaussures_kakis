@@ -1223,6 +1223,10 @@ font-weight: 900; = black
     font-size: 14px;
   }
 }
+.nouvelles .card:hover {
+  opacity: 85%;
+}
+
 /*****************FIN NOUVELLES***********************/
 /*****************DÉBUT TÉMOIGNAGE***********************/
 .temoignage {
@@ -1692,10 +1696,6 @@ font-weight: 900; = black
   flex-direction: column;
 }
 
-.nouvelle-template main {
-  margin-bottom: 100px;
-}
-
 .nouvelle-template .sectionsWrapup {
   display: flex;
   flex-direction: column;
@@ -1954,6 +1954,7 @@ font-weight: 900; = black
 /*****************DÉBUT SECTION IMAGE***********************/
 .nouvelle-template .sectionImg02 {
   margin: 40px 12px;
+  padding: 57px 50px;
 }
 .nouvelle-template .sectionImg02 img {
   width: 100%;

@@ -591,6 +591,9 @@ font-weight: 900; = black
         @include derniereNouvelles.derniereNouvellesOrdinateur;
     }
 }
+.nouvelles .card:hover{
+@include cartes.hover;
+}
 
 /*****************FIN NOUVELLES***********************/
 
@@ -1045,9 +1048,6 @@ font-weight: 900; = black
     flex-direction: column;
 }
 
-.nouvelle-template main {
-    margin-bottom: 100px;
-}
 
 .nouvelle-template .sectionsWrapup {
     display: flex;
@@ -1305,13 +1305,13 @@ font-weight: 900; = black
 
 .nouvelle-template .sectionImg02 {
     margin: 40px 12px;
-
+    padding: 57px 50px;
     img {
         width: 100%;
         object-fit: cover;
+        //max-width: 375px;
     }
 }
-
 /*****************FIN SECTION IMAGE***********************/
 
 /*****************DÉBUT SECTION 404***********************/
