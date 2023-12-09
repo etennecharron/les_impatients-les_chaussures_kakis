@@ -1811,3 +1811,124 @@ font-weight: 900; = black
 }
 
 /***************************************************FIN HUB DE SERVIC#ES***************************************************/
+
+
+/****************************************************** DÉBUT HUB DE NOUVELLES**********************************************/
+
+/**
+#hubNouvelles{
+.nouvellesRecentes{
+    &__wrapup{
+        @include sections.sectionsTelephone;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__titre{
+            width: 100%;
+            max-width: 375px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .swiperBtnGauche{
+                width: 60px;
+                height:60px;
+               position: absolute;
+               left:12px;
+               z-index:2;
+               transform: scaleX(-1);
+               opacity:50%;
+            }
+            .swiperBtnGauche:hover{
+                opacity: 100%;
+            }
+            .swiperBtnDroit{
+                width: 60px;
+                height:60px;
+                position: absolute;
+                right: 12px;
+                z-index:2;
+                opacity:50%;
+             }
+             .swiperBtnDroit:hover{
+                opacity: 100%;
+             }
+            &__carteWrapup{
+               // width: 100%;
+                .card{
+
+                    @include cartes.carte;
+                    z-index:0;
+                    max-width: 375px;
+                    height:400px;
+                    padding-top: 291px;
+                    
+                    img{
+                        width: 100%;
+                        height: 275px;
+                        object-fit: contain;
+                    }
+                }
+            }
+            
+        }
+
+    }
+}
+}
+
+**/
+
+#hubNouvelles .nouvellesRecentes{
+.mySwiper{
+width: 375px;
+margin: auto;
+display: flex;
+align-items: center;
+.swiperBtnDroit{
+    position: absolute;
+    right:12px;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    opacity:50%;
+}
+.swiperBtnDroit:hover{
+    opacity:100%;
+}
+.swiperBtnGauche{
+    position: absolute;
+    left:12px;
+    z-index: 2;
+    transform: scaleX(-1);
+    width: 60px;
+    height: 60px;
+    opacity:50%;
+}
+.swiperBtnGauche:hover{
+    opacity: 100%;
+}
+.swiper-wrapper{
+
+    .card{
+        
+        @include cartes.carte;
+        img{
+            width: 100%;
+            height:180px;
+            object-fit: cover;
+        }
+    }
+    }
+}
+
+}
+
+/****************************************************** FIN HUB DE NOUVELLES**********************************************/

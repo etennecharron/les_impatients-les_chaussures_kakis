@@ -1,19 +1,4 @@
 @charset "UTF-8";
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
 * {
   font-family: lato;
 }
@@ -66,15 +51,6 @@ nav .navbar-nav {
   font-weight: 900;
   text-decoration: none;
   color: black;
-  /*
-  &:hover{
-
-      color:variables.$orange;
-      text-decoration: underline;text-decoration-thickness:1.5px;
-      text-underline-offset: 8px;
-
-  }
-  */
 }
 
 .nav-item {
@@ -201,51 +177,6 @@ nav .navbar-nav {
     height: 30px;
   }
 }
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
 .heroGenerique {
   padding: 40px 12px;
   background-color: #004E89;
@@ -323,21 +254,6 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
     font-size: 40px;
   }
 }
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
 /*************************DÉBUT FOOTER HAUT 350PX*********************************/
 .footer__compagnie {
   padding: 40px 12px;
@@ -713,7 +629,7 @@ font-weight: 900; = black
 .hero__info02__carousel {
   width: 120px;
   height: 130px;
-  background-image: url(images/cercle.png);
+  background-image: url(../assets/images/cercle.png);
   background-repeat: no-repeat;
   background-size: 100%;
   font-size: 8px;
@@ -1149,9 +1065,6 @@ font-weight: 900; = black
   font-size: 8px;
   text-underline-offset: 1px;
 }
-.nouvelles__wrapup .card img {
-  height: 180px;
-}
 .nouvelles__wrapup__btn {
   background-color: #EBEBEB;
   color: #F75C03;
@@ -1191,9 +1104,6 @@ font-weight: 900; = black
     height: 250px;
     padding-top: 150px;
     margin: 20px 10px 0 10px;
-  }
-  .nouvelles__wrapup__content .card img {
-    height: 18;
   }
   .nouvelles__wrapup__content .card h4 {
     font-size: 10px;
@@ -2535,12 +2445,235 @@ font-weight: 900; = black
 }
 /***************************************************FIN ERREUR 404***************************************************/
 /***************************************************DÉBUT HUB DE SERVICES***************************************************/
-#hubService .card {
-  max-width: 300px;
+#hubNouvelles .sectionServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hubNouvelles .sectionServices__titre {
+  width: 100%;
+  max-width: 375px;
+  margin: 40px 12px;
+  padding: 0 30px;
+}
+#hubNouvelles .sectionServices__titre h2 {
+  font-size: 24px;
+}
+#hubNouvelles .sectionServices__wrapup {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#hubNouvelles .sectionServices__wrapup .card:nth-child(1) {
+  margin-top: 0;
+}
+#hubNouvelles .sectionServices__wrapup .card {
+  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
+  margin: 40px 12px;
+  padding: 40px 20px;
+  border-radius: 40px;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 375px;
+  width: 100%;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .card-title {
+  align-self: center;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .card-text {
+  text-align: justify;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .btn {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  align-self: flex-end;
+  text-decoration-thickness: 1.5px;
+  color: #F75C03;
 }
 
-.section_hub_services .card {
-  color: orange;
+@media (min-width: 768px) {
+  #hubNouvelles .sectionServices__titre {
+    max-width: 768px;
+  }
+  #hubNouvelles .sectionServices__wrapup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  #hubNouvelles .sectionServices__wrapup .card {
+    width: 348px;
+  }
+}
+@media (min-width: 1200px) {
+  #hubNouvelles .sectionServices__titre {
+    max-width: 1200px;
+  }
+  #hubNouvelles .sectionServices__wrapup {
+    max-width: 1200px;
+    flex-wrap: nowrap;
+  }
+}
+/***************************************************FIN HUB DE SERVIC#ES***************************************************/
+/****************************************************** DÉBUT HUB DE NOUVELLES**********************************************/
+/**
+#hubNouvelles{
+.nouvellesRecentes{
+    &__wrapup{
+        @include sections.sectionsTelephone;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__titre{
+            width: 100%;
+            max-width: 375px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        &__content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .swiperBtnGauche{
+                width: 60px;
+                height:60px;
+               position: absolute;
+               left:12px;
+               z-index:2;
+               transform: scaleX(-1);
+               opacity:50%;
+            }
+            .swiperBtnGauche:hover{
+                opacity: 100%;
+            }
+            .swiperBtnDroit{
+                width: 60px;
+                height:60px;
+                position: absolute;
+                right: 12px;
+                z-index:2;
+                opacity:50%;
+             }
+             .swiperBtnDroit:hover{
+                opacity: 100%;
+             }
+            &__carteWrapup{
+               // width: 100%;
+                .card{
+
+                    @include cartes.carte;
+                    z-index:0;
+                    max-width: 375px;
+                    height:400px;
+                    padding-top: 291px;
+
+                    img{
+                        width: 100%;
+                        height: 275px;
+                        object-fit: contain;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
 }
 
-/***************************************************FIN HUB DE SERVIC#ES***************************************************//*# sourceMappingURL=style.css.map */
+**/
+#hubNouvelles .nouvellesRecentes .mySwiper {
+  width: 375px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiperBtnDroit {
+  position: absolute;
+  right: 12px;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  opacity: 50%;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiperBtnDroit:hover {
+  opacity: 100%;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiperBtnGauche {
+  position: absolute;
+  left: 12px;
+  z-index: 2;
+  transform: scaleX(-1);
+  width: 60px;
+  height: 60px;
+  opacity: 50%;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiperBtnGauche:hover {
+  opacity: 100%;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card {
+  position: relative;
+  background-color: #D9D9D9;
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin-top: 20px;
+  margin: 20px 0 0 0;
+  width: 191px;
+  height: 273px;
+  padding-top: 185px;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card img:nth-child(1) {
+  border-radius: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card h4 {
+  font-size: 12px;
+  font-weight: 900;
+  text-align: left;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card button {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  text-decoration-thickness: 1px;
+  box-shadow: 0 0 4px 0 #004E89;
+  width: 100%;
+  margin: 0;
+  font-size: 8px;
+  text-underline-offset: 1px;
+}
+#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/****************************************************** FIN HUB DE NOUVELLES**********************************************//*# sourceMappingURL=style.css.map */

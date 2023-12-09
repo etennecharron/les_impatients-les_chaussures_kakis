@@ -9,7 +9,14 @@
                 <div class="nouvelles__wrapup__content">
 
                 <?php
-            $nouvelles = new WP_Query("post_type=nouvelle");
+
+                $nouvellesParDates = array(
+                    'post_type' => "nouvelle",
+                    'meta_key' => 'nouvelles_recentes',
+                    'orderby' => 'date',
+                    'order' => 'DESC',
+                );
+            $nouvelles = new WP_Query($nouvellesParDates);
             if ( $nouvelles->have_posts() ) : 
 	        while ( $nouvelles->have_posts() ) : $nouvelles->the_post(); 
             ?>
@@ -31,7 +38,10 @@
                             ?>
 
                 </div>
+                <!--A changer quand on va mettre le site en ligne parce c'est un lien absolue ; - ;  (j'ai pas réussis a crée un lien php full cool epik ; - ; -; - ; -; -; -; -; -; ;- ;)-->
+                <a href="http://localhost/les_impatients-les_chaussures_kakis/wordpress/wordpress/hub-de-nouvelles/">
                 <button class="nouvelles__wrapup__btn">Pour plus de nouvelles</button>
+                </a>
             </div>
         </section>
 
