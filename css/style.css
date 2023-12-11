@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 * {
   font-family: lato;
 }
@@ -51,6 +66,15 @@ nav .navbar-nav {
   font-weight: 900;
   text-decoration: none;
   color: black;
+  /*
+  &:hover{
+
+      color:variables.$orange;
+      text-decoration: underline;text-decoration-thickness:1.5px;
+      text-underline-offset: 8px;
+
+  }
+  */
 }
 
 .nav-item {
@@ -177,6 +201,51 @@ nav .navbar-nav {
     height: 30px;
   }
 }
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 .heroGenerique {
   padding: 40px 12px;
   background-color: #004E89;
@@ -254,6 +323,21 @@ nav .navbar-nav {
     font-size: 40px;
   }
 }
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 /*************************DÉBUT FOOTER HAUT 350PX*********************************/
 .footer__compagnie {
   padding: 40px 12px;
@@ -629,7 +713,7 @@ font-weight: 900; = black
 .hero__info02__carousel {
   width: 120px;
   height: 130px;
-  background-image: url(../assets/images/cercle.png);
+  background-image: url(../images/cercle.png);
   background-repeat: no-repeat;
   background-size: 100%;
   font-size: 8px;
@@ -1065,6 +1149,9 @@ font-weight: 900; = black
   font-size: 8px;
   text-underline-offset: 1px;
 }
+.nouvelles__wrapup .card img {
+  height: 180px;
+}
 .nouvelles__wrapup__btn {
   background-color: #EBEBEB;
   color: #F75C03;
@@ -1105,6 +1192,9 @@ font-weight: 900; = black
     padding-top: 150px;
     margin: 20px 10px 0 10px;
   }
+  .nouvelles__wrapup__content .card img {
+    height: 145px;
+  }
   .nouvelles__wrapup__content .card h4 {
     font-size: 10px;
   }
@@ -1124,10 +1214,17 @@ font-weight: 900; = black
     width: 220px;
     padding-top: 210px;
   }
+  .nouvelles__wrapup__content .card img {
+    height: 200px;
+  }
   .nouvelles__wrapup__content .card h4 {
     font-size: 14px;
   }
 }
+.nouvelles .card:hover {
+  opacity: 85%;
+}
+
 /*****************FIN NOUVELLES***********************/
 /*****************DÉBUT TÉMOIGNAGE***********************/
 .temoignage {
@@ -1590,16 +1687,12 @@ font-weight: 900; = black
 }
 */
 /********************************************DÉTAIL NOUVELLE***********************************************/
-#detailNouvelle {
+.nouvelle-template {
   display: flex;
   flex-direction: column;
 }
 
-#detailNouvelle main {
-  margin-bottom: 100px;
-}
-
-#detailNouvelle .sectionsWrapup {
+.nouvelle-template .sectionsWrapup {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1624,85 +1717,85 @@ font-weight: 900; = black
     height: 340px;
   }
 }
-#detailNouvelle .titreNouvelle {
+.nouvelle-template .titreNouvelle {
   padding: 40px 12px;
   background-color: #004E89;
 }
-#detailNouvelle .titreNouvelle__wrapup {
+.nouvelle-template .titreNouvelle__wrapup {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#detailNouvelle .titreNouvelle__wrapup__titreWrapup {
+.nouvelle-template .titreNouvelle__wrapup__titreWrapup {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
 }
-#detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane {
+.nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane p {
+.nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane p {
   font-size: 10px;
   word-spacing: 3px;
 }
-#detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane__nomNouvelle {
+.nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane__nomNouvelle {
   color: #F75C03;
 }
-#detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre {
+.nouvelle-template .titreNouvelle__wrapup__titreWrapup__titre {
   text-align: center;
 }
-#detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre h1 {
+.nouvelle-template .titreNouvelle__wrapup__titreWrapup__titre h1 {
   font-size: 24px;
   margin: 0;
   width: 200px;
 }
-#detailNouvelle .titreNouvelle__wrapup__titreWrapup__description {
+.nouvelle-template .titreNouvelle__wrapup__titreWrapup__description {
   display: flex;
   justify-content: flex-start;
 }
-#detailNouvelle .titreNouvelle__wrapup__titreWrapup__description p {
+.nouvelle-template .titreNouvelle__wrapup__titreWrapup__description p {
   margin: 0px 10px 10px 10px;
   font-size: 10px;
 }
 
 @media (min-width: 768px) {
-  #detailNouvelle .titreNouvelle {
+  .nouvelle-template .titreNouvelle {
     padding: 57px 50px;
   }
-  #detailNouvelle .titreNouvelle__wrapup__titreWrapup {
+  .nouvelle-template .titreNouvelle__wrapup__titreWrapup {
     align-self: center;
   }
-  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane p {
+  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane p {
     font-size: 14px;
   }
-  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre h1 {
+  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__titre h1 {
     font-size: 30px;
     width: 634px;
   }
-  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__description p {
+  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__description p {
     font-size: 14px;
   }
 }
 @media (min-width: 1200px) {
-  #detailNouvelle .titreNouvelle {
+  .nouvelle-template .titreNouvelle {
     padding: 57px 50px;
   }
-  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane p {
+  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane p {
     font-size: 14px;
   }
-  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre h1 {
+  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__titre h1 {
     font-size: 40px;
   }
 }
 /*****************FIN TITRE DE LA NOUVELLE***********************/
 /*****************DÉBUT SECTION TEXTE01***********************/
-#detailNouvelle .sectionTexte01 {
+.nouvelle-template .sectionTexte01 {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
@@ -1712,12 +1805,12 @@ font-weight: 900; = black
   flex-direction: column;
   align-items: center;
 }
-#detailNouvelle .sectionTexte01 p {
+.nouvelle-template .sectionTexte01 p {
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
 }
-#detailNouvelle .sectionTexte01 h2 {
+.nouvelle-template .sectionTexte01 h2 {
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
@@ -1727,7 +1820,7 @@ font-weight: 900; = black
 }
 
 @media (min-width: 768px) {
-  #detailNouvelle .sectionTexte01 {
+  .nouvelle-template .sectionTexte01 {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
     margin: 40px 66px;
     padding: 57px 50px;
@@ -1738,12 +1831,12 @@ font-weight: 900; = black
     align-items: center;
     max-width: 1068px;
   }
-  #detailNouvelle .sectionTexte01 p {
+  .nouvelle-template .sectionTexte01 p {
     font-size: 14px;
     font-weight: 300;
     line-height: 28px;
   }
-  #detailNouvelle .sectionTexte01 h2 {
+  .nouvelle-template .sectionTexte01 h2 {
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
@@ -1753,12 +1846,12 @@ font-weight: 900; = black
   }
 }
 @media (min-width: 1200px) {
-  #detailNouvelle .sectionTexte01 p {
+  .nouvelle-template .sectionTexte01 p {
     font-size: 14px;
     font-weight: 300;
     line-height: 28px;
   }
-  #detailNouvelle .sectionTexte01 h2 {
+  .nouvelle-template .sectionTexte01 h2 {
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
@@ -1769,7 +1862,7 @@ font-weight: 900; = black
 }
 /*****************FIN SECTION TEXTE01***********************/
 /*****************DÉBUT SECTION IMAGES***********************/
-#detailNouvelle .sectionImg01 {
+.nouvelle-template .sectionImg01 {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
@@ -1780,7 +1873,7 @@ font-weight: 900; = black
   align-items: center;
   justify-content: space-evenly;
 }
-#detailNouvelle .sectionImg01 img {
+.nouvelle-template .sectionImg01 img {
   margin: 20px 0;
   background-color: #F75C03;
   width: 300px;
@@ -1790,7 +1883,7 @@ font-weight: 900; = black
 }
 
 @media (min-width: 768px) {
-  #detailNouvelle .sectionImg01 {
+  .nouvelle-template .sectionImg01 {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
     margin: 40px 66px;
     padding: 57px 50px;
@@ -1804,7 +1897,7 @@ font-weight: 900; = black
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
-  #detailNouvelle .sectionImg01 img {
+  .nouvelle-template .sectionImg01 img {
     margin: 0;
     background-color: #F75C03;
     max-width: 210px;
@@ -1814,14 +1907,14 @@ font-weight: 900; = black
   }
 }
 @media (min-width: 1200px) {
-  #detailNouvelle .sectionImg01 {
+  .nouvelle-template .sectionImg01 {
     display: flex;
     flex-direction: row;
   }
 }
 /*****************FINT SECTION IMAGES***********************/
 /*****************DÉBUT SECTION TEXTE02***********************/
-#detailNouvelle .sectionTexte02 {
+.nouvelle-template .sectionTexte02 {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
@@ -1831,14 +1924,14 @@ font-weight: 900; = black
   flex-direction: column;
   align-items: center;
 }
-#detailNouvelle .sectionTexte02 p {
+.nouvelle-template .sectionTexte02 p {
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
 }
 
 @media (min-width: 768px) {
-  #detailNouvelle .sectionTexte02 {
+  .nouvelle-template .sectionTexte02 {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
     margin: 40px 66px;
     padding: 57px 50px;
@@ -1852,10 +1945,11 @@ font-weight: 900; = black
 }
 /*****************FIN SECTION TEXTE02***********************/
 /*****************DÉBUT SECTION IMAGE***********************/
-#detailNouvelle .sectionImg02 {
+.nouvelle-template .sectionImg02 {
   margin: 40px 12px;
+  padding: 57px 50px;
 }
-#detailNouvelle .sectionImg02 img {
+.nouvelle-template .sectionImg02 img {
   width: 100%;
   object-fit: cover;
 }
@@ -1952,7 +2046,7 @@ font-weight: 900; = black
 }
 /*****************FIN SECTION TEXTE04***********************/
 /*****************DÉBUT SECTION IMAGE03***********************/
-#detailNouvelle .sectionImg03 {
+.nouvelle-template .sectionImg03 {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
@@ -1963,7 +2057,7 @@ font-weight: 900; = black
   align-items: center;
   justify-content: space-evenly;
 }
-#detailNouvelle .sectionImg03 img {
+.nouvelle-template .sectionImg03 img {
   margin: 20px 0;
   background-color: #F75C03;
   width: 300px;
@@ -1973,7 +2067,7 @@ font-weight: 900; = black
 }
 
 @media (min-width: 768px) {
-  #detailNouvelle .sectionImg03 {
+  .nouvelle-template .sectionImg03 {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
     margin: 40px 66px;
     padding: 57px 50px;
@@ -1987,7 +2081,7 @@ font-weight: 900; = black
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
-  #detailNouvelle .sectionImg03 img {
+  .nouvelle-template .sectionImg03 img {
     margin: 0;
     background-color: #F75C03;
     max-width: 210px;
@@ -1997,7 +2091,7 @@ font-weight: 900; = black
   }
 }
 @media (min-width: 1200px) {
-  #detailNouvelle .sectionImg03 {
+  .nouvelle-template .sectionImg03 {
     display: flex;
     flex-direction: row;
   }
@@ -2445,188 +2539,35 @@ font-weight: 900; = black
 }
 /***************************************************FIN ERREUR 404***************************************************/
 /***************************************************DÉBUT HUB DE SERVICES***************************************************/
-#hubNouvelles .sectionServices {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#hubNouvelles .sectionServices__titre {
-  width: 100%;
-  max-width: 375px;
-  margin: 40px 12px;
-  padding: 0 30px;
-}
-#hubNouvelles .sectionServices__titre h2 {
-  font-size: 24px;
-}
-#hubNouvelles .sectionServices__wrapup {
-  width: 100%;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: center;
-}
-#hubNouvelles .sectionServices__wrapup .card:nth-child(1) {
-  margin-top: 0;
-}
-#hubNouvelles .sectionServices__wrapup .card {
-  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
-  margin: 40px 12px;
-  padding: 40px 20px;
-  border-radius: 40px;
-  background-color: #D9D9D9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 375px;
-  width: 100%;
-}
-#hubNouvelles .sectionServices__wrapup .card .card-body {
-  display: flex;
-  flex-direction: column;
-}
-#hubNouvelles .sectionServices__wrapup .card .card-body .card-title {
-  align-self: center;
-}
-#hubNouvelles .sectionServices__wrapup .card .card-body .card-text {
-  text-align: justify;
-}
-#hubNouvelles .sectionServices__wrapup .card .card-body .btn {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3.5px;
-  align-self: flex-end;
-  text-decoration-thickness: 1.5px;
-  color: #F75C03;
+#hubService .card {
+  max-width: 300px;
 }
 
-@media (min-width: 768px) {
-  #hubNouvelles .sectionServices__titre {
-    max-width: 768px;
-  }
-  #hubNouvelles .sectionServices__wrapup {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  #hubNouvelles .sectionServices__wrapup .card {
-    width: 348px;
-  }
+.section_hub_services .card {
+  color: orange;
 }
-@media (min-width: 1200px) {
-  #hubNouvelles .sectionServices__titre {
-    max-width: 1200px;
-  }
-  #hubNouvelles .sectionServices__wrapup {
-    max-width: 1200px;
-    flex-wrap: nowrap;
-  }
-}
+
 /***************************************************FIN HUB DE SERVIC#ES***************************************************/
 /****************************************************** DÉBUT HUB DE NOUVELLES**********************************************/
-/**
-#hubNouvelles{
-.nouvellesRecentes{
-    &__wrapup{
-        @include sections.sectionsTelephone;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        &__titre{
-            width: 100%;
-            max-width: 375px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-        &__content{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            .swiperBtnGauche{
-                width: 60px;
-                height:60px;
-               position: absolute;
-               left:12px;
-               z-index:2;
-               transform: scaleX(-1);
-               opacity:50%;
-            }
-            .swiperBtnGauche:hover{
-                opacity: 100%;
-            }
-            .swiperBtnDroit{
-                width: 60px;
-                height:60px;
-                position: absolute;
-                right: 12px;
-                z-index:2;
-                opacity:50%;
-             }
-             .swiperBtnDroit:hover{
-                opacity: 100%;
-             }
-            &__carteWrapup{
-               // width: 100%;
-                .card{
-
-                    @include cartes.carte;
-                    z-index:0;
-                    max-width: 375px;
-                    height:400px;
-                    padding-top: 291px;
-
-                    img{
-                        width: 100%;
-                        height: 275px;
-                        object-fit: contain;
-                    }
-                }
-            }
-
-        }
-
-    }
+#hubNouvelles .hubNouvelles {
+  width: 100%;
 }
-}
-
-**/
-#hubNouvelles .nouvellesRecentes .mySwiper {
-  width: 375px;
+#hubNouvelles .hubNouvelles__wrapup {
   margin: auto;
+  max-width: 375px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-#hubNouvelles .nouvellesRecentes .mySwiper .swiperBtnDroit {
-  position: absolute;
-  right: 12px;
-  z-index: 2;
-  width: 60px;
-  height: 60px;
-  opacity: 50%;
+#hubNouvelles .hubNouvelles__wrapup__cardWrapup {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
 }
-#hubNouvelles .nouvellesRecentes .mySwiper .swiperBtnDroit:hover {
-  opacity: 100%;
-}
-#hubNouvelles .nouvellesRecentes .mySwiper .swiperBtnGauche {
-  position: absolute;
-  left: 12px;
-  z-index: 2;
-  transform: scaleX(-1);
-  width: 60px;
-  height: 60px;
-  opacity: 50%;
-}
-#hubNouvelles .nouvellesRecentes .mySwiper .swiperBtnGauche:hover {
-  opacity: 100%;
-}
-#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card {
+#hubNouvelles .hubNouvelles__wrapup__cardWrapup .card {
+  width: 273px;
   position: relative;
   background-color: #D9D9D9;
   padding: 1.5em 0.5em 0.5em;
@@ -2640,19 +2581,19 @@ font-weight: 900; = black
   height: 273px;
   padding-top: 185px;
 }
-#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card img:nth-child(1) {
+#hubNouvelles .hubNouvelles__wrapup__cardWrapup .card img:nth-child(1) {
   border-radius: 2em;
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
 }
-#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card h4 {
+#hubNouvelles .hubNouvelles__wrapup__cardWrapup .card h4 {
   font-size: 12px;
   font-weight: 900;
   text-align: left;
 }
-#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card button {
+#hubNouvelles .hubNouvelles__wrapup__cardWrapup .card button {
   background-color: #EBEBEB;
   color: #F75C03;
   padding: 5px 10px;
@@ -2670,10 +2611,71 @@ font-weight: 900; = black
   font-size: 8px;
   text-underline-offset: 1px;
 }
-#hubNouvelles .nouvellesRecentes .mySwiper .swiper-wrapper .card img {
+#hubNouvelles .hubNouvelles__wrapup__cardWrapup .card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
+#hubNouvelles .hubNouvelles__wrapup__cardWrapup .card:hover {
+  opacity: 85%;
+}
+#hubNouvelles .hubNouvelles__wrapup__cardWrapup .card:nth-child(1) {
+  background-color: #afafaf;
+}
+#hubNouvelles .hubNouvelles__wrapup select {
+  border: none;
+  background-color: #004E89;
+  color: white;
+  padding: 5px;
+}
+#hubNouvelles .hubNouvelles__wrapup .btnPlusNouvelle {
+  margin: 40px 0;
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
 
+@media (min-width: 768px) {
+  #hubNouvelles .hubNouvelles__wrapup {
+    max-width: 768px;
+  }
+  #hubNouvelles .hubNouvelles__wrapup__cardWrapup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 18px;
+  }
+  #hubNouvelles .hubNouvelles__wrapup__cardWrapup .card {
+    margin: 10px;
+  }
+  #hubNouvelles .hubNouvelles__wrapup__cardWrapup .card:nth-child(1) {
+    width: 400px;
+  }
+  #hubNouvelles .hubNouvelles__wrapup select {
+    align-self: flex-end;
+    margin-right: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  #hubNouvelles .hubNouvelles__wrapup {
+    max-width: 1200px;
+  }
+  #hubNouvelles .hubNouvelles__wrapup__cardWrapup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 18px;
+  }
+  #hubNouvelles .hubNouvelles__wrapup__cardWrapup .card {
+    margin: 10px;
+  }
+  #hubNouvelles .hubNouvelles__wrapup select {
+    align-self: flex-end;
+    margin-right: 18px;
+  }
+}
 /****************************************************** FIN HUB DE NOUVELLES**********************************************//*# sourceMappingURL=style.css.map */

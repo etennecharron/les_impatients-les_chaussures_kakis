@@ -8,36 +8,19 @@ alert.classList.add("desactiver")
 }
 
 
-const mySwiperOne = new Swiper ("#hubNouvelles .nouvellesRecentes__wrapup .swiper", {
-    direction: 'horizontal',
-    loop: true,
-    slidesPerView:"1",
-    spaceBetween: 30,
-    //centeredSlides: true,
-    autoplay:true,
-    // Navigation arrows
-  navigation: {
-    nextEl: '.swiperBtnDroit',
-    prevEl: '.swiperBtnGauche',
-  },
-  breackpoints:{
-    1200:{
-        slidesPerView:3,
-    }
-  }
-    
-});
 
 
-const mySwiperTwo = new Swiper ("#hubNouvelles .nouvellesRecentes .mySwiper", {
+/**
+const mySwiperTwo = new Swiper ("#hubNouvelles .nouvellesRecentes .swiper-container", {
   direction: 'horizontal',
-  loop: true,
   centerdSlides: true,
+  loop:true,
   spaceBetween:30,
-  addSlidesAfter:2,
-  addSlidesBefore:2,
+  addSlidesAfter:0,
+  addSlidesBefore:0,
 navigation: {
   nextEl: '.swiperBtnDroit',
   prevEl: '.swiperBtnGauche',
 },
 });
+ */

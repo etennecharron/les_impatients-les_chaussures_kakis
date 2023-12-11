@@ -1748,3 +1748,114 @@ font-weight: 900; = black
 
 /***************************************************FIN HUB DE SERVIC#ES***************************************************/
 
+
+
+/****************************************************** DÉBUT HUB DE NOUVELLES**********************************************/
+
+.page-template-hub_nouvelle .hubNouvelles{
+    width: 100%;
+&__wrapup{
+margin: auto;
+max-width: 375px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+&__cardWrapup{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    .card{
+        width: 273px;
+        @include cartes.carte;
+        img{
+            width: 100%;
+            height:180px;
+            object-fit: cover;
+        }
+    }
+    .card:hover{
+        @include cartes.hover;
+    }
+    .card:nth-child(1){
+        background-color: #afafaf;
+        
+    }
+}
+
+select{
+    border: none;
+    background-color: variables.$bleu;
+    color: white;
+    padding: 5px;
+}
+.btnPlusNouvelle{
+    margin:40px 0;
+    @include base.btn;
+}
+}
+
+}
+
+
+
+
+
+@media (min-width:768px){
+
+
+    .page-template-hub_nouvelle .hubNouvelles{
+    &__wrapup{
+        max-width: 768px;
+    &__cardWrapup{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 18px;
+        .card{
+            margin:10px;
+        }
+        .card:nth-child(1){
+            width: 400px;
+        }
+    }
+    
+    select{
+    align-self: flex-end;
+    margin-right: 18px;
+    }
+    }
+    
+    }
+
+}
+
+
+
+@media (min-width:1200px){
+
+
+    .page-template-hub_nouvelle .hubNouvelles{
+    &__wrapup{
+        max-width: 1200px;
+    &__cardWrapup{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 18px;
+        .card{
+            margin:10px;
+        }
+    }
+    
+    select{
+    align-self: flex-end;
+    margin-right: 18px;
+    }
+    }
+    
+    }
+
+}
+/****************************************************** FIN HUB DE NOUVELLES**********************************************/
