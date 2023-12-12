@@ -24,59 +24,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
                   </select>
                 <div class="hubNouvelles__wrapup__cardWrapup">
 
-                    <div class="card">
-                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="assets/images/img_carte_nouvelles_01.png" class="card-img-top"
-                            alt="image de la nouvelle 1">
-                        <div class="card-body">
-                            <h4 class="card-title">360 000 $ POUR LA 24E ÉDITION</h4>
-                            <button>En savoir plus</button>
-                        </div>
-                    </div>
+                    <!-- cartes insserer grace a main.js-->
 
                 </div>
 

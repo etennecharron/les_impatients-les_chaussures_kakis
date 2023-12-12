@@ -17,11 +17,12 @@
                     'order' => 'DESC',
                 );
             $nouvelles = new WP_Query($nouvellesParDates);
-            if ( $nouvelles->have_posts() ) : 
+            if ( $nouvelles->have_posts()) : 
 	        while ( $nouvelles->have_posts() ) : $nouvelles->the_post(); 
             ?>
                 
 
+                <?php if(get_field('nouvelles_recentes') == true){?>
                     <!-- utiliser carte bootstrap-->
                     <div class="nouvelles__wrapup__content__carte card">
                     <?php the_post_thumbnail("medium", array("class" => "card-img-top")); ?>
@@ -32,7 +33,10 @@
                                 </a>
                             </div>
                     </div>
+
+
                     <?php 
+                            }
                             endwhile; 
                             endif;
                             ?>
