@@ -1,19 +1,4 @@
 @charset "UTF-8";
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
 * {
   font-family: lato;
 }
@@ -66,15 +51,6 @@ nav .navbar-nav {
   font-weight: 900;
   text-decoration: none;
   color: black;
-  /*
-  &:hover{
-
-      color:variables.$orange;
-      text-decoration: underline;text-decoration-thickness:1.5px;
-      text-underline-offset: 8px;
-
-  }
-  */
 }
 
 .nav-item {
@@ -201,51 +177,6 @@ nav .navbar-nav {
     height: 30px;
   }
 }
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
 .heroGenerique {
   padding: 40px 12px;
   background-color: #004E89;
@@ -323,21 +254,6 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
     font-size: 40px;
   }
 }
-/*
-Theme Name: Les impatients
-Author: Les chaussures kakis
-Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
-Description: Thème pour la réalisation du projet web final
-Version: 1.0
--------------------------------------------------------------- */
-/*
-C'est le moment d'effacer ce commentaire et d'écrire du vrai
-  ___  ____  ____ 
- / __)/ ___)/ ___)
-( (__ \___ \\___ \
- \___)(____/(____/
-
- */
 /*************************DÉBUT FOOTER HAUT 350PX*********************************/
 .footer__compagnie {
   padding: 40px 12px;
@@ -367,7 +283,8 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
   width: 141px;
   height: 47px;
   margin: 14px 0 14px 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*************************FIN FOOTER HAUT 350PX*********************************/
@@ -713,7 +630,7 @@ font-weight: 900; = black
 .hero__info02__carousel {
   width: 120px;
   height: 130px;
-  background-image: url(../images/cercle.png);
+  background-image: url(../assets/images/cercle.png);
   background-repeat: no-repeat;
   background-size: 100%;
   font-size: 8px;
@@ -1124,7 +1041,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .nouvelles__wrapup .card h4 {
   font-size: 12px;
@@ -1148,9 +1066,6 @@ font-weight: 900; = black
   margin: 0;
   font-size: 8px;
   text-underline-offset: 1px;
-}
-.nouvelles__wrapup .card img {
-  height: 180px;
 }
 .nouvelles__wrapup__btn {
   background-color: #EBEBEB;
@@ -1192,9 +1107,6 @@ font-weight: 900; = black
     padding-top: 150px;
     margin: 20px 10px 0 10px;
   }
-  .nouvelles__wrapup__content .card img {
-    height: 145px;
-  }
   .nouvelles__wrapup__content .card h4 {
     font-size: 10px;
   }
@@ -1214,17 +1126,10 @@ font-weight: 900; = black
     width: 220px;
     padding-top: 210px;
   }
-  .nouvelles__wrapup__content .card img {
-    height: 200px;
-  }
   .nouvelles__wrapup__content .card h4 {
     font-size: 14px;
   }
 }
-.nouvelles .card:hover {
-  opacity: 85%;
-}
-
 /*****************FIN NOUVELLES***********************/
 /*****************DÉBUT TÉMOIGNAGE***********************/
 .temoignage {
@@ -1273,7 +1178,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .temoignage__wrapup__content .card h4 {
   font-size: 12px;
@@ -1432,7 +1338,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .espace__wrapup__contenus .card h4 {
   font-size: 12px;
@@ -1687,12 +1594,16 @@ font-weight: 900; = black
 }
 */
 /********************************************DÉTAIL NOUVELLE***********************************************/
-.nouvelle-template {
+#detailNouvelle {
   display: flex;
   flex-direction: column;
 }
 
-.nouvelle-template .sectionsWrapup {
+#detailNouvelle main {
+  margin-bottom: 100px;
+}
+
+#detailNouvelle .sectionsWrapup {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1704,7 +1615,8 @@ font-weight: 900; = black
 .baniere {
   width: 100%;
   height: 200px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1717,85 +1629,85 @@ font-weight: 900; = black
     height: 340px;
   }
 }
-.nouvelle-template .titreNouvelle {
+#detailNouvelle .titreNouvelle {
   padding: 40px 12px;
   background-color: #004E89;
 }
-.nouvelle-template .titreNouvelle__wrapup {
+#detailNouvelle .titreNouvelle__wrapup {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.nouvelle-template .titreNouvelle__wrapup__titreWrapup {
+#detailNouvelle .titreNouvelle__wrapup__titreWrapup {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
 }
-.nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane {
+#detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane p {
+#detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane p {
   font-size: 10px;
   word-spacing: 3px;
 }
-.nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane__nomNouvelle {
+#detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane__nomNouvelle {
   color: #F75C03;
 }
-.nouvelle-template .titreNouvelle__wrapup__titreWrapup__titre {
+#detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre {
   text-align: center;
 }
-.nouvelle-template .titreNouvelle__wrapup__titreWrapup__titre h1 {
+#detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre h1 {
   font-size: 24px;
   margin: 0;
   width: 200px;
 }
-.nouvelle-template .titreNouvelle__wrapup__titreWrapup__description {
+#detailNouvelle .titreNouvelle__wrapup__titreWrapup__description {
   display: flex;
   justify-content: flex-start;
 }
-.nouvelle-template .titreNouvelle__wrapup__titreWrapup__description p {
+#detailNouvelle .titreNouvelle__wrapup__titreWrapup__description p {
   margin: 0px 10px 10px 10px;
   font-size: 10px;
 }
 
 @media (min-width: 768px) {
-  .nouvelle-template .titreNouvelle {
+  #detailNouvelle .titreNouvelle {
     padding: 57px 50px;
   }
-  .nouvelle-template .titreNouvelle__wrapup__titreWrapup {
+  #detailNouvelle .titreNouvelle__wrapup__titreWrapup {
     align-self: center;
   }
-  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane p {
+  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane p {
     font-size: 14px;
   }
-  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__titre h1 {
+  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre h1 {
     font-size: 30px;
     width: 634px;
   }
-  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__description p {
+  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__description p {
     font-size: 14px;
   }
 }
 @media (min-width: 1200px) {
-  .nouvelle-template .titreNouvelle {
+  #detailNouvelle .titreNouvelle {
     padding: 57px 50px;
   }
-  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__filAriane p {
+  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__filAriane p {
     font-size: 14px;
   }
-  .nouvelle-template .titreNouvelle__wrapup__titreWrapup__titre h1 {
+  #detailNouvelle .titreNouvelle__wrapup__titreWrapup__titre h1 {
     font-size: 40px;
   }
 }
 /*****************FIN TITRE DE LA NOUVELLE***********************/
 /*****************DÉBUT SECTION TEXTE01***********************/
-.nouvelle-template .sectionTexte01 {
+#detailNouvelle .sectionTexte01 {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
@@ -1805,12 +1717,12 @@ font-weight: 900; = black
   flex-direction: column;
   align-items: center;
 }
-.nouvelle-template .sectionTexte01 p {
+#detailNouvelle .sectionTexte01 p {
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
 }
-.nouvelle-template .sectionTexte01 h2 {
+#detailNouvelle .sectionTexte01 h2 {
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
@@ -1820,7 +1732,7 @@ font-weight: 900; = black
 }
 
 @media (min-width: 768px) {
-  .nouvelle-template .sectionTexte01 {
+  #detailNouvelle .sectionTexte01 {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
     margin: 40px 66px;
     padding: 57px 50px;
@@ -1831,12 +1743,12 @@ font-weight: 900; = black
     align-items: center;
     max-width: 1068px;
   }
-  .nouvelle-template .sectionTexte01 p {
+  #detailNouvelle .sectionTexte01 p {
     font-size: 14px;
     font-weight: 300;
     line-height: 28px;
   }
-  .nouvelle-template .sectionTexte01 h2 {
+  #detailNouvelle .sectionTexte01 h2 {
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
@@ -1846,12 +1758,12 @@ font-weight: 900; = black
   }
 }
 @media (min-width: 1200px) {
-  .nouvelle-template .sectionTexte01 p {
+  #detailNouvelle .sectionTexte01 p {
     font-size: 14px;
     font-weight: 300;
     line-height: 28px;
   }
-  .nouvelle-template .sectionTexte01 h2 {
+  #detailNouvelle .sectionTexte01 h2 {
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
@@ -1862,7 +1774,7 @@ font-weight: 900; = black
 }
 /*****************FIN SECTION TEXTE01***********************/
 /*****************DÉBUT SECTION IMAGES***********************/
-.nouvelle-template .sectionImg01 {
+#detailNouvelle .sectionImg01 {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
@@ -1873,17 +1785,18 @@ font-weight: 900; = black
   align-items: center;
   justify-content: space-evenly;
 }
-.nouvelle-template .sectionImg01 img {
+#detailNouvelle .sectionImg01 img {
   margin: 20px 0;
   background-color: #F75C03;
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
-  .nouvelle-template .sectionImg01 {
+  #detailNouvelle .sectionImg01 {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
     margin: 40px 66px;
     padding: 57px 50px;
@@ -1897,24 +1810,25 @@ font-weight: 900; = black
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
-  .nouvelle-template .sectionImg01 img {
+  #detailNouvelle .sectionImg01 img {
     margin: 0;
     background-color: #F75C03;
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
-  .nouvelle-template .sectionImg01 {
+  #detailNouvelle .sectionImg01 {
     display: flex;
     flex-direction: row;
   }
 }
 /*****************FINT SECTION IMAGES***********************/
 /*****************DÉBUT SECTION TEXTE02***********************/
-.nouvelle-template .sectionTexte02 {
+#detailNouvelle .sectionTexte02 {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
@@ -1924,14 +1838,14 @@ font-weight: 900; = black
   flex-direction: column;
   align-items: center;
 }
-.nouvelle-template .sectionTexte02 p {
+#detailNouvelle .sectionTexte02 p {
   font-size: 14px;
   font-weight: 300;
   line-height: 28px;
 }
 
 @media (min-width: 768px) {
-  .nouvelle-template .sectionTexte02 {
+  #detailNouvelle .sectionTexte02 {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
     margin: 40px 66px;
     padding: 57px 50px;
@@ -1945,13 +1859,13 @@ font-weight: 900; = black
 }
 /*****************FIN SECTION TEXTE02***********************/
 /*****************DÉBUT SECTION IMAGE***********************/
-.nouvelle-template .sectionImg02 {
+#detailNouvelle .sectionImg02 {
   margin: 40px 12px;
-  padding: 57px 50px;
 }
-.nouvelle-template .sectionImg02 img {
+#detailNouvelle .sectionImg02 img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*****************FIN SECTION IMAGE***********************/
@@ -2046,7 +1960,7 @@ font-weight: 900; = black
 }
 /*****************FIN SECTION TEXTE04***********************/
 /*****************DÉBUT SECTION IMAGE03***********************/
-.nouvelle-template .sectionImg03 {
+#detailNouvelle .sectionImg03 {
   box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
   margin: 40px 12px;
   padding: 40px 20px;
@@ -2057,17 +1971,18 @@ font-weight: 900; = black
   align-items: center;
   justify-content: space-evenly;
 }
-.nouvelle-template .sectionImg03 img {
+#detailNouvelle .sectionImg03 img {
   margin: 20px 0;
   background-color: #F75C03;
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 768px) {
-  .nouvelle-template .sectionImg03 {
+  #detailNouvelle .sectionImg03 {
     box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
     margin: 40px 66px;
     padding: 57px 50px;
@@ -2081,17 +1996,18 @@ font-weight: 900; = black
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
-  .nouvelle-template .sectionImg03 img {
+  #detailNouvelle .sectionImg03 img {
     margin: 0;
     background-color: #F75C03;
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
-  .nouvelle-template .sectionImg03 {
+  #detailNouvelle .sectionImg03 {
     display: flex;
     flex-direction: row;
   }
@@ -2393,7 +2309,8 @@ font-weight: 900; = black
 /*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
 #equipe .img_equipe {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -2539,14 +2456,86 @@ font-weight: 900; = black
 }
 /***************************************************FIN ERREUR 404***************************************************/
 /***************************************************DÉBUT HUB DE SERVICES***************************************************/
-#hubService .card {
-  max-width: 300px;
+#hubNouvelles .sectionServices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#hubNouvelles .sectionServices__titre {
+  width: 100%;
+  max-width: 375px;
+  margin: 40px 12px;
+  padding: 0 30px;
+}
+#hubNouvelles .sectionServices__titre h2 {
+  font-size: 24px;
+}
+#hubNouvelles .sectionServices__wrapup {
+  width: 100%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#hubNouvelles .sectionServices__wrapup .card:nth-child(1) {
+  margin-top: 0;
+}
+#hubNouvelles .sectionServices__wrapup .card {
+  box-shadow: 0 4px 4px 0 rgba(0, 85, 255, 0.25);
+  margin: 40px 12px;
+  padding: 40px 20px;
+  border-radius: 40px;
+  background-color: #D9D9D9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 375px;
+  width: 100%;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .card-title {
+  align-self: center;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .card-text {
+  text-align: justify;
+}
+#hubNouvelles .sectionServices__wrapup .card .card-body .btn {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  align-self: flex-end;
+  text-decoration-thickness: 1.5px;
+  color: #F75C03;
 }
 
-.section_hub_services .card {
-  color: orange;
+@media (min-width: 768px) {
+  #hubNouvelles .sectionServices__titre {
+    max-width: 768px;
+  }
+  #hubNouvelles .sectionServices__wrapup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  #hubNouvelles .sectionServices__wrapup .card {
+    width: 348px;
+  }
 }
-
+@media (min-width: 1200px) {
+  #hubNouvelles .sectionServices__titre {
+    max-width: 1200px;
+  }
+  #hubNouvelles .sectionServices__wrapup {
+    max-width: 1200px;
+    flex-wrap: nowrap;
+  }
+}
 /***************************************************FIN HUB DE SERVIC#ES***************************************************/
 /****************************************************** DÉBUT HUB DE NOUVELLES**********************************************/
 #hubNouvelles .hubNouvelles {
@@ -2586,7 +2575,8 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #hubNouvelles .hubNouvelles__wrapup__cardWrapup .card h4 {
   font-size: 12px;
@@ -2614,7 +2604,8 @@ font-weight: 900; = black
 #hubNouvelles .hubNouvelles__wrapup__cardWrapup .card img {
   width: 100%;
   height: 180px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #hubNouvelles .hubNouvelles__wrapup__cardWrapup .card:hover {
   opacity: 85%;
