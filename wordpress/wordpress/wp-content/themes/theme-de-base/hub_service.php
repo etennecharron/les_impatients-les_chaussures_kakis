@@ -1,6 +1,6 @@
 <?php 
 /**
- * 	Template Name: Détail de service
+ * 	Template Name: Hub de service
  * 	Identique à page
  */
 
