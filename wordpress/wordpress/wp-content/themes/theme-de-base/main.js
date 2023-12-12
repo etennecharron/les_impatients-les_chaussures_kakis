@@ -1,7 +1,99 @@
 /* Wow, tellement un beau spot pour écrire du JS */
 console.log("test");
 
+gsap.registerPlugin(ScrollTrigger);
 
+/* Animation 404 */
+gsap
+  .timeline()
+  .from(".drawanim", { x:"400%" },1)
+  .from(".h2_page_draw", { x:"400%" })
+  .from(".info_draw", { x:"400%"} )
+  .from(".use_loupe_draw", { x:"400%"} )
+  .from(".signaler_draw", { x:"400%"} )
+  .from(".search_draw", { x:"400%"} );
+
+/* Fin Animation 404 */
+
+/* Animation Histoire */
+
+gsap.to('.histoire__1992', 
+          
+{ 
+opacity:1,
+scrollTrigger:
+ 
+{
+  trigger: '.histoire__1992',
+  
+  scrub: 0.5,
+   start: 'top 70%',
+   end: 'bottom 25%',
+   }, 
+}
+
+
+         
+);
+
+gsap.to('.histoire__1999', 
+          
+{ 
+opacity:1,
+scrollTrigger:
+ 
+{
+  trigger: '.histoire__1999',
+  
+  scrub: 0.5,
+   start: 'top 70%',
+   end: 'bottom 25%',
+   }, 
+}
+
+
+         
+);
+
+gsap.to('.histoire__2009', 
+          
+{ 
+opacity:1,
+scrollTrigger:
+ 
+{
+  trigger: '.histoire__2009',
+  
+  scrub: 0.5,
+   start: 'top 70%',
+   end: 'bottom 25%',
+   }, 
+}
+
+
+         
+);
+
+gsap.to('.histoire__2011', 
+          
+{ 
+opacity:1,
+scrollTrigger:
+ 
+{
+  trigger: '.histoire__2011',
+  
+  scrub: 0.5,
+   start: 'top 70%',
+   end: 'bottom 25%',
+   }, 
+}
+
+
+         
+);
+
+/* Fin Animation Histoire */
 
 let btnPlusDeNouvelles = document.querySelector(".btnPlusNouvelle");
 
