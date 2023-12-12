@@ -1424,14 +1424,14 @@ font-weight: 900; = black
 
 
 /***************************************************DÉBUT A PROPOS***************************************************/
-#aPropos .sectionWrapup {
+.page-template-about .sectionWrapup {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /*****************DÉBUT MISSION***********************/
-#aPropos .mission {
+.page-template-about .mission {
     @include sections.sectionNouvelleTelephone;
 
     &__wrapup {
@@ -1447,7 +1447,7 @@ font-weight: 900; = black
 }
 
 @media (min-width:768px) {
-    #aPropos .mission {
+    .page-template-about .mission {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
@@ -1455,7 +1455,7 @@ font-weight: 900; = black
 /*****************FIN MISSION***********************/
 
 /*****************DÉBUT VALEUR***********************/
-#aPropos .valeur {
+.page-template-about .valeur {
     @include sections.sectionNouvelleTelephone;
 
     &__wrapup {
@@ -1471,13 +1471,13 @@ font-weight: 900; = black
 }
 
 @media (min-width:768px) {
-    #aPropos .valeur {
+    .page-template-about .valeur {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
 
 /*****************FIN MISSION***********************/
-#aPropos .atelier {
+.page-template-about .atelier {
     @include sections.sectionNouvelleTelephone;
 
     &__wrapup {
@@ -1499,7 +1499,7 @@ font-weight: 900; = black
 }
 
 @media (min-width:768px) {
-    #aPropos .atelier {
+    .page-template-about .atelier {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
@@ -1507,7 +1507,7 @@ font-weight: 900; = black
 /*****************DÉBUT ATELIER***********************/
 
 /*****************DÉBUT COLLECTION***********************/
-#aPropos .collection {
+.page-template-about .collection {
     @include sections.sectionNouvelleTelephone;
 
     &__wrapup {
@@ -1529,7 +1529,7 @@ font-weight: 900; = black
 }
 
 @media (min-width:768px) {
-    #aPropos .collection {
+    .page-template-about .collection {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }
@@ -1537,7 +1537,7 @@ font-weight: 900; = black
 /*****************FIN COLLECTION***********************/
 
 /*****************DÉBUT ÉVENEMENT***********************/
-#aPropos .evenements {
+.page-template-about .evenements {
     @include sections.sectionNouvelleTelephone;
 
     &__wrapup {
@@ -1559,7 +1559,7 @@ font-weight: 900; = black
 }
 
 @media (min-width:768px) {
-    #aPropos .evenements {
+    .page-template-about .evenements {
         @include sections.sectionNouvelleTabletteOrdinateur;
     }
 }

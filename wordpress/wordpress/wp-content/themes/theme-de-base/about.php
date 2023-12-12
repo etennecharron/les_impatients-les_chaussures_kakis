@@ -17,26 +17,6 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 		
 		<main>
 
-<!------------------------DÉBUT HERO GÉNÉRIQUE------------------------->
-<section class="heroGenerique">
-	<div class="heroGenerique__wrapup">
-		<div class="heroGenerique__wrapup__titreWrapup">
-			<div class="heroGenerique__wrapup__titreWrapup__filAriane">
-				<p>Les impatients /</p>
-				<p>&nbsp</p>
-				<p class="heroGenerique__wrapup__titreWrapup__filAriane__actuel">
-					À propos
-				</p>
-			</div>
-
-			<div class="heroGenerique__wrapup__titreWrapup__titre">
-				<h1>À propos</h1>
-			</div>
-		</div>
-	</div>
-</section>
-<!-----------------------FIN HERO GÉNÉRIQUE------------------------->
-
 
 <!------------------------DÉBUT MISSION------------------------->
 <div class="sectionWrapup">
