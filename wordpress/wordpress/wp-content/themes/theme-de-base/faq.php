@@ -1,7 +1,6 @@
 <?php 
 /**
- * 	Template Name: FAQ
- *  Template Post Type: faq
+ * 	Template Name: FAQS
  * 	Identique à page
  */
 
