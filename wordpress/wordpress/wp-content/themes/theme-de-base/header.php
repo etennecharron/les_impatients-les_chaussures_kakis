@@ -63,7 +63,7 @@
             <div class="container-fluid">
 
                 <!--DÉBUT LOGO-->
-                <a href="" class="navbar-brand">
+                <a href="<?php echo esc_url( home_url( '/' ) );?>" class="navbar-brand">
                 <img class="logo" src="<?php bloginfo('template_url'); ?>/images/logo.png">
                 </a>
                 <!--FIN LOGO-->
