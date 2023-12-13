@@ -3,9 +3,6 @@ nav{
     max-width: 1200px;
     margin: auto;
     font-size:20px;
-    .ligne_separation{
-        display: none;
-    }
     .logo{
         width:39px;
     }
@@ -15,7 +12,9 @@ nav{
         justify-content: space-around;
         margin: 0;
     }
-    
+    .menu-navigation-principal-container{
+        width: 100%;
+    }
     }
     .nav-lien{
         font-size:14px;
@@ -47,18 +46,12 @@ nav{
       }
     }
     }
-    .navbar-light .navbar-toggler-icon{
-        background-image: url(../assets/images/menu_hamburger.svg);
-    }
     .navbar-light .navbar-toggler{
         border: none;
     }
     
     @media(min-width:768px){
         nav{
-            .ligne_separation{
-                display:block;
-            }
             .logo{
                 width:48px;
             }

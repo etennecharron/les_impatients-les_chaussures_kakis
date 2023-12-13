@@ -48,7 +48,7 @@
 	<nav>
 		<?php 
 			// Affiche un menu si dans le tableau de bord un menu a été défini dans cet emplacement
-			wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
+			
 		?>
 	</nav>
 
@@ -77,47 +77,14 @@
 
                 <!--DÉBUT CONTENUS NAV-->
                 <div id="mainNav" class="collapse navbar-collapse">
-                    <ul class="navbar-nav align-items-center">
-                        <li class="nav-item">
-                            <a href="" class=" nav-lien">Accueil</a>
-                        </li>
-                        <li>
-                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-lien">Ateliers</a>
-                        </li>
-                        <li>
-                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-lien">Collection</a>
-                        </li>
-                        <li>
-                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-lien">Événements</a>
-                        </li>
-                        <li>
-                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-lien">Boutique</a>
-                        </li>
-                        <li>
-                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-lien">Contact</a>
-                        </li>
-                        <li>
-                            <img src="assets/images/ligne_separation.svg" class="ligne_separation" alt="">
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-lien">En</a>
-                        </li>
-                    </ul>
+<?php 
+wp_nav_menu([
+    'theme_location'=> 'main-menu',
+    'menu_class'    => 'navbar-nav align-items-center',
+    'list_item_class'  => 'nav-item',
+    'link_item_class'     => 'nav-lien',
+  ]);
+?>
                     <!--FIN CONTENUS NAV-->
                 </div>
             </div>
