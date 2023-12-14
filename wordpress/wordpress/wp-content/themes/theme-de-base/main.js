@@ -371,3 +371,18 @@ zoneCarte.innerHTML = carteContainer;
 }
 
 /*********************************************FIN HUB DE NOUVELLES****************************************/
+
+/*********************************************Début animation don ****************************************/
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap
+  .timeline()
+  .from(".anim_titre_campagne", { x:"400%" },1)
+  .from(".anim_contenu_campagne", { x:"400%" })
+  .from(".anim_bouton_campagne", { x:"400%"} )
+  .from(".anim_bouton_campagne", { rotationX:"50%"},1 );
+  
+
+  /*********************************************Fin animation don ****************************************/
