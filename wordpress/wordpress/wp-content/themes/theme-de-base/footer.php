@@ -77,7 +77,7 @@
 Montréal (Québec) H2X 1C5</a>
                         <p href="">Téléphone</p>
                         <p href="">514 842-1043</p>
-                        <p>© lesimpatientsleschaussureskakis</p>
+                        <p>© lesimpatientsleschaussureskakis2023</p>
                     </div>
                     <a href="https://impatients.ca/faire-un-don/">
                     <button class="footer__bas__wrapup__wrapupSection__inscription__btn">Pour donner -></button>
