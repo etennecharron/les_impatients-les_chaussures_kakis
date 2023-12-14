@@ -31,7 +31,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
   $admin = new WP_Query('post_type=administration');
   while ($admin->have_posts()) : $admin->the_post(); 
 ?>
-				<div data-bs-toggle="modal" data-bs-target="#exampleModal" class="card">
+				<div data-bs-toggle="modal" data-bs-target="#ModalEquipe" class="card">
 				  <img class="card-img-top img-fluid" src=<?php the_post_thumbnail_url() ?> alt="Card image cap">
 				  <div class="card-body">
 					<h3 class="card-title"><?php the_field('nom_de_lemploye')?></h5>
@@ -53,7 +53,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
   $artiste = new WP_Query('post_type=artiste');
   while ($artiste->have_posts()) : $artiste->the_post(); 
 ?>
-				<div data-bs-toggle="modal" data-bs-target="#exampleModal" class="card">
+				<div data-bs-toggle="modal" data-bs-target="#ModalEquipe" class="card">
 				  <img class="card-img-top" src=<?php the_post_thumbnail_url() ?> alt="Card image cap">
 				  <div class="card-body">
 					<h3 class="card-title"><?php the_field('nom_de_lemploye')?></h3>
@@ -73,7 +73,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
   $conseil = new WP_Query('post_type=conseil-admin');
   while ($conseil->have_posts()) : $conseil->the_post(); 
 ?>
-				<div data-bs-toggle="modal" data-bs-target="#exampleModal" class="card">
+				<div data-bs-toggle="modal" data-bs-target="#ModalEquipe" class="card">
 				  <img class="card-img-top" src=<?php the_post_thumbnail_url() ?> alt="Card image cap">
 				  <div class="card-body">
 					<h3 class="card-title"><?php the_field('nom_de_lemploye')?></h3>
