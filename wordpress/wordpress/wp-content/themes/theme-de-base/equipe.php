@@ -91,7 +91,22 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	</div>
 </div>
 
+
 </section>
+
+<div class="modal fade" id="ModalEquipe" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-end" role="document">
+    <div class="modal-content">
+		
+    <div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Nos fabuleux membres</h5>
+    </div>
+    <div class="modal-body">
+        Felis eget nunc lobortis mattis aliquam faucibus purus in. Vehicula ipsum a arcu cursus vitae congue mauris rhoncus. Bibendum enim facilisis gravida neque convallis a cras semper. Id aliquet lectus proin nibh nisl condimentum id venenatis a. Arcu non sodales neque sodales. Et tortor consequat id porta nibh venenatis cras. 
+    </div>
+    </div>
+    </div>
+    </div>
 		
 
 <?php endwhile; // Fermeture de la boucle
