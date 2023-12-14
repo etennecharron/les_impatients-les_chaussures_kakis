@@ -1,9 +1,43 @@
 /* Wow, tellement un beau spot pour écrire du JS */
 console.log("Main.js fonctionne");
 
-gsap.registerPlugin(ScrollTrigger);
+/*******************DÉBUT FONCTION QUI FAIS DISPARAITRE L'ALERTE SI DEJA FERMER***************************/
 
-/* Animation 404 */
+let alert = document.querySelector(".alert");
+alert.querySelector("button").addEventListener("click",function(){
+localStorage.setItem("alertEtat","false");
+})
+if(localStorage.getItem("alertEtat") == null){
+console.log("alert désactiver")
+alert.classList.remove("desactiver")
+}
+
+/*******************FIN FONCTION QUI FAIS DISPARAITRE L'ALERTE SI DEJA FERMER***************************/
+
+/***************************************DÉBUT DU SWIPER DANS LE HERO DE LA PAGE PRINCIPAL */
+
+
+const swiper = new Swiper('.swiperContainer', {
+    // Optional parameters
+    direction: 'horizontal',
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+
+
+/******************************************FIN DU SWIPER DANS LE HERO DE LA PAGE PRINCIPAL */
+
+
+/******************************************Début Animation 404 **********************/
+if(document.querySelector("body").classList[0] == "error404"){
+
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+
 gsap
   .timeline()
   .from(".drawanim", { x:"400%" },1)
@@ -13,10 +47,17 @@ gsap
   .from(".signaler_draw", { x:"400%"} )
   .from(".search_draw", { x:"400%"} );
 
-/* Fin Animation 404 */
+}
 
-/* Animation Histoire */
+/********************************************Fin Animation 404 *******************/
 
+
+
+/**************************************************************Début Animation Histoire ****************/
+
+if(document.querySelector("body").classList[1] == "page-template-history"){
+
+    
 gsap.to('.histoire__1992', 
           
 { 
@@ -93,7 +134,9 @@ scrollTrigger:
          
 );
  
-/* Fin Animation Histoire */
+}
+/********************************************** Fin Animation Histoire ******************************/
+
 
 let btnPlusDeNouvelles = document.querySelector(".btnPlusNouvelle");
 

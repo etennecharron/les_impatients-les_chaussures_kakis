@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
         rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 <?php wp_head(); 
 /* Cette fonction permet à WordPress et aux extensions d'instancier des fichier CSS et js dans le <head>
 	 Supprimer cette fonction briserait vos extensions et diverses fonctionnalités WordPress. 
@@ -57,8 +57,16 @@
 		bloginfo( 'description' ); 
 	?>
 	-->
-
-
+	<!-- Début de l'alerte-->
+	<div class="alert alert-dismissible fade show desactiver" role="alert">
+            <div class="alert__wrapup">
+                <p>Ce site est développé par des étudiants</p>
+                <img src="<?php bloginfo('template_url'); ?>/images/ligne_separation.svg" class="ligne_separation" alt="">
+                <a href="https://impatients.ca/">Site web original</a>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+<!-- Fin de l'alerte-->
 	<nav class="navbar navbar-light navbar-expand-md">
             <div class="container-fluid">
 

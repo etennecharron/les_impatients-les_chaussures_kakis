@@ -92,6 +92,10 @@
 
             &__connaitre {
                 @include sections.footerSectionTelephone;
+                ul{
+                    list-style-type: none;
+                    padding:0;
+                }
             }
 
             &__inscription {
