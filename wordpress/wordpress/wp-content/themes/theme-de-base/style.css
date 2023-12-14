@@ -2824,6 +2824,15 @@ font-weight: 900; = black
   justify-content: space-between;
   padding: 0 50px;
 }
+.service-template-detail_service .autreServices__wrapup a {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
 
 @media (min-width: 768px) {
   .service-template-detail_service .autreServices {
