@@ -1888,3 +1888,175 @@ select{
 }
 /****************************************************** FIN HUB DE NOUVELLES**********************************************/
 
+
+
+
+
+
+
+/******************************************************DÉBUT HUB DE SERVICES**********************************************/
+
+.page-template-hub_service .sectionServices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titre{
+        width:100%;
+        max-width: 375px;
+        margin:40px 12px;
+        padding:0 30px;
+        h2{
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    &__wrapup {
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+        .card {
+            @include sections.sectionNouvelleTelephone;
+            max-width: 375px;
+            width: 100%;
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+
+                .card-title {
+                    align-self: center;
+                }
+
+                .card-text {
+                    text-align: justify;
+                }
+
+                a{
+                    img{
+                        margin: 10px;
+                    }
+                }
+                .btn {
+                    @include base.sousligne;
+                    align-self: flex-end;
+                    text-decoration-thickness: 1.5px;
+                    color: variables.$orange;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .page-template-hub_service .sectionServices {
+        &__titre{
+            max-width: 768px;
+        }
+        &__wrapup {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            .card{
+                width: 348px;
+            }
+        }
+    }
+
+}
+
+@media (min-width:1200px){
+    .page-template-hub_service .sectionServices{
+        &__titre{
+            max-width: 1200px;
+        }
+        &__wrapup{
+            max-width:1200px;
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+/****************************************************** FIN HUB DE SERVICES**********************************************/
+
+/******************************************************DEBUT DETAIL DE SERVICES**********************************************/
+.service-template-detail_service .contenus{
+    @include sections.sectionNouvelleTelephone;
+    &__wrapup{
+        margin: auto;
+        width: 100%;
+        max-width:375px;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .service-template-detail_service .contenus{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+        &__wrapup{
+            margin: auto;
+            width: 100%;
+            max-width:768px;
+        }
+    }
+}
+
+@media (min-width: 1200px){
+    .service-template-detail_service .contenus{
+        @include sections.sectionNouvelleTabletteOrdinateur;
+        margin: auto;
+        &__wrapup{
+            margin: auto;
+            width: 100%;
+            max-width:1200px;
+        }
+    }
+}
+
+
+.service-template-detail_service .autreServices{
+    width: 100%;
+    &__wrapup{
+        margin: auto;
+        max-width: 375px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        a{
+            @include base.btn;
+        }
+    }
+}
+
+@media (min-width:768px){
+
+    .service-template-detail_service .autreServices{
+        width: 100%;
+        &__wrapup{
+            max-width: 768px;
+            
+        }
+    }
+
+}
+
+@media (min-width:1200px){
+
+    .service-template-detail_service .autreServices{
+        width: 100%;
+        &__wrapup{
+            max-width: 1200px;
+            padding: 0 50px;
+            margin-top: 40px;
+        }
+    }
+
+}
+/******************************************************FIN DETAIL DE SERVICES**********************************************/

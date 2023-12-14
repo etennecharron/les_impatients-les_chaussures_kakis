@@ -32,21 +32,22 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 
 		<section class="autreServices">
 			<div class="autreServices__wrapup">
-			<div>
 			<?php
+			 
+				$postPresent = get_post();
 					$services= new WP_Query("post_type=service");
                         if ( $services->have_posts() ) : 
-                            while ( $services->have_posts() ) : $services->the_post(); ?>
-
-							
-						<?php the_title(); ?>
-                      <?php the_content(); ?>
-                    <?php the_permalink() ?>
+                            while ( $services->have_posts() ) : $services->the_post(); 
+							if($postPresent != get_post()):
+							?>
+								
+							<a href="<?php the_permalink() ?>"> <?php the_title()?></a>
 				  <?php 
+				  			endif;
                             endwhile; 
                             endif;
                             ?>
-			</div>
+							
 			</div>
 		</section>
 			
