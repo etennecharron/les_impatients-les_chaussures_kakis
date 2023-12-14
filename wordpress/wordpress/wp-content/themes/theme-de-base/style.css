@@ -360,8 +360,7 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
   width: 141px;
   height: 47px;
   margin: 14px 0 14px 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*************************FIN FOOTER HAUT 350PX*********************************/
@@ -1118,8 +1117,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .nouvelles__wrapup .card h4 {
   font-size: 12px;
@@ -1268,8 +1266,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .temoignage__wrapup__content .card h4 {
   font-size: 12px;
@@ -1428,8 +1425,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .espace__wrapup__contenus .card h4 {
   font-size: 12px;
@@ -1701,8 +1697,7 @@ font-weight: 900; = black
 .baniere {
   width: 100%;
   height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1877,8 +1872,7 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1902,8 +1896,7 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -1951,8 +1944,7 @@ font-weight: 900; = black
 }
 .nouvelle-template .sectionImg02 img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 /*****************FIN SECTION IMAGE***********************/
@@ -2064,8 +2056,7 @@ font-weight: 900; = black
   width: 300px;
   height: 300px;
   border-radius: 35px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -2089,8 +2080,7 @@ font-weight: 900; = black
     max-width: 210px;
     max-height: 210px;
     border-radius: 35px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 @media (min-width: 1200px) {
@@ -2395,15 +2385,29 @@ font-weight: 900; = black
 /*****************FIN ÉVENEMENT***********************/
 /*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
-.imgEquipe {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+.card.equi {
+  margin: 10px;
+}
+
+.card.equi:hover {
+  color: #F75C03;
 }
 
 .cardEquipe {
-  margin: 200px;
-  border-radius: 20px;
+  margin: 0 auto;
+}
+.cardEquipe .card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.equi .card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.titre .equipe {
+  text-align: center;
 }
 
 /*************************************************** DÉBUT HISTOIRE***************************************************/
@@ -2595,8 +2599,7 @@ font-weight: 900; = black
   position: absolute;
   top: 0;
   left: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .page-template-hub_nouvelle .hubNouvelles__wrapup__cardWrapup .card h4 {
   font-size: 12px;
@@ -2624,8 +2627,7 @@ font-weight: 900; = black
 .page-template-hub_nouvelle .hubNouvelles__wrapup__cardWrapup .card img {
   width: 100%;
   height: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .page-template-hub_nouvelle .hubNouvelles__wrapup__cardWrapup .card:hover {
   opacity: 85%;
