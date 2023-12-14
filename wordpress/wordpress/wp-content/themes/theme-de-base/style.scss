@@ -1967,6 +1967,7 @@ select{
         width: 100%;
         max-width:375px;
     }
+    
 }
 
 @media (min-width: 768px){
@@ -1990,5 +1991,42 @@ select{
             max-width:1200px;
         }
     }
+}
+
+
+.service-template-detail_service .autreServices{
+    width: 100%;
+    &__wrapup{
+        margin: auto;
+        max-width: 375px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+}
+
+@media (min-width:768px){
+
+    .service-template-detail_service .autreServices{
+        width: 100%;
+        &__wrapup{
+            max-width: 768px;
+            
+        }
+    }
+
+}
+
+@media (min-width:1200px){
+
+    .service-template-detail_service .autreServices{
+        width: 100%;
+        &__wrapup{
+            max-width: 1200px;
+            padding: 0 50px;
+            margin-top: 40px;
+        }
+    }
+
 }
 /******************************************************FIN DETAIL DE SERVICES**********************************************/

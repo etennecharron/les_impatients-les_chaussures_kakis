@@ -2809,4 +2809,33 @@ font-weight: 900; = black
     max-width: 1200px;
   }
 }
+.service-template-detail_service .autreServices {
+  width: 100%;
+}
+.service-template-detail_service .autreServices__wrapup {
+  margin: auto;
+  max-width: 375px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+@media (min-width: 768px) {
+  .service-template-detail_service .autreServices {
+    width: 100%;
+  }
+  .service-template-detail_service .autreServices__wrapup {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .service-template-detail_service .autreServices {
+    width: 100%;
+  }
+  .service-template-detail_service .autreServices__wrapup {
+    max-width: 1200px;
+    padding: 0 50px;
+    margin-top: 40px;
+  }
+}
 /******************************************************FIN DETAIL DE SERVICES**********************************************//*# sourceMappingURL=style.css.map */
