@@ -294,6 +294,7 @@ font-weight: 900; = black
 .campagne {
     @include sections.sectionsTelephone;
     background-color: variables.$bleu;
+    overflow: hidden;
 
     &__wrapup {
         display: flex;
@@ -1842,7 +1843,7 @@ font-weight: 900; = black
             .card {
                 width: 273px;
                 @include cartes.carte;
-
+                padding-bottom: 128px;
                 img {
                     width: 100%;
                     height: 180px;

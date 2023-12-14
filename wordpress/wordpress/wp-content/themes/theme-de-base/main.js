@@ -171,7 +171,8 @@ if (document.querySelector("body").classList[1] == "page-template-hub_nouvelle")
                     for (let i = nbDeCartePresente; i < 6; i++) {
 
                         carteContainer = carteContainer + `<div class="card">
-            <img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_1920,c_limit/Monkey-Selfie.jpg" class="card-img-top"
+            <img src="${data[i].better_featured_image.source_url
+            }" class="card-img-top"
                 alt="image de la nouvelle 1">
             <div class="card-body">
                 <h4 class="card-title">${data[i].title.rendered}</h4>
@@ -197,7 +198,8 @@ if (document.querySelector("body").classList[1] == "page-template-hub_nouvelle")
                     for (let i = nbDeCartePresente; i < 6; i++) {
 
                         carteContainer = carteContainer + `<div class="card">
-            <img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_1920,c_limit/Monkey-Selfie.jpg" class="card-img-top"
+            <img src="${data[i].better_featured_image.source_url
+            }" class="card-img-top"
                 alt="image de la nouvelle 1">
             <div class="card-body">
                 <h4 class="card-title">${data[i].title.rendered}</h4>
@@ -231,8 +233,10 @@ if (document.querySelector("body").classList[1] == "page-template-hub_nouvelle")
                 .then(data => {
                     console.log(data);
                     for (let i = nbDeCartePresente; i < 6; i++) {
+                        console.log(data[i].better_featured_image["description"]);
                         carteContainer = carteContainer + `<div class="card">
-            <img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_1920,c_limit/Monkey-Selfie.jpg" class="card-img-top"
+            <img src="${data[i].better_featured_image.source_url
+            }" class="card-img-top"
                 alt="image de la nouvelle 1">
             <div class="card-body">
                 <h4 class="card-title">${data[i].title.rendered}</h4>
@@ -258,7 +262,8 @@ if (document.querySelector("body").classList[1] == "page-template-hub_nouvelle")
                     for (let i = nbDeCartePresente; i < 6; i++) {
 
                         carteContainer = carteContainer + `<div class="card">
-            <img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_1920,c_limit/Monkey-Selfie.jpg" class="card-img-top"
+            <img src="${data[i].better_featured_image.source_url
+            }" class="card-img-top"
                 alt="image de la nouvelle 1">
             <div class="card-body">
                 <h4 class="card-title">${data[i].title.rendered}</h4>
@@ -301,7 +306,8 @@ if (document.querySelector("body").classList[1] == "page-template-hub_nouvelle")
     for (let i = nbDeCartePresente; i < 6; i++) {
 
         carteContainer = carteContainer + `<div class="card">
-<img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_1920,c_limit/Monkey-Selfie.jpg" class="card-img-top"
+<img src="${data[i].better_featured_image.source_url
+}" class="card-img-top"
     alt="image de la nouvelle 1">
 <div class="card-body">
     <h4 class="card-title">${data[i].title.rendered}</h4>
@@ -320,7 +326,8 @@ else {
     };
     for (let i = nbDeCartePresente; i < nbMaxDeCarte; i++) {
         carteContainer = carteContainer + `<div class="card">
-<img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_1920,c_limit/Monkey-Selfie.jpg" class="card-img-top"
+<img src="${data[i].better_featured_image.source_url
+}" class="card-img-top"
 alt="image de la nouvelle 1">
 <div class="card-body">
 <h4 class="card-title">${data[i].title.rendered}</h4>
@@ -359,7 +366,8 @@ zoneCarte.innerHTML = carteContainer;
                         for (let i = nbDeCartePresente; i < 6; i++) {
 
                             carteContainer = carteContainer + `<div class="card">
-                    <img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_1920,c_limit/Monkey-Selfie.jpg" class="card-img-top"
+                    <img src="${data[i].better_featured_image.source_url
+                    }" class="card-img-top"
                         alt="image de la nouvelle 1">
                     <div class="card-body">
                         <h4 class="card-title">${data[i].title.rendered}</h4>
@@ -378,7 +386,8 @@ zoneCarte.innerHTML = carteContainer;
                         };
                         for (let i = nbDeCartePresente; i < nbMaxDeCarte; i++) {
                             carteContainer = carteContainer + `<div class="card">
-                <img src="https://media.newyorker.com/photos/59095bb86552fa0be682d9d0/master/w_1920,c_limit/Monkey-Selfie.jpg" class="card-img-top"
+                <img src="${data[i].better_featured_image.source_url
+                }" class="card-img-top"
                     alt="image de la nouvelle 1">
                 <div class="card-body">
                     <h4 class="card-title">${data[i].title.rendered}</h4>

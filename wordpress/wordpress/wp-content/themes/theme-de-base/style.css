@@ -842,6 +842,7 @@ font-weight: 900; = black
 .campagne {
   padding: 40px 12px;
   background-color: #004E89;
+  overflow: hidden;
 }
 .campagne__wrapup {
   display: flex;
@@ -1128,6 +1129,7 @@ font-weight: 900; = black
   width: 191px;
   height: 273px;
   padding-top: 185px;
+  padding-bottom: 128px;
 }
 .nouvelles__wrapup .card img:nth-child(1) {
   border-radius: 2em;
@@ -2622,6 +2624,7 @@ font-weight: 900; = black
   width: 191px;
   height: 273px;
   padding-top: 185px;
+  padding-bottom: 128px;
 }
 .page-template-hub_nouvelle .hubNouvelles__wrapup__cardWrapup .card img:nth-child(1) {
   border-radius: 2em;
