@@ -2386,14 +2386,29 @@ font-weight: 900; = black
 /*****************FIN ÉVENEMENT***********************/
 /*****************FIN ATELIER***********************/
 /***************************************************FIN A PROPOS***************************************************/
-.imgEquipe {
-  object-fit: cover;
-  width: 100%;
+.card.equi {
+  margin: 10px;
+}
+
+.card.equi:hover {
+  color: #F75C03;
 }
 
 .cardEquipe {
-  margin: 200px;
-  border-radius: 20px;
+  margin: 0 auto;
+}
+.cardEquipe .card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.equi .card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.titre .equipe {
+  text-align: center;
 }
 
 /*************************************************** DÉBUT HISTOIRE***************************************************/

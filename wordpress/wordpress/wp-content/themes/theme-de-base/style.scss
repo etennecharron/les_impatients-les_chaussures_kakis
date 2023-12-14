@@ -1572,15 +1572,36 @@ font-weight: 900; = black
 /***************************************************FIN A PROPOS***************************************************/
 
 
-.imgEquipe {
-    object-fit: cover;
-    width: 100%;
+.card.equi {
+    margin: 10px;
 }
 
-.cardEquipe{
-    margin: 200px;
-    border-radius: 20px;
+.card.equi:hover {
+    color: variables.$orange;
+}
 
+.cardEquipe {
+
+    margin: 0 auto; 
+    .card-img-top {
+        max-height: 250px;
+        object-fit: cover;
+
+    }
+}
+
+.equi {
+    .card-img-top {
+        max-height: 250px;
+        object-fit: cover;
+
+    }
+}
+
+.titre {
+    .equipe {
+        text-align: center;
+    }
 }
 
 /*************************************************** DÉBUT HISTOIRE***************************************************/
