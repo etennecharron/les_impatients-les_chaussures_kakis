@@ -56,7 +56,7 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 				impliqués
 				dans leur communauté. Plusieurs ont suivi. Aujourd’hui, nous avons 21 points de service dans 13
 				villes au Québec qui accueillent 900 personnes par semaine.</p>
-			<button>Voir les ateliers</button>
+				<a href="<?php echo site_url('/hub_service'); ?>"><button>Voir les ateliers</button></a>
 		</div>
 	</section>
 	<!------------------------FIN ATELIER------------------------->
@@ -64,14 +64,14 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 	<!------------------------DÉBUT COLLECTION------------------------->
 	<section class="collection">
 		<div class="collection__wrapup">
-			<h2>collection­</h2>
+			<h2>Collection­</h2>
 			<p>
 				Depuis le début de nos activités, nous avons conservé une grande partie des œuvres produites par
 				nos participants et participantes, ce qui constitue aujourd’hui un patrimoine riche de 15 000
 				œuvres d’art. Il s’agit là d’une collection d’une grande originalité, pionnière au Canada dans
 				son champ de collectionnement.
 			</p>
-			<button>Voir la collection</button>
+			<a href="<?php echo site_url('/hub_service'); ?>"><button>Voir la collection</button></a>
 		</div>
 	</section>
 	<!------------------------ FIN COLLECTION------------------------->
@@ -87,7 +87,8 @@ if ( have_posts() ) : // Est-ce que nous avons des pages à afficher ?
 				œuvres d’art. Il s’agit là d’une collection d’une grande originalité, pionnière au Canada dans
 				son champ de collectionnement.
 			</p>
-			<button>Voir les évenements</button>
+			
+			<a href="<?php echo site_url('/hub_service'); ?>"><button>Voir les évenements</button></a>
 		</div>
 	</section>
 	<!------------------------ FIN EVENEMENT------------------------->
