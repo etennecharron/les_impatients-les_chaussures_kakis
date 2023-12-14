@@ -1,10 +1,10 @@
 /* Wow, tellement un beau spot pour écrire du JS */
 console.log("Main.js fonctionne");
 
-// gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 /* Animation 404 */
-/**gsap
+gsap
   .timeline()
   .from(".drawanim", { x:"400%" },1)
   .from(".h2_page_draw", { x:"400%" })
@@ -12,12 +12,12 @@ console.log("Main.js fonctionne");
   .from(".use_loupe_draw", { x:"400%"} )
   .from(".signaler_draw", { x:"400%"} )
   .from(".search_draw", { x:"400%"} );
-**/
+
 /* Fin Animation 404 */
 
 /* Animation Histoire */
 
-/**gsap.to('.histoire__1992', 
+gsap.to('.histoire__1992', 
           
 { 
 opacity:1,
@@ -92,7 +92,7 @@ scrollTrigger:
 
          
 );
- **/
+ 
 /* Fin Animation Histoire */
 
 let btnPlusDeNouvelles = document.querySelector(".btnPlusNouvelle");
