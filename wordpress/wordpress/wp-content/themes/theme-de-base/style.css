@@ -425,6 +425,9 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
   width: 125px;
   background-color: #F75C03;
 }
+.footer__bas__wrapup__wrapupSection__connaitre ul {
+  list-style-type: none;
+}
 .footer__bas__wrapup__wrapupSection__inscription {
   display: flex;
   flex-direction: column;

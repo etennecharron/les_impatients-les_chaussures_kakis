@@ -40,7 +40,7 @@
 
                 </div>
                 <!--A changer quand on va mettre le site en ligne parce c'est un lien absolue ; - ;  (j'ai pas réussis a crée un lien php full cool epik ; - ; -; - ; -; -; -; -; -; ;- ;)-->
-                <a href="http://localhost/les_impatients-les_chaussures_kakis/wordpress/wordpress/hub-de-nouvelles/">
+                <a href="<?php echo site_url('/hub-de-nouvelle'); ?>">
                 <button class="nouvelles__wrapup__btn">Pour plus de nouvelles</button>
                 </a>
             </div>
