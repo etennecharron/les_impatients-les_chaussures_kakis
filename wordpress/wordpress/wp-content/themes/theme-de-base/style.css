@@ -128,6 +128,10 @@ nav .menu-navigation-principal-container {
     font-size: 28px;
   }
 }
+.navbar-toggler-icon {
+  background-image: url("images/menu_hamburger.svg");
+}
+
 .alert {
   background-color: #AEB4A9;
   font-size: 10px;
@@ -146,7 +150,7 @@ nav .menu-navigation-principal-container {
   margin: auto;
 }
 .alert .btn-close {
-  background: url(../assets/images/btnX.svg);
+  background: url("images/btnX.svg");
   background-repeat: no-repeat;
   background-size: 17px;
   background-position: center;
@@ -427,6 +431,7 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
 }
 .footer__bas__wrapup__wrapupSection__connaitre ul {
   list-style-type: none;
+  padding: 0;
 }
 .footer__bas__wrapup__wrapupSection__inscription {
   display: flex;
@@ -706,13 +711,21 @@ font-weight: 900; = black
   font-size: 14px;
   line-height: 1.5;
 }
-.hero__info02__carousel {
+.hero__info02 .swiperContainer {
   width: 120px;
   height: 130px;
-  background-image: url(../images/cercle.png);
+  background-image: url("images/cercle.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-size: contain;
   font-size: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.hero__info02 .swiperContainer .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .hero__info02__carousel p {
   width: 100px;
@@ -779,7 +792,7 @@ font-weight: 900; = black
   .hero__info02 p {
     line-height: 30px;
   }
-  .hero__info02__carousel {
+  .hero__info02 .swiperContainer {
     width: 207px;
     height: 178px;
   }
@@ -1263,7 +1276,7 @@ font-weight: 900; = black
   padding-top: 185px;
   width: 240px;
   height: 330px;
-  padding-top: 230px;
+  padding-top: 200px;
 }
 .temoignage__wrapup__content .card img:nth-child(1) {
   border-radius: 2em;
@@ -1295,23 +1308,28 @@ font-weight: 900; = black
   font-size: 8px;
   text-underline-offset: 1px;
 }
-.temoignage__wrapup__content .card .identiter {
+.temoignage__wrapup__content .card .imgTemoin {
+  width: 100%;
+  height: 200px;
+}
+.temoignage__wrapup__content .card .card-body .identiter {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-.temoignage__wrapup__content .card .identiter img {
-  width: 11px;
-  height: 7px;
-}
-.temoignage__wrapup__content .card .identiter h4 {
+.temoignage__wrapup__content .card .card-body .identiter h4 {
   font-size: 8px;
   font-weight: 900;
   margin: 0;
-  height: 20px;
 }
-.temoignage__wrapup__content .card p {
-  font-size: 8px;
+.temoignage__wrapup__content .card .card-body .identiter img {
+  height: 10px;
+}
+.temoignage__wrapup__content .card .card-body p {
+  font-size: 10px;
   font-weight: 300;
+  padding: 5px;
 }
 .temoignage__wrapup__content .imgCoter {
   display: none;
@@ -1349,14 +1367,17 @@ font-weight: 900; = black
     height: 585px;
     padding-top: 379px;
   }
-  .temoignage__wrapup__content .card .identiter h4 {
+  .temoignage__wrapup__content .card .imgTemoin {
+    height: 330px;
+  }
+  .temoignage__wrapup__content .card .card-body .identiter h4 {
     font-size: 14px;
   }
-  .temoignage__wrapup__content .card .identiter img {
+  .temoignage__wrapup__content .card .card-body .identiter img {
     width: 23px;
     height: 17px;
   }
-  .temoignage__wrapup__content .card p {
+  .temoignage__wrapup__content .card .card-body p {
     font-size: 14px;
   }
   .temoignage__wrapup__content .imgCoter {
@@ -2460,6 +2481,10 @@ font-weight: 900; = black
 }
 
 /***************************************************DÉBUT ERREUR 404***************************************************/
+.error404 .campagne {
+  overflow: hidden;
+}
+
 .erreur {
   padding: 40px 12px;
   background-color: #004E89;
