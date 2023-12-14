@@ -958,6 +958,7 @@ font-weight: 900; = black
   text-underline-offset: 3.5px;
   text-decoration-color: #F75C03;
   font-size: 20px;
+  white-space: normal;
 }
 .services__wrapup__contenus__wrapupDropdown .dropdown .dropdown-menu {
   background-color: #D9D9D9;
