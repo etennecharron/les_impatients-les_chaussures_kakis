@@ -1,0 +1,129 @@
+@charset "UTF-8";
+* {
+  font-family: lato;
+}
+
+a {
+  color: #F75C03;
+}
+
+header {
+  width: 100%;
+}
+
+body {
+  background-color: #EBEBEB;
+}
+
+.ligne_separation {
+  height: 13px;
+}
+
+em {
+  color: #F75C03;
+  font-style: normal;
+}
+
+.desactiver {
+  display: none;
+}
+
+/*************************DÉBUT FOOTER BAS 350PX*********************************/
+.footer__bas {
+  padding: 40px 12px;
+  padding: 40px 30px 12px 30px;
+  background-color: #004E89;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bas h4 {
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0;
+}
+.footer__bas a {
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+.footer__bas__logo02 {
+  width: 50px;
+  height: 50px;
+}
+.footer__bas__wrapup {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  max-width: 350px;
+}
+.footer__bas__wrapup__wrapupSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.footer__bas__wrapup__wrapupSection__impliquer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.footer__bas__wrapup__wrapupSection__impliquer__barre {
+  margin: 5px 0 5px 0;
+  height: 2px;
+  width: 125px;
+  background-color: #F75C03;
+}
+.footer__bas__wrapup__wrapupSection__impliquer__logo01 {
+  display: none;
+  width: 50px;
+  height: 50px;
+}
+.footer__bas__wrapup__wrapupSection__connaitre {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.footer__bas__wrapup__wrapupSection__connaitre__barre {
+  margin: 5px 0 5px 0;
+  height: 2px;
+  width: 125px;
+  background-color: #F75C03;
+}
+.footer__bas__wrapup__wrapupSection__connaitre ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer__bas__wrapup__wrapupSection__inscription {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.footer__bas__wrapup__wrapupSection__inscription__barre {
+  margin: 5px 0 5px 0;
+  height: 2px;
+  width: 125px;
+  background-color: #F75C03;
+}
+.footer__bas__wrapup__wrapupSection__inscription__recherche {
+  width: 200px;
+}
+.footer__bas__wrapup__wrapupSection__inscription__icons img {
+  margin: 5px;
+}
+.footer__bas__wrapup__wrapupSection__inscription__contact p {
+  font-size: 8px;
+  margin: 3px;
+}
+.footer__bas__wrapup__wrapupSection__inscription__btn {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  width: 130px;
+  margin-top: 5px;
+}
+
+/*************************FIN FOOTER BAS 350PX*********************************//*# sourceMappingURL=footer_bas.css.map */

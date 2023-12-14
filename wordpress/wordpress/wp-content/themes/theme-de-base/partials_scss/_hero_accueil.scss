@@ -1,0 +1,261 @@
+@use "sass:color";
+@use "variables";
+@use "sections";
+@use "base";
+
+
+/***************** DÉBUT HERO***********************/
+.hero {
+    @include sections.sectionsTelephone;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+
+    &__titre {
+        align-self: center;
+
+        img {
+            width: 49px;
+        }
+
+        h1 {
+            color: black;
+            font-size: 24px;
+            padding-right: 25px;
+            padding-left: 0;
+            margin: 0;
+            font-weight: 900;
+        }
+
+        h1:nth-child(3) {
+            padding-left: 25px;
+        }
+    }
+
+    &__info01 {
+        align-self: center;
+        padding-top: 40px;
+        margin-top: 0;
+
+        &__content {
+            width: 200px;
+
+            h2:nth-child(1) {
+                @include base.sousligne;
+                text-decoration-color: variables.$bleu;
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 14px;
+            text-align: right;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        img {
+            width: 146px;
+            height: 140px;
+        }
+    }
+
+    &__info02 {
+        align-self: center;
+        padding-top: 20px;
+        margin-top: 0;
+
+        &__content {
+            padding-right: 0;
+            width: 235px;
+
+            h2:nth-child(2) {
+                @include base.sousligne;
+                text-decoration-color: variables.$orange;
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .swiperContainer {
+            width: 120px;
+            height: 130px;
+            background-image: url("images/cercle.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-size: contain;
+            font-size: 8px;
+            position: relative;
+            overflow: hidden;
+
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__carousel {
+            p {
+                width: 100px;
+                margin: 0;
+                font-size: 8px;
+                line-height: 1.5;
+            }
+
+            &__nav {
+                width: 50%;
+
+                button {
+                    margin-top: 5px;
+                    border: none;
+                    background-color: variables.$bleu;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (min-width:768px) {
+    .hero {
+        @include sections.sectionsTablette;
+
+        &__titre {
+            align-self: flex-start;
+
+            h1 {
+                font-size: 50px;
+            }
+
+            img {
+                width: 105px;
+            }
+        }
+
+        &__info01 {
+            align-self: flex-start;
+            position: relative;
+            height: 170px;
+            width: 500px;
+
+            &__content {
+                width: 315px;
+                position: absolute;
+            }
+
+            h2 {
+                font-size: 32px;
+            }
+
+            p {
+                line-height: 30px;
+            }
+
+            img {
+                position: absolute;
+                right: 0;
+                width: 194px;
+            }
+        }
+
+        &__info02 {
+            align-self: flex-end;
+
+            &__content {
+                width: 380px;
+                padding-right: 0;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                line-height: 30px;
+            }
+
+            .swiperContainer {
+                width: 207px;
+                height: 178px;
+            }
+
+            &__carousel {
+
+                p {
+                    width: 134px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) {
+    .hero {
+        @include sections.sectionsOrdinateur;
+
+        &__titre {
+            h1 {
+                font-size: 80px;
+            }
+
+            img {
+                width: 141px;
+            }
+        }
+
+        &__info01 {
+            margin-top: 38px;
+            width: 700px;
+
+            &__content {
+                width: 390px;
+            }
+
+            h2 {
+                font-size: 40px;
+            }
+
+            img {
+                width: 280px;
+                height: 233px;
+            }
+        }
+
+        &__info02 {
+            margin-top: 38px;
+
+            &__content {
+                width: 460px;
+                padding-right: 10px;
+            }
+
+            h2 {
+                font-size: 40px
+            }
+        }
+    }
+}
+
+/*****************FIN HERO***********************/

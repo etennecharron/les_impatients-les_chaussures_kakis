@@ -1,0 +1,190 @@
+@use "sass:color";
+@use "variables";
+@use "sections";
+@use "base";
+
+
+
+
+/*****************DÉBUT SERVICE***********************/
+.services {
+    @include sections.sectionsTelephone;
+
+    &__wrapup {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+
+        &__titre {
+            display: flex;
+
+            h2 {
+                font-size: 24px;
+                @include base.sousligne;
+                text-decoration-color: variables.$bleu;
+            }
+        }
+
+        &__contenus {
+            padding-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 163px;
+                height: 135px;
+            }
+
+            &__wrapupDropdown {
+                &__titre {
+                    display: none;
+                }
+
+                .dropdown {
+                    button {
+                        @include base.sousligne;
+                        text-decoration-color: variables.$orange;
+                        font-size: 20px;
+                        white-space: normal;
+                    }
+
+                    .dropdown-menu {
+                        &.show {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 28px;
+                        }
+
+                        background-color:variables.$grisFoncer;
+                        width:270px;
+                        padding:20px;
+
+                        button {
+                            @include base.btn;
+                            box-shadow: 0 0 4px 0 variables.$bleu;
+                            height: 30px;
+                            width: 100%;
+                            max-width: 200px;
+                            background-color: transparent;
+                            text-decoration-thickness: 1px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width:768px) {
+    .services {
+        @include sections.sectionsTablette;
+
+        &__wrapup {
+            &__titre {
+                display: none;
+            }
+
+            &__contenus {
+                img {
+                    width: 369px;
+                    height: 307px;
+                }
+
+                &__wrapupDropdown {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    .dropdown {
+                        button {
+                            font-size: 28px;
+                        }
+
+                        .dropdown-menu {
+                            width: 450px;
+                        }
+                    }
+
+                    &__titre {
+                        display: flex;
+
+                        h2 {
+                            font-size: 30px;
+                        }
+
+                        h2:nth-child(1) {
+                            @include base.sousligne;
+                            text-decoration-color: variables.$bleu;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .services {
+        @include sections.sectionsOrdinateur;
+
+        &__wrapup {
+            &__titre {
+                display: none;
+            }
+
+            &__contenus {
+                img {
+                    width: 662px;
+                    height: 550px;
+                }
+
+                &__wrapupDropdown {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+
+                    .dropdown {
+                        .dropdown-menu {
+                            width: 450px;
+
+                            p {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+
+                    &__titre {
+                        display: flex;
+
+                        h2 {
+                            font-size: 40px;
+                        }
+
+                        h2:nth-child(1) {
+                            @include base.sousligne;
+                            text-decoration-color: variables.$bleu;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*****************FIN SERVICES***********************/

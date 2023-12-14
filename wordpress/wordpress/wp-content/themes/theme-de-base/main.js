@@ -1,7 +1,35 @@
 /* Wow, tellement un beau spot pour écrire du JS */
 console.log("Main.js fonctionne");
 
+
+
+
+
+
+
+/**********************début Animation gsap menu hamburger********************/
+
+let menuHamburger = document.querySelector(".navbar-toggler");
+
+menuHamburger.addEventListener("mouseover", function(){
+    
+
+    gsap.fromTo(menuHamburger,
+        {rotation : 0},
+        {rotation: 360}
+        );
+
+})
+
+/**********************fin Animation gsap menu hamburger********************/
+
+
+
+
+
+
 /*******************DÉBUT FONCTION QUI FAIS DISPARAITRE L'ALERTE SI DEJA FERMER***************************/
+
 
 let alert = document.querySelector(".alert");
 alert.querySelector("button").addEventListener("click",function(){

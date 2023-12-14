@@ -1,0 +1,100 @@
+@use "sass:color";
+@use "variables";
+@use "sections";
+@use "base";
+
+
+/*************************DÉBUT FOOTER HAUT 350PX*********************************/
+.footer__compagnie {
+    @include sections.sectionsTelephone;
+
+    &__titre {
+        margin-bottom: 25px;
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        em {
+            color: #212529;
+            @include base.sousligne;
+            text-decoration-color: variables.$orange;
+        }
+    }
+
+    &__logos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        max-width: 350px;
+        margin: auto;
+        img {
+            width: 141px;
+            height: 47px;
+            margin: 14px 0 14px 0;
+            object-fit: cover;
+        }
+    }
+}
+
+/*************************FIN FOOTER HAUT 350PX*********************************/
+
+
+
+
+
+
+
+/*************************DÉBUT FOOTER HAUT 768PX*********************************/
+@media (min-width:768px) {
+
+    .footer__compagnie {
+        @include sections.sectionsTablette;
+
+        &__titre {
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        &__logos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            max-width: 768px;
+        }
+    }
+}
+/*************************FIN FOOTER HAUT 768PX*********************************/
+
+
+
+
+
+
+
+/*************************DÉBUT FOOTER HAUT 1200PX*********************************/
+
+@media (min-width:1200px){
+
+    .footer__compagnie {
+        @include sections.sectionsTablette;
+        &__titre {
+            h2 {
+                font-size: 40px;
+            }
+        }
+        &__logos {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            max-width: 1200px;
+            img{
+                width: 227px;
+                height:75px;
+            }
+        }
+    }
+}
+/*************************FIN FOOTER HAUT 1200PX*********************************/
+
+

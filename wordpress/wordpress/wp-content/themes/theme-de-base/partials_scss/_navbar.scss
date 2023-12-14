@@ -6,7 +6,10 @@ nav{
     .logo{
         width:39px;
     }
-    
+    .navDon{
+        font-weight: 900;
+        font-size:20px;
+    }
     .navbar-nav{
         width: 100%;
         display: flex;
@@ -56,7 +59,9 @@ nav{
             .logo{
                 width:48px;
             }
-    
+            .navDon{
+                font-size:18px;
+            }
             .nav-lien{
                 font-size:18px;
                 font-weight: 300;
@@ -84,7 +89,11 @@ nav{
             .nav-lien{
                 font-size:28px;
             }
+            .navDon{
+                font-size:28px;
+            }
         }
+        
     }
     
     
