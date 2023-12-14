@@ -71,12 +71,16 @@
                     </div>
                     <div class="footer__bas__wrapup__wrapupSection__inscription__contact">
                         <p href="">Organisme de bienfaisance enregistré</p>
-                        <p href="">13484-5213-RR0001</p>
+                        <a href="https://www.google.com/maps/place/Les+Impatients/@45.5137226,-73.5717072,17z/data=!3m1!4b1!4m10!1m2!2m1!1sLes+Impatients+%E2%80%93+Trois+Sapins+131A,+rue+Sherbrooke+Est+Montr%C3%A9al+(Qu%C3%A9bec)+H2X+1C5!3m6!1s0x4cc91a4b05e4a1f5:0xd18026e341f51e99!8m2!3d45.5137226!4d-73.5691323!15sClRMZXMgSW1wYXRpZW50cyDigJMgVHJvaXMgU2FwaW5zIDEzMUEsIHJ1ZSBTaGVyYnJvb2tlIEVzdCBNb250csOpYWwgKFF1w6liZWMpIEgyWCAxQzWSARxzb2NpYWxfc2VydmljZXNfb3JnYW5pemF0aW9u4AEA!16s%2Fg%2F11c76pbghf?entry=ttu">Les Impatients – Trois Sapins
+131A, rue Sherbrooke Est
+Montréal (Québec) H2X 1C5</a>
                         <p href="">Téléphone</p>
                         <p href="">514 842-1043</p>
                         <p>© lesimpatientsleschaussureskakis</p>
                     </div>
+                    <a href="https://impatients.ca/faire-un-don/">
                     <button class="footer__bas__wrapup__wrapupSection__inscription__btn">Pour donner -></button>
+                    </a>
                 </div>
             </div>
             <a href="<?php echo esc_url( home_url( '/' ) );?>">
@@ -85,11 +89,6 @@
         </div>
     </section>
 </footer>
-<?php wp_footer(); 
-/* Espace où WordPress peut insérer des fichiers .js et autres. Par exemple pour des extensions (plugins). 
-	 Si vous enlevez cette fonction, vous désactiverez du même coup toutes vos extensions (plugins) 🤷. 
-	 Vous pouvez la déplacer si désiré, mais garder là. */
-?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Observer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -98,6 +97,12 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
 </script>
+
+<?php wp_footer(); 
+/* Espace où WordPress peut insérer des fichiers .js et autres. Par exemple pour des extensions (plugins). 
+	 Si vous enlevez cette fonction, vous désactiverez du même coup toutes vos extensions (plugins) 🤷. 
+	 Vous pouvez la déplacer si désiré, mais garder là. */
+?>
 
 </body>
 

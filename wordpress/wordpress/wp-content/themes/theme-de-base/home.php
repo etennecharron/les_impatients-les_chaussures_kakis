@@ -171,37 +171,21 @@ get_header(); // Affiche header.php
                     <h2>Impatients</h2>
                 </div>
                 <div class="espace__wrapup__contenus">
-                    <button class="espace__wrapup__contenus__btn">Pour plus d'articles ></button>
-                    <!-- utiliser carte bootstrap-->
-
-                    <?php
-            $articles = new WP_Query("post_type=article");
-            if ( $articles->have_posts() ) : 
-	        while ( $articles->have_posts() ) : $articles->the_post(); 
-            ?>
-                
-
-                <div class="espace__wrapup__contenus__carte card">
-                        <img src="assets/images/img_carte_espace_01.png" class="card-img-top"
-                            alt="image de la nouvelle">
+                    <div class="espace__wrapup__contenus__carte card">
+                        <img src="<?php bloginfo('template_url'); ?>/images/img_carte_espace_01.png" class="card-img-top"
+                            alt="image de la nouvelle 1">
                         <div class="card-body">
-                            <h4 class="card-title"><?php the_title(); ?></h4>
-                            <a href="<?php the_permalink() ?>">
-                            <button>Lire l’article</button>
-                            </a>
+                            <h4 class="card-title">Diane Frigon à l'espace d'exposition Aimant•é</h4>
                         </div>
                     </div>
-
-
-                    <?php 
-                            endwhile; 
-                            endif;
-                            ?>
-
-
-                    <!-- utiliser carte bootstrap-->
-
-                    <button class="espace__wrapup__contenus__btn">Lire l’article</button>
+                    <div class="espace__wrapup__contenus__carte card">
+                        <img src="<?php bloginfo('template_url'); ?>/images/img_carte_espace_02.png" class="card-img-top"
+                            alt="image de la nouvelle 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Jocelyne Proulx et Annie Letendre À L’ESPACE D’EXPOSITION AIMANT•É
+                            </h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
