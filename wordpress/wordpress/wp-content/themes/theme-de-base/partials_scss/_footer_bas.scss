@@ -1,0 +1,197 @@
+
+
+@use "sass:color";
+@use "variables";
+@use "sections";
+@use "base";
+
+
+/*************************DÉBUT FOOTER BAS 350PX*********************************/
+.footer__bas {
+    @include sections.sectionsTelephone;
+    padding: 40px 30px 12px 30px;
+    background-color: variables.$bleu;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+        font-weight: 700;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+    &__logo02 {
+        width: 50px;
+        height: 50px;
+    }
+
+    &__wrapup {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        max-width: 350px;
+
+        &__wrapupSection {
+
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            // section impliquer
+            &__impliquer {
+                @include sections.footerSectionTelephone;
+
+                &__logo01 {
+                    display: none;
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            &__connaitre {
+                @include sections.footerSectionTelephone;
+                ul{
+                    list-style-type: none;
+                    padding:0;
+                }
+            }
+
+            &__inscription {
+                @include sections.footerSectionTelephone;
+
+                &__recherche {
+                    width: 200px;
+                }
+
+                &__icons {
+                    img {
+                        margin: 5px;
+                    }
+                }
+
+                &__contact {
+                    p {
+                        font-size: 8px;
+                        margin: 3px;
+                    }
+                }
+
+                &__btn {
+                    @include base.btn;
+                    width: 130px;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+/*************************FIN FOOTER BAS 350PX*********************************/
+
+
+
+
+/*************************DÉBUT FOOTER BAS 768PX*********************************/
+@media(min-width:768px){
+.footer__bas {
+    @include sections.sectionsTablette;
+    justify-content: space-around;
+
+    &__logo02 {
+        display: none;
+    }
+    &__wrapup {
+        max-width:768px;
+        &__wrapupSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            // section impliquer
+            &__impliquer {
+                @include sections.footerSectionTelephone;
+
+                &__logo01 {
+                    display: block;
+                }
+            }
+            &__connaitre {
+                @include sections.footerSectionTelephone;
+            }
+
+            &__inscription {
+                @include sections.footerSectionTelephone;
+            }
+        }
+    }
+}
+
+}
+/*************************FIN FOOTER BAS 768PX*********************************/
+
+/*************************DÉBUT FOOTER BAS 1200PX*********************************/
+
+@media (min-width:1200px){
+
+
+.footer__bas {
+    @include sections.sectionsTablette;
+    justify-content: space-around;
+    h4 {
+        font-size: 28px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    &__logo02 {
+        display: none;
+    }
+    &__wrapup {
+        max-width:1200px;
+        &__wrapupSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            // section impliquer
+            &__impliquer {
+                @include sections.footerSectionTelephone;
+                &__barre{
+                    margin: 5px 0 25px 0;
+                }
+                &__logo01 {
+                    display: block;
+                }
+            }
+            &__connaitre {
+                @include sections.footerSectionTelephone;
+                &__barre{
+                    margin: 5px 0 25px 0;
+                }
+            }
+
+            &__inscription {
+                @include sections.footerSectionTelephone;
+                &__barre{
+                    margin: 5px 0 25px 0;
+                }
+                &__barre:nth-child(4){
+                    margin: 25px 0 25px 0;
+                }
+                &__contact{
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+/*************************FIN FOOTER BAS 1200PX*********************************/

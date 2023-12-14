@@ -1,0 +1,152 @@
+@use "sass:color";
+@use "variables";
+@use "sections";
+@use "base";
+@use "cartes";
+
+/*****************DÉBUT TÉMOIGNAGE***********************/
+.temoignage {
+    @include sections.sectionsTelephone;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapup {
+        max-width: 1200px;
+        margin: auto;
+
+        h2 {
+            @include base.sousligne;
+            text-decoration-color: variables.$bleu;
+            font-size: 24px;
+        }
+
+        &__content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+
+            .card {
+                @include cartes.carte;
+                width: 240px;
+                height: 330px;
+                padding-top: 200px;
+
+                .imgTemoin {
+                    width: 100%;
+                    height: 200px;
+                }
+
+                .card-body {
+
+                    .identiter {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        h4 {
+                            font-size: 8px;
+                            font-weight: 900;
+                            margin: 0;
+                        }
+
+                        img {
+                            height: 10px;
+                        }
+                    }
+
+                    p {
+                        font-size: 10px;
+                        font-weight: 300;
+                        padding: 5px;
+                    }
+                }
+            }
+
+            .imgCoter {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px) {
+
+    .temoignage {
+        @include sections.sectionsTablette;
+
+        &__wrapup {
+            h2 {
+                font-size: 30px;
+                align-self: flex-start;
+            }
+
+            &__content {
+                justify-content: space-between;
+
+                .imgCoter {
+                    display: block;
+                    width: 378px;
+                    height: 304px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+
+    .temoignage {
+        @include sections.sectionsOrdinateur;
+
+        &__wrapup {
+            h2 {
+                font-size: 40px;
+            }
+
+            &__content {
+                justify-content: space-between;
+
+                .card {
+                    width: 400px;
+                    height: 585px;
+                    padding-top: 379px;
+
+                    .imgTemoin {
+                        height: 330px;
+                    }
+
+                    .card-body {
+                        .identiter {
+                            h4 {
+                                font-size: 14px;
+                            }
+
+                            img {
+                                width: 23px;
+                                height: 17px;
+                            }
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+
+                }
+
+                .imgCoter {
+                    display: block;
+                    width: 531px;
+                    height: 522px;
+                }
+            }
+        }
+    }
+}
+
+/*****************FIN TÉMOIGNAGE***********************/

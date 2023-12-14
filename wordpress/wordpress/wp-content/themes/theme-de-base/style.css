@@ -51,6 +51,10 @@ nav {
 nav .logo {
   width: 39px;
 }
+nav .navDon {
+  font-weight: 900;
+  font-size: 20px;
+}
 nav .navbar-nav {
   width: 100%;
   display: flex;
@@ -101,6 +105,9 @@ nav .menu-navigation-principal-container {
   nav .logo {
     width: 48px;
   }
+  nav .navDon {
+    font-size: 18px;
+  }
   nav .nav-lien {
     font-size: 18px;
     font-weight: 300;
@@ -125,6 +132,9 @@ nav .menu-navigation-principal-container {
     width: 96px;
   }
   nav .nav-lien {
+    font-size: 28px;
+  }
+  nav .navDon {
     font-size: 28px;
   }
 }
@@ -368,6 +378,55 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
 }
 
 /*************************FIN FOOTER HAUT 350PX*********************************/
+/*************************DÉBUT FOOTER HAUT 768PX*********************************/
+@media (min-width: 768px) {
+  .footer__compagnie {
+    padding: 57px 50px;
+  }
+  .footer__compagnie__titre h2 {
+    font-size: 30px;
+  }
+  .footer__compagnie__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 768px;
+  }
+}
+/*************************FIN FOOTER HAUT 768PX*********************************/
+/*************************DÉBUT FOOTER HAUT 1200PX*********************************/
+@media (min-width: 1200px) {
+  .footer__compagnie {
+    padding: 57px 50px;
+  }
+  .footer__compagnie__titre h2 {
+    font-size: 40px;
+  }
+  .footer__compagnie__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1200px;
+  }
+  .footer__compagnie__logos img {
+    width: 227px;
+    height: 75px;
+  }
+}
+/*************************FIN FOOTER HAUT 1200PX*********************************/
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 /*************************DÉBUT FOOTER BAS 350PX*********************************/
 .footer__bas {
   padding: 40px 12px;
@@ -467,21 +526,8 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
 }
 
 /*************************FIN FOOTER BAS 350PX*********************************/
-/*************************DÉBUT FOOTER HAUT 768PX*********************************/
+/*************************DÉBUT FOOTER BAS 768PX*********************************/
 @media (min-width: 768px) {
-  .footer__compagnie {
-    padding: 57px 50px;
-  }
-  .footer__compagnie__titre h2 {
-    font-size: 30px;
-  }
-  .footer__compagnie__logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 768px;
-  }
-  /*************************FIN FOOTER HAUT 768PX*********************************/
-  /*************************DÉBUT FOOTER BAS 768PX*********************************/
   .footer__bas {
     padding: 57px 50px;
     justify-content: space-around;
@@ -535,25 +581,8 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
   }
 }
 /*************************FIN FOOTER BAS 768PX*********************************/
-/*************************DÉBUT FOOTER HAUT 1200PX*********************************/
+/*************************DÉBUT FOOTER BAS 1200PX*********************************/
 @media (min-width: 1200px) {
-  .footer__compagnie {
-    padding: 57px 50px;
-  }
-  .footer__compagnie__titre h2 {
-    font-size: 40px;
-  }
-  .footer__compagnie__logos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 1200px;
-  }
-  .footer__compagnie__logos img {
-    width: 227px;
-    height: 75px;
-  }
-  /*************************FIN FOOTER HAUT 1200PX*********************************/
-  /*************************DÉBUT FOOTER BAS 1200PX*********************************/
   .footer__bas {
     padding: 57px 50px;
     justify-content: space-around;
@@ -628,12 +657,21 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
   }
 }
 /*************************FIN FOOTER BAS 1200PX*********************************/
-/**aide mémoire pour font lato
-font-weight: 300; = light
-font-weight: 400; = regular
-font-weight: 700; = bold 
-font-weight: 900; = black
-**/
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 /***************** DÉBUT HERO***********************/
 .hero {
   padding: 40px 12px;
@@ -838,6 +876,21 @@ font-weight: 900; = black
   }
 }
 /*****************FIN HERO***********************/
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 /*****************DÉBUT CAMPAGNE***********************/
 .campagne {
   padding: 40px 12px;
@@ -935,6 +988,21 @@ font-weight: 900; = black
   }
 }
 /*****************FIN CAMPAGNE***********************/
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
 /*****************DÉBUT SERVICE***********************/
 .services {
   padding: 40px 12px;
@@ -1080,6 +1148,178 @@ font-weight: 900; = black
   }
 }
 /*****************FIN SERVICES***********************/
+/*
+Theme Name: Les impatients
+Author: Les chaussures kakis
+Author URI: https://github.com/etennecharron/les_impatients-les_chaussures_kakis
+Description: Thème pour la réalisation du projet web final
+Version: 1.0
+-------------------------------------------------------------- */
+/*
+C'est le moment d'effacer ce commentaire et d'écrire du vrai
+  ___  ____  ____ 
+ / __)/ ___)/ ___)
+( (__ \___ \\___ \
+ \___)(____/(____/
+
+ */
+/*****************DÉBUT TÉMOIGNAGE***********************/
+.temoignage {
+  padding: 40px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.temoignage__wrapup {
+  max-width: 1200px;
+  margin: auto;
+}
+.temoignage__wrapup h2 {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  text-decoration-color: #004E89;
+  font-size: 24px;
+}
+.temoignage__wrapup__content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.temoignage__wrapup__content .card {
+  position: relative;
+  background-color: #D9D9D9;
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin-top: 20px;
+  margin: 20px 0 0 0;
+  width: 191px;
+  height: 273px;
+  padding-top: 185px;
+  width: 240px;
+  height: 330px;
+  padding-top: 200px;
+}
+.temoignage__wrapup__content .card img:nth-child(1) {
+  border-radius: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.temoignage__wrapup__content .card h4 {
+  font-size: 12px;
+  font-weight: 900;
+  text-align: left;
+}
+.temoignage__wrapup__content .card button {
+  background-color: #EBEBEB;
+  color: #F75C03;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 3.5px;
+  text-decoration-thickness: 1px;
+  box-shadow: 0 0 4px 0 #004E89;
+  width: 100%;
+  margin: 0;
+  font-size: 8px;
+  text-underline-offset: 1px;
+}
+.temoignage__wrapup__content .card .imgTemoin {
+  width: 100%;
+  height: 200px;
+}
+.temoignage__wrapup__content .card .card-body .identiter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.temoignage__wrapup__content .card .card-body .identiter h4 {
+  font-size: 8px;
+  font-weight: 900;
+  margin: 0;
+}
+.temoignage__wrapup__content .card .card-body .identiter img {
+  height: 10px;
+}
+.temoignage__wrapup__content .card .card-body p {
+  font-size: 10px;
+  font-weight: 300;
+  padding: 5px;
+}
+.temoignage__wrapup__content .imgCoter {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .temoignage {
+    padding: 57px 50px;
+  }
+  .temoignage__wrapup h2 {
+    font-size: 30px;
+    align-self: flex-start;
+  }
+  .temoignage__wrapup__content {
+    justify-content: space-between;
+  }
+  .temoignage__wrapup__content .imgCoter {
+    display: block;
+    width: 378px;
+    height: 304px;
+  }
+}
+@media (min-width: 1200px) {
+  .temoignage {
+    padding: 75px 60px;
+  }
+  .temoignage__wrapup h2 {
+    font-size: 40px;
+  }
+  .temoignage__wrapup__content {
+    justify-content: space-between;
+  }
+  .temoignage__wrapup__content .card {
+    width: 400px;
+    height: 585px;
+    padding-top: 379px;
+  }
+  .temoignage__wrapup__content .card .imgTemoin {
+    height: 330px;
+  }
+  .temoignage__wrapup__content .card .card-body .identiter h4 {
+    font-size: 14px;
+  }
+  .temoignage__wrapup__content .card .card-body .identiter img {
+    width: 23px;
+    height: 17px;
+  }
+  .temoignage__wrapup__content .card .card-body p {
+    font-size: 14px;
+  }
+  .temoignage__wrapup__content .imgCoter {
+    display: block;
+    width: 531px;
+    height: 522px;
+  }
+}
+/*****************FIN TÉMOIGNAGE***********************/
+/**aide mémoire pour font lato
+font-weight: 300; = light
+font-weight: 400; = regular
+font-weight: 700; = bold 
+font-weight: 900; = black
+**/
 /*****************DÉBUT NOUVELLES***********************/
 .nouvelles {
   padding: 40px 12px;
@@ -1238,157 +1478,6 @@ font-weight: 900; = black
 }
 
 /*****************FIN NOUVELLES***********************/
-/*****************DÉBUT TÉMOIGNAGE***********************/
-.temoignage {
-  padding: 40px 12px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.temoignage__wrapup {
-  max-width: 1200px;
-  margin: auto;
-}
-.temoignage__wrapup h2 {
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3.5px;
-  text-decoration-color: #004E89;
-  font-size: 24px;
-}
-.temoignage__wrapup__content {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-}
-.temoignage__wrapup__content .card {
-  position: relative;
-  background-color: #D9D9D9;
-  padding: 1.5em 0.5em 0.5em;
-  border-radius: 2em;
-  text-align: center;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border: none;
-  margin-top: 20px;
-  margin: 20px 0 0 0;
-  width: 191px;
-  height: 273px;
-  padding-top: 185px;
-  width: 240px;
-  height: 330px;
-  padding-top: 200px;
-}
-.temoignage__wrapup__content .card img:nth-child(1) {
-  border-radius: 2em;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-.temoignage__wrapup__content .card h4 {
-  font-size: 12px;
-  font-weight: 900;
-  text-align: left;
-}
-.temoignage__wrapup__content .card button {
-  background-color: #EBEBEB;
-  color: #F75C03;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 15px;
-  font-size: 14px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 3.5px;
-  text-decoration-thickness: 1px;
-  box-shadow: 0 0 4px 0 #004E89;
-  width: 100%;
-  margin: 0;
-  font-size: 8px;
-  text-underline-offset: 1px;
-}
-.temoignage__wrapup__content .card .imgTemoin {
-  width: 100%;
-  height: 200px;
-}
-.temoignage__wrapup__content .card .card-body .identiter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.temoignage__wrapup__content .card .card-body .identiter h4 {
-  font-size: 8px;
-  font-weight: 900;
-  margin: 0;
-}
-.temoignage__wrapup__content .card .card-body .identiter img {
-  height: 10px;
-}
-.temoignage__wrapup__content .card .card-body p {
-  font-size: 10px;
-  font-weight: 300;
-  padding: 5px;
-}
-.temoignage__wrapup__content .imgCoter {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .temoignage {
-    padding: 57px 50px;
-  }
-  .temoignage__wrapup h2 {
-    font-size: 30px;
-    align-self: flex-start;
-  }
-  .temoignage__wrapup__content {
-    justify-content: space-between;
-  }
-  .temoignage__wrapup__content .imgCoter {
-    display: block;
-    width: 378px;
-    height: 304px;
-  }
-}
-@media (min-width: 1200px) {
-  .temoignage {
-    padding: 75px 60px;
-  }
-  .temoignage__wrapup h2 {
-    font-size: 40px;
-  }
-  .temoignage__wrapup__content {
-    justify-content: space-between;
-  }
-  .temoignage__wrapup__content .card {
-    width: 400px;
-    height: 585px;
-    padding-top: 379px;
-  }
-  .temoignage__wrapup__content .card .imgTemoin {
-    height: 330px;
-  }
-  .temoignage__wrapup__content .card .card-body .identiter h4 {
-    font-size: 14px;
-  }
-  .temoignage__wrapup__content .card .card-body .identiter img {
-    width: 23px;
-    height: 17px;
-  }
-  .temoignage__wrapup__content .card .card-body p {
-    font-size: 14px;
-  }
-  .temoignage__wrapup__content .imgCoter {
-    display: block;
-    width: 531px;
-    height: 522px;
-  }
-}
-/*****************FIN TÉMOIGNAGE***********************/
 /*****************DÉBUT ESPACE***********************/
 .espace {
   padding: 40px 12px;
